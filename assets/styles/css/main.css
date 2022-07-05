@@ -5,12 +5,14 @@
     Author:         Anton Shaposhnikov
 	Email:			shaposhnikov.web@gmail.com
 --------------------------------------------------------------*/
+/* line 7, ../scss/common.scss */
 html {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%; }
 
+/* line 13, ../scss/common.scss */
 body {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
@@ -28,32 +30,39 @@ body {
   color: #333;
   background-color: #fff; }
 
+/* line 27, ../scss/common.scss */
 .main {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   overflow: hidden; }
 
+/* line 34, ../scss/common.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
+/* line 41, ../scss/common.scss */
 :active, :focus {
   outline: none; }
 
+/* line 45, ../scss/common.scss */
 img {
   display: block;
   width: 100%;
   max-width: 100%; }
 
+/* line 51, ../scss/common.scss */
 ul {
   list-style-type: none; }
 
+/* line 55, ../scss/common.scss */
 strong {
   font-weight: bold; }
 
+/* line 60, ../scss/common.scss */
 a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
@@ -61,9 +70,14 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in; }
 
+/* line 67, ../scss/common.scss */
+button {
+  font-family: 'Montserrat', sans-serif; }
+
 /* ======================================
 //            Layout
 ====================================== */
+/* line 75, ../scss/common.scss */
 .c-container {
   max-width: 1170px;
   height: 100%;
@@ -71,8 +85,9 @@ a, a:focus, a:hover, a:active a:visited {
   padding: 0 15px; }
 
 /* ======================================
-//            Buttons
+//            Common used
 ====================================== */
+/* line 86, ../scss/common.scss */
 .main-btn {
   min-width: 180px;
   height: 47px;
@@ -86,39 +101,13 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: all 1 ease-in;
   transition: all 1 ease-in;
   cursor: pointer; }
+  /* line 99, ../scss/common.scss */
   .main-btn:hover {
     background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
     -webkit-transition: all 1 ease-in;
     transition: all 1 ease-in; }
 
-.read-more-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  font-size: var(--px16);
-  line-height: 1.1;
-  border: none;
-  outline: none;
-  background: transparent;
-  padding: 10px 0;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  cursor: pointer; }
-  .read-more-btn span {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin-left: 5px; }
-  .read-more-btn:hover {
-    color: var(--primary-green);
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out; }
-
+/* line 105, ../scss/common.scss */
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,6 +115,7 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  /* line 108, ../scss/common.scss */
   .logo .logo__title {
     position: relative;
     margin-right: 25px;
@@ -137,6 +127,7 @@ a, a:focus, a:hover, a:active a:visited {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #242424; }
+    /* line 120, ../scss/common.scss */
     .logo .logo__title:after {
       top: 20px;
       right: -23px;
@@ -147,22 +138,27 @@ a, a:focus, a:hover, a:active a:visited {
               transform: rotate(90deg);
       width: 20px;
       height: 1px; }
+    /* line 131, ../scss/common.scss */
     .logo .logo__title span {
       font-size: 17px;
       font-weight: 800;
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  /* line 140, ../scss/common.scss */
   .logo p {
     font-size: 10px;
     width: 100px;
     line-height: 12px; }
 
+/* line 147, ../scss/common.scss */
 .lang-switcher {
   font-size: 14px; }
+  /* line 150, ../scss/common.scss */
   .lang-switcher a:first-child {
     margin-right: 10px;
     position: relative; }
+    /* line 154, ../scss/common.scss */
     .lang-switcher a:first-child:after {
       top: 10px;
       right: -13px;
@@ -173,13 +169,67 @@ a, a:focus, a:hover, a:active a:visited {
               transform: rotate(90deg);
       width: 13px;
       height: 1px; }
+  /* line 166, ../scss/common.scss */
   .lang-switcher .active {
     font-weight: 500;
     color: #02839F; }
 
+/* line 172, ../scss/common.scss */
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #333; }
+
+/* line 178, ../scss/common.scss */
+.pretitle {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%; }
+
+/* line 187, ../scss/common.scss */
+.linker-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer; }
+  /* line 197, ../scss/common.scss */
+  .linker-btn svg {
+    display: block;
+    width: 15px;
+    height: 8px;
+    margin-left: 10px; }
+    /* line 203, ../scss/common.scss */
+    .linker-btn svg path {
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+  /* line 208, ../scss/common.scss */
+  .linker-btn:hover {
+    color: #02839F;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    /* line 212, ../scss/common.scss */
+    .linker-btn:hover svg path {
+      fill: #02839F;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out; }
+
 /* ======================================
 //            General Section
 ====================================== */
+/* line 223, ../scss/common.scss */
 .general__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -194,6 +244,7 @@ a, a:focus, a:hover, a:active a:visited {
   margin-top: 145px;
   padding-bottom: 110px;
   border-bottom: 1px solid #D3D3D3; }
+  /* line 230, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -201,6 +252,7 @@ a, a:focus, a:hover, a:active a:visited {
     line-height: 85px;
     letter-spacing: 0.02em;
     text-transform: uppercase; }
+    /* line 238, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -209,6 +261,7 @@ a, a:focus, a:hover, a:active a:visited {
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
+  /* line 249, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -217,10 +270,12 @@ a, a:focus, a:hover, a:active a:visited {
     font-size: 18px;
     line-height: 22px;
     font-weight: 400; }
+  /* line 259, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
 
+/* line 265, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -229,6 +284,7 @@ a, a:focus, a:hover, a:active a:visited {
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
+  /* line 274, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -239,6 +295,86 @@ a, a:focus, a:hover, a:active a:visited {
     line-height: 22px;
     text-align: center; }
 
+/* ======================================
+//            How-it-works Section
+====================================== */
+/* line 290, ../scss/common.scss */
+.how-it-works__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid #D3D3D3;
+  position: relative; }
+  /* line 298, ../scss/common.scss */
+  .how-it-works__inner .how-it-works__content {
+    margin: 0 auto;
+    max-width: 690px;
+    width: 100%; }
+    /* line 303, ../scss/common.scss */
+    .how-it-works__inner .how-it-works__content p {
+      margin-top: 30px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: #333; }
+    /* line 311, ../scss/common.scss */
+    .how-it-works__inner .how-it-works__content .how-it-works__content--hidden-text {
+      display: none; }
+    /* line 315, ../scss/common.scss */
+    .how-it-works__inner .how-it-works__content .linker-btn {
+      margin-left: auto;
+      margin-top: 10px; }
+
+/* ======================================
+//          Donation Section
+====================================== */
+/* line 326, ../scss/common.scss */
+.donation__inner {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 125px; }
+  /* line 331, ../scss/common.scss */
+  .donation__inner .pretitle {
+    top: 25px; }
+  /* line 335, ../scss/common.scss */
+  .donation__inner .donation__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto; }
+    /* line 339, ../scss/common.scss */
+    .donation__inner .donation__content .donation__content-info {
+      max-width: 690px;
+      width: 100%; }
+      /* line 343, ../scss/common.scss */
+      .donation__inner .donation__content .donation__content-info p {
+        margin-top: 35px;
+        margin-bottom: 30px; }
+      /* line 348, ../scss/common.scss */
+      .donation__inner .donation__content .donation__content-info .donation__content-btns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        /* line 351, ../scss/common.scss */
+        .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
+          margin-left: 25px; }
+    /* line 357, ../scss/common.scss */
+    .donation__inner .donation__content .donation__content-img {
+      max-width: 222px;
+      width: 100%; }
+
+/* line 2, ../../../modules/header/Header.module.scss */
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,6 +388,7 @@ a, a:focus, a:hover, a:active a:visited {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #D3D3D3; }
+/* line 9, ../../../modules/header/Header.module.scss */
 .header__btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +398,7 @@ a, a:focus, a:hover, a:active a:visited {
           align-items: center;
   gap: 24px; }
 
+/* line 15, ../../../modules/header/Header.module.scss */
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -269,12 +407,14 @@ a, a:focus, a:hover, a:active a:visited {
       -ms-flex-align: center;
           align-items: center;
   gap: 70px; }
+  /* line 19, ../../../modules/header/Header.module.scss */
   .nav-list a:focus, .nav-list a:hover, .nav-list a:active a:visited {
     text-decoration: underline;
     color: #02839F;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in; }
 
+/* line 3, ../../../modules/footer/Footer.module.scss */
 .footer .footer__inner {
   margin-bottom: 35px;
   padding-top: 35px;
@@ -290,6 +430,7 @@ a, a:focus, a:hover, a:active a:visited {
   font-size: 10px;
   font-weight: 500;
   color: #616161; }
+  /* line 14, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__main-info, .footer .footer__inner .footer__contact-info, .footer .footer__inner .footer__sub-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -300,12 +441,16 @@ a, a:focus, a:hover, a:active a:visited {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  /* line 18, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__main-info {
     margin-bottom: 35px; }
+  /* line 22, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__contact-item {
     margin-right: 80px; }
+    /* line 25, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item:last-child {
       margin-right: 0; }
+    /* line 29, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item .footer__contact-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -313,11 +458,14 @@ a, a:focus, a:hover, a:active a:visited {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      /* line 32, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item .footer__contact-link svg {
         margin-right: 5px; }
+  /* line 40, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info p:first-child {
     max-width: 337px;
     width: 100%; }
+  /* line 45, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info p:nth-child(2) {
     max-width: 140px;
     width: 100%; }
@@ -338,6 +486,7 @@ a, a:focus, a:hover, a:active a:visited {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+/* line 26, ../../../modules/preloader/Preloader.module.scss */
 .preloader {
   position: fixed;
   left: 0;
@@ -346,6 +495,7 @@ a, a:focus, a:hover, a:active a:visited {
   bottom: 0;
   background-color: var(--light-green-bg);
   z-index: 999999; }
+  /* line 35, ../../../modules/preloader/Preloader.module.scss */
   .preloader__row {
     position: relative;
     top: calc((100% - 227px) / 2);
@@ -358,11 +508,13 @@ a, a:focus, a:hover, a:active a:visited {
     -webkit-animation: spin 15s linear 0s infinite;
     animation: spin 15s linear 0s infinite; }
 
+/* line 50, ../../../modules/preloader/Preloader.module.scss */
 .loaded_hiding .preloader {
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
   opacity: 0; }
 
+/* line 57, ../../../modules/preloader/Preloader.module.scss */
 .loaded .preloader {
   display: none; }
 

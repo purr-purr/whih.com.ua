@@ -175,6 +175,47 @@ button {
   color: $primary-text;
 }
 
+.pretitle {
+  position: absolute;
+  top: 110px;
+  left: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+}
+
+.linker-btn {
+  @include flex-align(center);
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+
+  svg {
+    display: block;
+    width: 15px;
+    height: 8px;
+    margin-left: 10px;
+
+    path {
+      transition: all .2s ease-in-out;
+    }
+  }
+
+  &:hover {
+    color: $blue;
+    transition: all .2s ease-in-out;
+
+    svg path {
+      fill: $blue;
+      transition: all .2s ease-in-out;
+    }
+  }
+}
+
 /* ======================================
 //            General Section
 ====================================== */
@@ -251,12 +292,8 @@ button {
   padding-top: 110px;
   padding-bottom: 110px;
   border-bottom: 1px solid $border-color;
+  position: relative;
 
-  .how-it-works__pretitle {
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 140%;
-  }
 
   .how-it-works__content {
     margin: 0 auto;
@@ -274,35 +311,52 @@ button {
     .how-it-works__content--hidden-text {
       display: none;
     }
+
+    .linker-btn {
+      margin-left: auto;
+      margin-top: 10px;
+    }
   }
 }
 
-.read-more-btn {
-  @include flex-align(center);
-  margin-left: auto;
-  margin-top: 10px;
-  font-weight: 500;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  background: transparent;
-  transition: all .3s ease-in-out;
-  cursor: pointer;
+/* ======================================
+//          Donation Section
+====================================== */
 
-  svg {
-    display: block;
-    width: 15px;
-    height: 8px;
-    margin-left: 10px;
+.donation__inner {
+  position: relative;
+  margin-bottom: 100px;
+  margin-top: 125px;
 
-    &:hover {
-      color: $blue;
-      transition: all .3s ease-in-out;
-    }
+  .pretitle {
+    top: 25px;
   }
 
-  &:hover {
-    color: $blue;
-    transition: all .3s ease-in-out;
+  .donation__content {
+    @include flex-justify-align(end, center);
+    margin-left: auto;
+
+    .donation__content-info {
+      max-width: 690px;
+      width: 100%;
+
+      p {
+        margin-top: 35px;
+        margin-bottom: 30px;
+      }
+
+      .donation__content-btns {
+        @include flex-align(center);
+
+        .linker-btn {
+          margin-left: 25px;
+        }
+      }
+    }
+
+    .donation__content-img {
+      max-width: 222px;
+      width: 100%;
+    }
   }
 }
