@@ -11,7 +11,7 @@
     color: $secondary;
 
     &:after {
-      @include section-border(-35px);
+      @include section-border-top(-35px);
     }
 
     .footer__main-info, .footer__contact-info, .footer__sub-info {
