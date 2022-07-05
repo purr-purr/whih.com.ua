@@ -66,13 +66,6 @@ a:focus, a:hover, a:active a:visited {
   color: var(--primary-green);
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.01em;
-  font-weight: bold;
-  line-height: 1.1;
-}
-
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {
   display: none
@@ -121,5 +114,71 @@ details > summary {
   &:hover {
     color: var(--primary-green);
     transition: all .3s ease-in-out;
+  }
+}
+
+.logo {
+  @include flex-align(center);
+
+  .logo__title {
+    position: relative;
+    margin-right: 25px;
+    max-width: 135px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #242424;
+
+    &:after {
+      top: 20px;
+      right: -23px;
+      position: absolute;
+      content: " ";
+      background-color: #02839F;
+      transform: rotate(90deg);
+      width: 20px;
+      height: 1px;
+    }
+
+    span {
+      font-size: 17px;
+      font-weight: 800;
+      background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    max-width: 100px;
+    width: 100%;
+  }
+}
+
+.lang-switcher {
+  font-size: 14px;
+
+  a:first-child {
+    margin-right: 10px;
+    position: relative;
+
+    &:after {
+      top: 10px;
+      right: -13px;
+      position: absolute;
+      content: " ";
+      background-color: #333;
+      transform: rotate(90deg);
+      width: 13px;
+      height: 1px;
+    }
+  }
+
+  .current {
+    font-weight: 500;
+    color: #02839F;
   }
 }

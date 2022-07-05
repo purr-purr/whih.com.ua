@@ -74,27 +74,20 @@ a, a:focus, a:hover, a:active a:visited {
 a:focus, a:hover, a:active a:visited {
   color: var(--primary-green); }
 
-/* line 69, ../scss/common.scss */
-h1, h2, h3, h4, h5 {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.01em;
-  font-weight: bold;
-  line-height: 1.1; }
-
 /* Убираем стандартный маркер Chrome */
-/* line 77, ../scss/common.scss */
+/* line 70, ../scss/common.scss */
 details summary::-webkit-details-marker {
   display: none; }
 
 /* Убираем стандартный маркер Firefox */
-/* line 82, ../scss/common.scss */
+/* line 75, ../scss/common.scss */
 details > summary {
   list-style: none; }
 
 /* ======================================
 //            Layout
 ====================================== */
-/* line 90, ../scss/common.scss */
+/* line 83, ../scss/common.scss */
 .c-container {
   max-width: 1170px;
   height: 100%;
@@ -104,7 +97,7 @@ details > summary {
 /* ======================================
 //            Buttons
 ====================================== */
-/* line 101, ../scss/common.scss */
+/* line 94, ../scss/common.scss */
 .read-more-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,17 +116,83 @@ details > summary {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   cursor: pointer; }
-  /* line 114, ../scss/common.scss */
+  /* line 107, ../scss/common.scss */
   .read-more-btn span {
     display: block;
     width: 20px;
     height: 20px;
     margin-left: 5px; }
-  /* line 121, ../scss/common.scss */
+  /* line 114, ../scss/common.scss */
   .read-more-btn:hover {
     color: var(--primary-green);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
+
+/* line 120, ../scss/common.scss */
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  /* line 123, ../scss/common.scss */
+  .logo .logo__title {
+    position: relative;
+    margin-right: 25px;
+    max-width: 135px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #242424; }
+    /* line 135, ../scss/common.scss */
+    .logo .logo__title:after {
+      top: 20px;
+      right: -23px;
+      position: absolute;
+      content: " ";
+      background-color: #02839F;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 20px;
+      height: 1px; }
+    /* line 146, ../scss/common.scss */
+    .logo .logo__title span {
+      font-size: 17px;
+      font-weight: 800;
+      background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  /* line 155, ../scss/common.scss */
+  .logo p {
+    max-width: 100px;
+    width: 100%; }
+
+/* line 161, ../scss/common.scss */
+.lang-switcher {
+  font-size: 14px; }
+  /* line 164, ../scss/common.scss */
+  .lang-switcher a:first-child {
+    margin-right: 10px;
+    position: relative; }
+    /* line 168, ../scss/common.scss */
+    .lang-switcher a:first-child:after {
+      top: 10px;
+      right: -13px;
+      position: absolute;
+      content: " ";
+      background-color: #333;
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+      width: 13px;
+      height: 1px; }
+  /* line 180, ../scss/common.scss */
+  .lang-switcher .current {
+    font-weight: 500;
+    color: #02839F; }
 
 /* line 1, ../../../modules/header/Header.module.scss */
 .header {
@@ -168,8 +227,19 @@ details > summary {
 
 /* line 1, ../../../modules/footer/Footer.module.scss */
 .footer {
-  height: 162px; }
-  /* line 4, ../../../modules/footer/Footer.module.scss */
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 35px; }
+  /* line 6, ../../../modules/footer/Footer.module.scss */
+  .footer:after {
+    position: absolute;
+    content: "";
+    top: -35px;
+    left: 0;
+    background: #d3d3d3;
+    width: 100%;
+    height: 1px; }
+  /* line 16, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -179,8 +249,9 @@ details > summary {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 10px;
-    font-weight: 500; }
-    /* line 10, ../../../modules/footer/Footer.module.scss */
+    font-weight: 500;
+    color: #616161; }
+    /* line 23, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__main-info, .footer .footer__inner .footer__contact-info, .footer .footer__inner .footer__sub-info {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -191,15 +262,34 @@ details > summary {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    /* line 14, ../../../modules/footer/Footer.module.scss */
+    /* line 27, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__main-info {
       margin-bottom: 35px; }
-    /* line 18, ../../../modules/footer/Footer.module.scss */
+    /* line 31, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item {
       margin-right: 80px; }
-      /* line 21, ../../../modules/footer/Footer.module.scss */
+      /* line 34, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item:last-child {
         margin-right: 0; }
+      /* line 38, ../../../modules/footer/Footer.module.scss */
+      .footer .footer__inner .footer__contact-item .footer__contact-link {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        /* line 41, ../../../modules/footer/Footer.module.scss */
+        .footer .footer__inner .footer__contact-item .footer__contact-link svg {
+          margin-right: 5px; }
+    /* line 49, ../../../modules/footer/Footer.module.scss */
+    .footer .footer__inner .footer__sub-info p:first-child {
+      max-width: 337px;
+      width: 100%; }
+    /* line 54, ../../../modules/footer/Footer.module.scss */
+    .footer .footer__inner .footer__sub-info p:nth-child(2) {
+      max-width: 140px;
+      width: 100%; }
 
 /* Preloader */
 /* Анимация вращения лого */
@@ -248,4 +338,5 @@ details > summary {
 /* line 57, ../../../modules/preloader/Preloader.module.scss */
 .loaded .preloader {
   display: none; }
+
 /*# sourceMappingURL=main.css.map */

@@ -1,11 +1,24 @@
 .footer {
-  height: 162px;
+  position: relative;
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: -35px;
+    left: 0;
+    background: #d3d3d3;
+    width: 100%;
+    height: 1px;
+  }
 
   .footer__inner {
     display: flex;
     flex-direction: column;
     font-size: 10px;
     font-weight: 500;
+    color: $secondary;
 
     .footer__main-info, .footer__contact-info, .footer__sub-info {
       @include flex-justify-align(space-between, center)
@@ -20,6 +33,27 @@
 
       &:last-child {
         margin-right: 0;
+      }
+
+      .footer__contact-link {
+        @include flex-align(center);
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .footer__sub-info {
+
+      p:first-child {
+        max-width: 337px;
+        width: 100%;
+      }
+
+      p:nth-child(2) {
+        max-width: 140px;
+        width: 100%;
       }
     }
   }
