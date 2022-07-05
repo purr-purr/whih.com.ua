@@ -210,17 +210,9 @@ details > summary {
           align-items: center;
   position: relative;
   margin-top: 145px;
-  margin-bottom: 110px; }
-  /* line 196, ../scss/common.scss */
-  .general__inner:after {
-    position: absolute;
-    content: "";
-    bottom: -110px;
-    left: 0;
-    background-color: #d3d3d3;
-    width: 100%;
-    height: 1px; }
-  /* line 200, ../scss/common.scss */
+  padding-bottom: 110px;
+  border-bottom: 1px solid #D3D3D3; }
+  /* line 197, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -228,7 +220,7 @@ details > summary {
     line-height: 85px;
     letter-spacing: 0.02em;
     text-transform: uppercase; }
-    /* line 208, ../scss/common.scss */
+    /* line 205, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -237,7 +229,7 @@ details > summary {
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 219, ../scss/common.scss */
+  /* line 216, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -246,20 +238,21 @@ details > summary {
     font-size: 18px;
     line-height: 22px;
     font-weight: 400; }
-  /* line 229, ../scss/common.scss */
+  /* line 226, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
 
-/* line 235, ../scss/common.scss */
+/* line 232, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
   background-image: url("/assets/images/general/bg-blur.svg");
   background-repeat: no-repeat;
-  background-position: center; }
-  /* line 243, ../scss/common.scss */
+  background-position: center;
+  border-bottom: 1px solid #D3D3D3; }
+  /* line 241, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -301,71 +294,61 @@ details > summary {
         min-width: 113px;
         height: 40px; } }
 
-/* line 1, ../../../modules/footer/Footer.module.scss */
-.footer {
-  margin-top: 35px;
-  margin-bottom: 35px; }
-  /* line 5, ../../../modules/footer/Footer.module.scss */
-  .footer .footer__inner {
-    position: relative;
+/* line 3, ../../../modules/footer/Footer.module.scss */
+.footer .footer__inner {
+  margin-bottom: 35px;
+  padding-top: 35px;
+  border-top: 1px solid #D3D3D3;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 10px;
+  font-weight: 500;
+  color: #616161; }
+  /* line 14, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__main-info, .footer .footer__inner .footer__contact-info, .footer .footer__inner .footer__sub-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 10px;
-    font-weight: 500;
-    color: #616161; }
-    /* line 13, ../../../modules/footer/Footer.module.scss */
-    .footer .footer__inner:after {
-      position: absolute;
-      content: "";
-      top: -35px;
-      left: 0;
-      background-color: #d3d3d3;
-      width: 100%;
-      height: 1px; }
-    /* line 17, ../../../modules/footer/Footer.module.scss */
-    .footer .footer__inner .footer__main-info, .footer .footer__inner .footer__contact-info, .footer .footer__inner .footer__sub-info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  /* line 18, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__main-info {
+    margin-bottom: 35px; }
+  /* line 22, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__contact-item {
+    margin-right: 80px; }
+    /* line 25, ../../../modules/footer/Footer.module.scss */
+    .footer .footer__inner .footer__contact-item:last-child {
+      margin-right: 0; }
+    /* line 29, ../../../modules/footer/Footer.module.scss */
+    .footer .footer__inner .footer__contact-item .footer__contact-link {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    /* line 21, ../../../modules/footer/Footer.module.scss */
-    .footer .footer__inner .footer__main-info {
-      margin-bottom: 35px; }
-    /* line 25, ../../../modules/footer/Footer.module.scss */
-    .footer .footer__inner .footer__contact-item {
-      margin-right: 80px; }
-      /* line 28, ../../../modules/footer/Footer.module.scss */
-      .footer .footer__inner .footer__contact-item:last-child {
-        margin-right: 0; }
       /* line 32, ../../../modules/footer/Footer.module.scss */
-      .footer .footer__inner .footer__contact-item .footer__contact-link {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        /* line 35, ../../../modules/footer/Footer.module.scss */
-        .footer .footer__inner .footer__contact-item .footer__contact-link svg {
-          margin-right: 5px; }
-    /* line 43, ../../../modules/footer/Footer.module.scss */
-    .footer .footer__inner .footer__sub-info p:first-child {
-      max-width: 337px;
-      width: 100%; }
-    /* line 48, ../../../modules/footer/Footer.module.scss */
-    .footer .footer__inner .footer__sub-info p:nth-child(2) {
-      max-width: 140px;
-      width: 100%; }
+      .footer .footer__inner .footer__contact-item .footer__contact-link svg {
+        margin-right: 5px; }
+  /* line 40, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__sub-info p:first-child {
+    max-width: 337px;
+    width: 100%; }
+  /* line 45, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__sub-info p:nth-child(2) {
+    max-width: 140px;
+    width: 100%; }
 
 /* Preloader */
 /* Анимация вращения лого */

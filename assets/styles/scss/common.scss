@@ -191,11 +191,8 @@ details > summary {
   @include flex-justify-align(space-between, center);
   position: relative;
   margin-top: 145px;
-  margin-bottom: 110px;
-
-  &:after {
-    @include section-border-bottom(-110px);
-  }
+  padding-bottom: 110px;
+  border-bottom: 1px solid #D3D3D3;
 
   .general__title {
     max-width: 600px;
@@ -239,6 +236,7 @@ details > summary {
   background-image: url("/assets/images/general/bg-blur.svg");
   background-repeat: no-repeat;
   background-position: center;
+  border-bottom: 1px solid #D3D3D3;
 
   p {
     margin-left: auto;

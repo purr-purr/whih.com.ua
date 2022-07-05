@@ -15,26 +15,6 @@
   align-items: $align-position;
 }
 
-@mixin section-border-top($top) {
-  position: absolute;
-  content: "";
-  top: $top;
-  left: 0;
-  background-color: #d3d3d3;
-  width: 100%;
-  height: 1px;
-}
-
-@mixin section-border-bottom($bottom) {
-  position: absolute;
-  content: "";
-  bottom: $bottom;
-  left: 0;
-  background-color: #d3d3d3;
-  width: 100%;
-  height: 1px;
-}
-
 /* Breakpoint mixins */
 @mixin media-mobile {
   @media (max-width: $mobile-bp) {

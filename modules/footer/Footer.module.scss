@@ -1,18 +1,15 @@
 .footer {
-  margin-top: 35px;
-  margin-bottom: 35px;
-
+  
   .footer__inner {
+    margin-bottom: 35px;
+    padding-top: 35px;
+    border-top: 1px solid #D3D3D3;
     position: relative;
     display: flex;
     flex-direction: column;
     font-size: 10px;
     font-weight: 500;
     color: $secondary;
-
-    &:after {
-      @include section-border-top(-35px);
-    }
 
     .footer__main-info, .footer__contact-info, .footer__sub-info {
       @include flex-justify-align(space-between, center)
