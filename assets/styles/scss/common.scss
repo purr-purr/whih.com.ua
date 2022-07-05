@@ -284,6 +284,21 @@ button {
   }
 }
 
+@include media-mobile {
+  .general__img {
+    max-width: 505px;
+
+    img {
+      &:first-child {
+        display: none;
+      }
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+  }
+}
+
 /* ======================================
 //            How-it-works Section
 ====================================== */
@@ -324,6 +339,51 @@ button {
     .linker-btn {
       margin-left: auto;
       margin-top: 10px;
+    }
+  }
+}
+
+.how-it-works__cards {
+  @include flex-justify(start);
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+
+  .how-it-works__card {
+    padding: 20px;
+    margin-right: 22px;
+    margin-bottom: 30px;
+    width: 23%;
+    height: 160px;
+    background: linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
+    filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    border: 1px solid #F6F6F6;
+
+    &:hover {
+      background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
+      filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+    }
+
+    .how-it-works__card-title {
+      max-width: 227px;
+      width: 100%;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: $primary-text;
+    }
+
+    .how-it-works__card-btns {
+      @include flex-justify-align(space-between, center);
+      margin-top: 40px;
+
+      .how-it-works__card-download {
+        svg {
+          margin-right: 8px;
+        }
+      }
     }
   }
 }

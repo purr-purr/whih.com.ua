@@ -184,7 +184,7 @@ button {
   color: #333; }
 
 /* line 181, ../scss/common.scss */
-.pretitle {
+.pre-title {
   position: absolute;
   top: 110px;
   left: 0;
@@ -296,10 +296,20 @@ button {
     line-height: 22px;
     text-align: center; }
 
+@media (max-width: 992px) {
+  /* line 288, ../scss/common.scss */
+  .general__img {
+    max-width: 505px; }
+    /* line 292, ../scss/common.scss */
+    .general__img img:first-child {
+      display: none; }
+    /* line 295, ../scss/common.scss */
+    .general__img img:nth-child(2) {
+      display: block; } }
 /* ======================================
 //            How-it-works Section
 ====================================== */
-/* line 291, ../scss/common.scss */
+/* line 306, ../scss/common.scss */
 .how-it-works__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,38 +318,100 @@ button {
   padding-bottom: 110px;
   border-bottom: 1px solid #D3D3D3;
   position: relative; }
-  /* line 299, ../scss/common.scss */
+  /* line 313, ../scss/common.scss */
+  .how-it-works__inner .how-it-works__wrap {
+    width: 100%; }
+  /* line 317, ../scss/common.scss */
   .how-it-works__inner .how-it-works__content {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 690px;
     width: 100%; }
-    /* line 304, ../scss/common.scss */
+    /* line 323, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content p {
       margin-top: 30px;
       font-weight: 300;
       font-size: 14px;
       line-height: 140%;
       color: #333; }
-    /* line 312, ../scss/common.scss */
-    .how-it-works__inner .how-it-works__content .how-it-works__content--hidden-text {
+    /* line 331, ../scss/common.scss */
+    .how-it-works__inner .how-it-works__content--hidden-text {
       display: none; }
-    /* line 316, ../scss/common.scss */
+      /* line 334, ../scss/common.scss */
+      .how-it-works__inner .how-it-works__content--hidden-text.active {
+        display: block; }
+    /* line 339, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content .linker-btn {
       margin-left: auto;
       margin-top: 10px; }
 
+/* line 346, ../scss/common.scss */
+.how-it-works__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px; }
+  /* line 352, ../scss/common.scss */
+  .how-it-works__cards .how-it-works__card {
+    padding: 20px;
+    margin-right: 22px;
+    margin-bottom: 30px;
+    width: 23%;
+    height: 160px;
+    background: linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
+    -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+            filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 8px;
+    border: 1px solid #F6F6F6; }
+    /* line 364, ../scss/common.scss */
+    .how-it-works__cards .how-it-works__card:hover {
+      background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
+      -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+              filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34)); }
+    /* line 369, ../scss/common.scss */
+    .how-it-works__cards .how-it-works__card .how-it-works__card-title {
+      max-width: 227px;
+      width: 100%;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: #333; }
+    /* line 378, ../scss/common.scss */
+    .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 40px; }
+      /* line 383, ../scss/common.scss */
+      .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download svg {
+        margin-right: 8px; }
+
 /* ======================================
 //          Donation Section
 ====================================== */
-/* line 327, ../scss/common.scss */
+/* line 396, ../scss/common.scss */
 .donation__inner {
   position: relative;
   margin-bottom: 100px;
   margin-top: 125px; }
-  /* line 332, ../scss/common.scss */
-  .donation__inner .pretitle {
+  /* line 401, ../scss/common.scss */
+  .donation__inner .pre-title {
     top: 25px; }
-  /* line 336, ../scss/common.scss */
+  /* line 405, ../scss/common.scss */
   .donation__inner .donation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -351,15 +423,15 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
-    /* line 340, ../scss/common.scss */
+    /* line 409, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-info {
       max-width: 690px;
       width: 100%; }
-      /* line 344, ../scss/common.scss */
+      /* line 413, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info p {
         margin-top: 35px;
         margin-bottom: 30px; }
-      /* line 349, ../scss/common.scss */
+      /* line 418, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info .donation__content-btns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -367,10 +439,10 @@ button {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        /* line 352, ../scss/common.scss */
+        /* line 421, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
           margin-left: 25px; }
-    /* line 358, ../scss/common.scss */
+    /* line 427, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-img {
       max-width: 222px;
       width: 100%; }
@@ -415,6 +487,10 @@ button {
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in; }
 
+@media (max-width: 992px) and (max-width: 992px) {
+  /* line 29, ../../../modules/header/Header.module.scss */
+  .header__btn-group .main-btn {
+    display: none; } }
 /* line 3, ../../../modules/footer/Footer.module.scss */
 .footer .footer__inner {
   margin-bottom: 35px;
@@ -471,6 +547,30 @@ button {
     max-width: 140px;
     width: 100%; }
 
+@media (max-width: 992px) and (max-width: 992px) {
+  /* line 58, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__main-info {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal; }
+  /* line 63, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start; }
+    /* line 67, ../../../modules/footer/Footer.module.scss */
+    .footer .footer__inner .footer__contact-info .footer__contact-item {
+      margin-bottom: 6px; }
+      /* line 70, ../../../modules/footer/Footer.module.scss */
+      .footer .footer__inner .footer__contact-info .footer__contact-item:last-child {
+        margin-bottom: 0; }
+  /* line 77, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__sub-info p:first-child {
+    max-width: 160px; } }
 /* Preloader */
 /* Анимация вращения лого */
 @-webkit-keyframes spin {

@@ -22,3 +22,13 @@
       @include transition(1s);
     }
 }
+
+@include media-mobile {
+  @media (max-width: $mobile-bp) {
+    .header__btn-group {
+      .main-btn {
+        display: none;
+      }
+    }
+  }
+}

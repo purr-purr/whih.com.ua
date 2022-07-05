@@ -49,3 +49,36 @@
     }
   }
 }
+
+@include media-mobile {
+  @media (max-width: $mobile-bp) {
+    .footer {
+      .footer__inner {
+
+        .footer__main-info {
+          align-items: normal;
+
+        }
+
+        .footer__contact-info {
+          flex-direction: column;
+          align-items: start;
+
+          .footer__contact-item {
+            margin-bottom: 6px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .footer__sub-info {
+          p:first-child {
+            max-width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
