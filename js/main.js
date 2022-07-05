@@ -1,7 +1,7 @@
 $(function () {
     $("#included__header").load("/modules/header/index.html");
     $("#included__footer").load("/modules/footer/index.html");
-    $("#included__preloader").load("/modules/preloader/index.html");
+    $("#included__preloader").load("/modules/preloader/preloader.html");
 });
 
 window.onload = function () {
@@ -21,3 +21,18 @@ $(function() {
         $(this).hide();
     });
 });
+
+$(function() {
+    $('.open-btn').on('click', function(event){
+        $('.modal-bg').addClass('modal-bg--active');
+    });
+
+    $('.modal-bg, .modal__close').on('click', function(event){
+        $('.modal-bg').removeClass('modal-bg--active');
+    });
+
+    $('.modal').on('click', function(event){
+        event.stopPropagation();
+    });
+});
+
