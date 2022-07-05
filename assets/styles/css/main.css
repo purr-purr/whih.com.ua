@@ -5,14 +5,12 @@
     Author:         Anton Shaposhnikov
 	Email:			shaposhnikov.web@gmail.com
 --------------------------------------------------------------*/
-/* line 7, ../scss/common.scss */
 html {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%; }
 
-/* line 13, ../scss/common.scss */
 body {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
@@ -27,42 +25,34 @@ body {
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
-  color: #333;
-  background-color: #fff; }
+  color: #333; }
 
-/* line 26, ../scss/common.scss */
 .main {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   overflow: hidden; }
 
-/* line 33, ../scss/common.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-/* line 40, ../scss/common.scss */
 :active, :focus {
   outline: none; }
 
-/* line 44, ../scss/common.scss */
 img {
   display: block;
   width: 100%;
   max-width: 100%; }
 
-/* line 50, ../scss/common.scss */
 ul {
   list-style-type: none; }
 
-/* line 54, ../scss/common.scss */
 strong {
   font-weight: bold; }
 
-/* line 58, ../scss/common.scss */
 a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
@@ -70,24 +60,20 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: color .3s linear;
   transition: color .3s linear; }
 
-/* line 65, ../scss/common.scss */
 a:focus, a:hover, a:active a:visited {
   color: var(--primary-green); }
 
 /* Убираем стандартный маркер Chrome */
-/* line 70, ../scss/common.scss */
 details summary::-webkit-details-marker {
   display: none; }
 
 /* Убираем стандартный маркер Firefox */
-/* line 75, ../scss/common.scss */
 details > summary {
   list-style: none; }
 
 /* ======================================
 //            Layout
 ====================================== */
-/* line 83, ../scss/common.scss */
 .c-container {
   max-width: 1170px;
   height: 100%;
@@ -97,7 +83,6 @@ details > summary {
 /* ======================================
 //            Buttons
 ====================================== */
-/* line 94, ../scss/common.scss */
 .read-more-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,19 +101,16 @@ details > summary {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   cursor: pointer; }
-  /* line 107, ../scss/common.scss */
   .read-more-btn span {
     display: block;
     width: 20px;
     height: 20px;
     margin-left: 5px; }
-  /* line 114, ../scss/common.scss */
   .read-more-btn:hover {
     color: var(--primary-green);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out; }
 
-/* line 120, ../scss/common.scss */
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,7 +118,6 @@ details > summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 123, ../scss/common.scss */
   .logo .logo__title {
     position: relative;
     margin-right: 25px;
@@ -148,7 +129,6 @@ details > summary {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #242424; }
-    /* line 135, ../scss/common.scss */
     .logo .logo__title:after {
       top: 20px;
       right: -23px;
@@ -159,26 +139,21 @@ details > summary {
               transform: rotate(90deg);
       width: 20px;
       height: 1px; }
-    /* line 146, ../scss/common.scss */
     .logo .logo__title span {
       font-size: 17px;
       font-weight: 800;
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 155, ../scss/common.scss */
   .logo p {
     max-width: 100px;
     width: 100%; }
 
-/* line 161, ../scss/common.scss */
 .lang-switcher {
   font-size: 14px; }
-  /* line 164, ../scss/common.scss */
   .lang-switcher a:first-child {
     margin-right: 10px;
     position: relative; }
-    /* line 168, ../scss/common.scss */
     .lang-switcher a:first-child:after {
       top: 10px;
       right: -13px;
@@ -189,7 +164,6 @@ details > summary {
               transform: rotate(90deg);
       width: 13px;
       height: 1px; }
-  /* line 180, ../scss/common.scss */
   .lang-switcher .active {
     font-weight: 500;
     color: #02839F; }
@@ -197,7 +171,6 @@ details > summary {
 /* ======================================
 //            General Section
 ====================================== */
-/* line 190, ../scss/common.scss */
 .general__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +185,6 @@ details > summary {
   margin-top: 145px;
   padding-bottom: 110px;
   border-bottom: 1px solid #D3D3D3; }
-  /* line 197, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -220,7 +192,6 @@ details > summary {
     line-height: 85px;
     letter-spacing: 0.02em;
     text-transform: uppercase; }
-    /* line 205, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -229,7 +200,6 @@ details > summary {
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 216, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -238,12 +208,10 @@ details > summary {
     font-size: 18px;
     line-height: 22px;
     font-weight: 400; }
-  /* line 226, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
 
-/* line 232, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -252,7 +220,6 @@ details > summary {
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
-  /* line 241, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -263,38 +230,17 @@ details > summary {
     line-height: 22px;
     text-align: center; }
 
-/* line 1, ../../../modules/header/Header.module.scss */
-.header {
-  background-color: var(--light-green-bg); }
-  /* line 4, ../../../modules/header/Header.module.scss */
-  .header__inner {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    position: relative; }
-    @media (max-width: 992px) {
-      /* line 4, ../../../modules/header/Header.module.scss */
-      .header__inner {
-        height: 80px;
-        padding-top: 0;
-        padding-bottom: 0; } }
-  /* line 15, ../../../modules/header/Header.module.scss */
-  .header__logo {
-    position: absolute;
-    left: 0;
-    top: 60px;
-    display: block;
-    width: 137px;
-    min-width: 137px;
-    height: 49px; }
-    @media (max-width: 992px) {
-      /* line 15, ../../../modules/header/Header.module.scss */
-      .header__logo {
-        top: 20px;
-        width: 113px;
-        min-width: 113px;
-        height: 40px; } }
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-/* line 3, ../../../modules/footer/Footer.module.scss */
 .footer .footer__inner {
   margin-bottom: 35px;
   padding-top: 35px;
@@ -310,7 +256,6 @@ details > summary {
   font-size: 10px;
   font-weight: 500;
   color: #616161; }
-  /* line 14, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__main-info, .footer .footer__inner .footer__contact-info, .footer .footer__inner .footer__sub-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -321,16 +266,12 @@ details > summary {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  /* line 18, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__main-info {
     margin-bottom: 35px; }
-  /* line 22, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__contact-item {
     margin-right: 80px; }
-    /* line 25, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item:last-child {
       margin-right: 0; }
-    /* line 29, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item .footer__contact-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -338,14 +279,11 @@ details > summary {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      /* line 32, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item .footer__contact-link svg {
         margin-right: 5px; }
-  /* line 40, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info p:first-child {
     max-width: 337px;
     width: 100%; }
-  /* line 45, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info p:nth-child(2) {
     max-width: 140px;
     width: 100%; }
@@ -366,7 +304,6 @@ details > summary {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
-/* line 26, ../../../modules/preloader/Preloader.module.scss */
 .preloader {
   position: fixed;
   left: 0;
@@ -375,7 +312,6 @@ details > summary {
   bottom: 0;
   background-color: var(--light-green-bg);
   z-index: 999999; }
-  /* line 35, ../../../modules/preloader/Preloader.module.scss */
   .preloader__row {
     position: relative;
     top: calc((100% - 227px) / 2);
@@ -388,13 +324,11 @@ details > summary {
     -webkit-animation: spin 15s linear 0s infinite;
     animation: spin 15s linear 0s infinite; }
 
-/* line 50, ../../../modules/preloader/Preloader.module.scss */
 .loaded_hiding .preloader {
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
   opacity: 0; }
 
-/* line 57, ../../../modules/preloader/Preloader.module.scss */
 .loaded .preloader {
   display: none; }
 
