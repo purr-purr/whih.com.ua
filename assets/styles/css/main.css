@@ -61,20 +61,6 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in; }
 
-a:focus, a:hover, a:active a:visited {
-  text-decoration: underline;
-  color: #02839F;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in; }
-
-/* Убираем стандартный маркер Chrome */
-details summary::-webkit-details-marker {
-  display: none; }
-
-/* Убираем стандартный маркер Firefox */
-details > summary {
-  list-style: none; }
-
 /* ======================================
 //            Layout
 ====================================== */
@@ -283,6 +269,11 @@ details > summary {
       -ms-flex-align: center;
           align-items: center;
   gap: 70px; }
+  .nav-list a:focus, .nav-list a:hover, .nav-list a:active a:visited {
+    text-decoration: underline;
+    color: #02839F;
+    -webkit-transition: all 1s ease-in;
+    transition: all 1s ease-in; }
 
 .footer .footer__inner {
   margin-bottom: 35px;

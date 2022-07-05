@@ -15,4 +15,10 @@
 .nav-list {
   @include flex-align(center);
   gap: 70px;
+
+    a:focus, a:hover, a:active a:visited {
+      text-decoration: underline;
+      color: $blue;
+      @include transition(1s);
+    }
 }
