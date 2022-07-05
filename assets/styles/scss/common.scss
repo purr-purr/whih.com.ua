@@ -175,7 +175,7 @@ button {
   color: $primary-text;
 }
 
-.pretitle {
+.pre-title {
   position: absolute;
   top: 110px;
   left: 0;
@@ -294,9 +294,13 @@ button {
   border-bottom: 1px solid $border-color;
   position: relative;
 
+  .how-it-works__wrap {
+    width: 100%;
+  }
 
   .how-it-works__content {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 690px;
     width: 100%;
 
@@ -308,8 +312,12 @@ button {
       color: $primary-text;
     }
 
-    .how-it-works__content--hidden-text {
+    &--hidden-text {
       display: none;
+
+      &.active {
+        display: block;
+      }
     }
 
     .linker-btn {
@@ -318,6 +326,7 @@ button {
     }
   }
 }
+
 
 /* ======================================
 //          Donation Section
@@ -328,7 +337,7 @@ button {
   margin-bottom: 100px;
   margin-top: 125px;
 
-  .pretitle {
+  .pre-title {
     top: 25px;
   }
 
