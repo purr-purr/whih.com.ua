@@ -1,0 +1,26 @@
+.footer {
+  height: 162px;
+
+  .footer__inner {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: 500;
+
+    .footer__main-info, .footer__contact-info, .footer__sub-info {
+      @include flex-justify-align(space-between, center)
+    }
+
+    .footer__main-info {
+      margin-bottom: 35px;
+    }
+
+    .footer__contact-item {
+      margin-right: 80px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

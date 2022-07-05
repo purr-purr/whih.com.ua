@@ -11,14 +11,16 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 14px;
+  font-weight: 300;
   font-style: normal;
-  color: white; //1
-  background-color: black; //1
+  color: $primary;
+  background-color: $background-color;
 }
 
 .main {
@@ -71,12 +73,6 @@ h1, h2, h3, h4, h5 {
   line-height: 1.1;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.1;
-  color: var(--primary-text);
-}
-
 /* Убираем стандартный маркер Chrome */
 details summary::-webkit-details-marker {
   display: none
@@ -92,7 +88,7 @@ details > summary {
 ====================================== */
 
 .c-container {
-  max-width: 1470px;
+  max-width: 1170px;
   height: 100%;
   margin: 0 auto;
   padding: 0 15px;
