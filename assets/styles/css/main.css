@@ -190,7 +190,7 @@ details > summary {
       width: 13px;
       height: 1px; }
   /* line 180, ../scss/common.scss */
-  .lang-switcher .current {
+  .lang-switcher .active {
     font-weight: 500;
     color: #02839F; }
 
@@ -227,20 +227,11 @@ details > summary {
 
 /* line 1, ../../../modules/footer/Footer.module.scss */
 .footer {
-  position: relative;
   margin-top: 35px;
   margin-bottom: 35px; }
-  /* line 6, ../../../modules/footer/Footer.module.scss */
-  .footer:after {
-    position: absolute;
-    content: "";
-    top: -35px;
-    left: 0;
-    background: #d3d3d3;
-    width: 100%;
-    height: 1px; }
-  /* line 10, ../../../modules/footer/Footer.module.scss */
+  /* line 5, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -251,6 +242,15 @@ details > summary {
     font-size: 10px;
     font-weight: 500;
     color: #616161; }
+    /* line 13, ../../../modules/footer/Footer.module.scss */
+    .footer .footer__inner:after {
+      position: absolute;
+      content: "";
+      top: -35px;
+      left: 0;
+      background: #d3d3d3;
+      width: 100%;
+      height: 1px; }
     /* line 17, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__main-info, .footer .footer__inner .footer__contact-info, .footer .footer__inner .footer__sub-info {
       display: -webkit-box;
