@@ -1,0 +1,48 @@
+// Breackpoints
+$low-mobile-bp: 375px;
+$mobile-bp: 992px;
+
+:root {
+  --primary-text: #3F3F3F;
+  --primary-green: #017113;
+  --white-color: #fff;
+  --black-color: #000;
+  --gray-color: #787878;
+  --gray-secondary-color: #494949;
+  --dark-green-bg: #D1E5CA;
+  --light-green-bg: #F5FFF1;
+  --bright-green-color: #52E61E;
+  --border-color: #ccc;
+
+  --px12: 12px;
+  --px14: 14px;
+  --px16: 16px;
+  --px18: 18px;
+  --px25: 25px;
+  --px40: 40px;
+  --px45: 45px;
+  --px50: 50px;
+}
+
+.a2 {
+  --px12: 13px;
+  --px14: 17px;
+  --px16: 19px;
+  --px18: 21px;
+  --px25: 28px;
+  --px40: 43px;
+  --px45: 48px;
+  --px50: 53px;
+}
+
+.a3 {
+
+}
+
+.light-mode {
+
+}
+
+.dark-mode {
+
+}

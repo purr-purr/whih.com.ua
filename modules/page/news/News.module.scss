@@ -1,0 +1,11 @@
+.news {
+  padding: 110px 0;
+
+  & h2 {
+    margin-bottom: 30px;
+  }
+
+  .accordion-list__summary h3 {
+    font-size: var(--px16);
+  }
+}

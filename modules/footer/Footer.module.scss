@@ -1,0 +1,60 @@
+.footer {
+  background-color: var(--dark-green-bg);
+  flex-shrink: 0;
+
+  &__inner {
+    padding: 45px 0;
+  }
+
+  &__info-block {
+    display: flex;
+    margin-bottom: 25px;
+  }
+
+  &__logo {
+    width: 138px;
+    min-width: 138px;
+    height: 49px;
+    margin-right: 45px;
+  }
+
+  &__legal {
+    max-width: 414px;
+    width: 100%;
+    margin-right: 70px;
+  }
+
+  &__signature {
+    width: fit-content;
+    margin: 0 auto;
+    border-top: 1px solid var(--border-color);
+
+    p {
+      padding: 10px 25px 0;
+      color: var(--gray-secondary-color);
+    }
+  }
+  
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+
+    &-item {
+      margin-bottom: 15px;
+      width: fit-content;
+
+      &:not(:last-child) {
+        margin-right: 70px;
+      }
+    }
+
+    &-title {
+      font-weight: bold;
+    }
+
+    &-desc {
+
+    }
+  }
+}
