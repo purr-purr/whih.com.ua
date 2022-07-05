@@ -15,6 +15,10 @@
   align-items: $align-position;
 }
 
+@mixin transition($delay) {
+  transition: all $delay ease-in;
+}
+
 /* Breakpoint mixins */
 @mixin media-mobile {
   @media (max-width: $mobile-bp) {
