@@ -21,13 +21,13 @@
 
 /* Breakpoint mixins */
 @mixin media-mobile {
-  @media (max-width: $mobile-bp) {
+  @media (max-width: $mobile) {
     @content;
   }
 }
 
-@mixin media-low-mobile {
-  @media (max-width: $low-mobile-bp) {
+@mixin media-tablet {
+  @media (max-width: $tablet) {
     @content;
   }
 }

@@ -30,42 +30,42 @@ body {
   color: #333;
   background-color: #fff;
   background-image: url("/assets/images/common/background.png");
-  background-size: cover;
+  background-size: auto;
   background-position: center; }
 
-/* line 30, ../scss/common.scss */
+/* line 29, ../scss/common.scss */
 .main {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   overflow: hidden; }
 
-/* line 37, ../scss/common.scss */
+/* line 36, ../scss/common.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-/* line 44, ../scss/common.scss */
+/* line 43, ../scss/common.scss */
 :active, :focus {
   outline: none; }
 
-/* line 48, ../scss/common.scss */
+/* line 47, ../scss/common.scss */
 img {
   display: block;
   width: 100%;
   max-width: 100%; }
 
-/* line 54, ../scss/common.scss */
+/* line 53, ../scss/common.scss */
 ul {
   list-style-type: none; }
 
-/* line 58, ../scss/common.scss */
+/* line 57, ../scss/common.scss */
 strong {
   font-weight: bold; }
 
-/* line 63, ../scss/common.scss */
+/* line 62, ../scss/common.scss */
 a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
@@ -73,14 +73,14 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in; }
 
-/* line 70, ../scss/common.scss */
+/* line 69, ../scss/common.scss */
 button {
   font-family: 'Montserrat', sans-serif; }
 
 /* ======================================
 //            Layout
 ====================================== */
-/* line 78, ../scss/common.scss */
+/* line 77, ../scss/common.scss */
 .c-container {
   max-width: 1170px;
   height: 100%;
@@ -90,7 +90,7 @@ button {
 /* ======================================
 //            Common used
 ====================================== */
-/* line 89, ../scss/common.scss */
+/* line 88, ../scss/common.scss */
 .main-btn {
   min-width: 180px;
   height: 47px;
@@ -104,13 +104,13 @@ button {
   -webkit-transition: all 1 ease-in;
   transition: all 1 ease-in;
   cursor: pointer; }
-  /* line 102, ../scss/common.scss */
+  /* line 101, ../scss/common.scss */
   .main-btn:hover {
     background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
     -webkit-transition: all 1 ease-in;
     transition: all 1 ease-in; }
 
-/* line 108, ../scss/common.scss */
+/* line 107, ../scss/common.scss */
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +118,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 111, ../scss/common.scss */
+  /* line 110, ../scss/common.scss */
   .logo .logo__title {
     position: relative;
     margin-right: 25px;
@@ -130,7 +130,7 @@ button {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #242424; }
-    /* line 123, ../scss/common.scss */
+    /* line 122, ../scss/common.scss */
     .logo .logo__title:after {
       top: 20px;
       right: -23px;
@@ -141,27 +141,27 @@ button {
               transform: rotate(90deg);
       width: 20px;
       height: 1px; }
-    /* line 134, ../scss/common.scss */
+    /* line 133, ../scss/common.scss */
     .logo .logo__title span {
       font-size: 17px;
       font-weight: 800;
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 143, ../scss/common.scss */
+  /* line 142, ../scss/common.scss */
   .logo p {
     font-size: 10px;
     width: 100px;
     line-height: 12px; }
 
-/* line 150, ../scss/common.scss */
+/* line 149, ../scss/common.scss */
 .lang-switcher {
   font-size: 14px; }
-  /* line 153, ../scss/common.scss */
+  /* line 152, ../scss/common.scss */
   .lang-switcher a:first-child {
     margin-right: 10px;
     position: relative; }
-    /* line 157, ../scss/common.scss */
+    /* line 156, ../scss/common.scss */
     .lang-switcher a:first-child:after {
       top: 10px;
       right: -13px;
@@ -172,18 +172,18 @@ button {
               transform: rotate(90deg);
       width: 13px;
       height: 1px; }
-  /* line 169, ../scss/common.scss */
+  /* line 168, ../scss/common.scss */
   .lang-switcher .active {
     font-weight: 500;
     color: #02839F; }
 
-/* line 175, ../scss/common.scss */
+/* line 174, ../scss/common.scss */
 .title {
   font-weight: 500;
   font-size: 40px;
   color: #333; }
 
-/* line 181, ../scss/common.scss */
+/* line 180, ../scss/common.scss */
 .pre-title {
   position: absolute;
   top: 110px;
@@ -192,7 +192,7 @@ button {
   font-size: 10px;
   line-height: 140%; }
 
-/* line 190, ../scss/common.scss */
+/* line 189, ../scss/common.scss */
 .linker-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,31 +208,37 @@ button {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   cursor: pointer; }
-  /* line 200, ../scss/common.scss */
+  /* line 199, ../scss/common.scss */
   .linker-btn svg {
     display: block;
     width: 15px;
     height: 8px;
     margin-left: 10px; }
-    /* line 206, ../scss/common.scss */
+    /* line 205, ../scss/common.scss */
     .linker-btn svg path {
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
-  /* line 211, ../scss/common.scss */
+  /* line 210, ../scss/common.scss */
   .linker-btn:hover {
     color: #02839F;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
-    /* line 215, ../scss/common.scss */
+    /* line 214, ../scss/common.scss */
     .linker-btn:hover svg path {
       fill: #02839F;
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
 
+@media (max-width: 1440px) {
+  /* line 222, ../scss/common.scss */
+  .main-btn {
+    font-size: 12px;
+    line-height: 15px;
+    min-width: 155px; } }
 /* ======================================
 //            General Section
 ====================================== */
-/* line 226, ../scss/common.scss */
+/* line 234, ../scss/common.scss */
 .general__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,7 +251,15 @@ button {
           align-items: center;
   position: relative;
   border-bottom: 1px solid #D3D3D3; }
-  /* line 231, ../scss/common.scss */
+  @media (max-width: 744px) {
+    /* line 234, ../scss/common.scss */
+    .general__inner {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      position: relative; } }
+  /* line 245, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -253,7 +267,17 @@ button {
     line-height: 85px;
     letter-spacing: 0.02em;
     text-transform: uppercase; }
-    /* line 239, ../scss/common.scss */
+    @media (max-width: 744px) {
+      /* line 245, ../scss/common.scss */
+      .general__inner .general__title {
+        font-size: 35px;
+        line-height: 43px;
+        max-width: 280px; }
+        /* line 258, ../scss/common.scss */
+        .general__inner .general__title span {
+          font-size: 35px;
+          line-height: 43px; } }
+    /* line 264, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -262,7 +286,7 @@ button {
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 250, ../scss/common.scss */
+  /* line 275, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -271,12 +295,33 @@ button {
     font-size: 18px;
     line-height: 22px;
     font-weight: 400; }
-  /* line 260, ../scss/common.scss */
+    @media (max-width: 744px) {
+      /* line 275, ../scss/common.scss */
+      .general__inner .general__desc {
+        font-size: 16px;
+        max-width: 310px;
+        margin-top: 25px;
+        margin-bottom: 35px; } }
+  /* line 294, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
+    @media (max-width: 1440px) {
+      /* line 294, ../scss/common.scss */
+      .general__inner .general__img {
+        max-width: 505px;
+        position: absolute;
+        right: -60px;
+        top: 145px; } }
+    @media (max-width: 744px) {
+      /* line 294, ../scss/common.scss */
+      .general__inner .general__img {
+        position: relative;
+        max-width: 335px;
+        top: 0;
+        right: 0; } }
 
-/* line 266, ../scss/common.scss */
+/* line 314, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -285,7 +330,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
-  /* line 275, ../scss/common.scss */
+  /* line 323, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -296,20 +341,10 @@ button {
     line-height: 22px;
     text-align: center; }
 
-@media (max-width: 992px) {
-  /* line 288, ../scss/common.scss */
-  .general__img {
-    max-width: 505px; }
-    /* line 292, ../scss/common.scss */
-    .general__img img:first-child {
-      display: none; }
-    /* line 295, ../scss/common.scss */
-    .general__img img:nth-child(2) {
-      display: block; } }
 /* ======================================
 //            How-it-works Section
 ====================================== */
-/* line 306, ../scss/common.scss */
+/* line 340, ../scss/common.scss */
 .how-it-works__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,34 +353,43 @@ button {
   padding-bottom: 110px;
   border-bottom: 1px solid #D3D3D3;
   position: relative; }
-  /* line 313, ../scss/common.scss */
+  @media (max-width: 1440px) {
+    /* line 340, ../scss/common.scss */
+    .how-it-works__inner {
+      padding-bottom: 80px;
+      padding-top: 80px; } }
+  /* line 352, ../scss/common.scss */
   .how-it-works__inner .how-it-works__wrap {
     width: 100%; }
-  /* line 317, ../scss/common.scss */
+  /* line 356, ../scss/common.scss */
   .how-it-works__inner .how-it-works__content {
     margin-left: auto;
     margin-right: auto;
     max-width: 690px;
     width: 100%; }
-    /* line 323, ../scss/common.scss */
+    @media (max-width: 1440px) {
+      /* line 356, ../scss/common.scss */
+      .how-it-works__inner .how-it-works__content {
+        max-width: 512px; } }
+    /* line 366, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content p {
       margin-top: 30px;
       font-weight: 300;
       font-size: 14px;
       line-height: 140%;
       color: #333; }
-    /* line 331, ../scss/common.scss */
+    /* line 374, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content--hidden-text {
       display: none; }
-      /* line 334, ../scss/common.scss */
+      /* line 377, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content--hidden-text.active {
         display: block; }
-    /* line 339, ../scss/common.scss */
+    /* line 382, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content .linker-btn {
       margin-left: auto;
       margin-top: 10px; }
 
-/* line 346, ../scss/common.scss */
+/* line 389, ../scss/common.scss */
 .how-it-works__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,7 +401,14 @@ button {
       flex-wrap: wrap;
   width: 100%;
   margin-top: 50px; }
-  /* line 352, ../scss/common.scss */
+  @media (max-width: 1440px) {
+    /* line 389, ../scss/common.scss */
+    .how-it-works__cards {
+      margin-top: 30px;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  /* line 400, ../scss/common.scss */
   .how-it-works__cards .how-it-works__card {
     padding: 20px;
     margin-right: 22px;
@@ -371,12 +422,17 @@ button {
             backdrop-filter: blur(20px);
     border-radius: 8px;
     border: 1px solid #F6F6F6; }
-    /* line 364, ../scss/common.scss */
+    @media (max-width: 1440px) {
+      /* line 400, ../scss/common.scss */
+      .how-it-works__cards .how-it-works__card {
+        width: 48%;
+        margin-right: 0; } }
+    /* line 417, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
       -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
               filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34)); }
-    /* line 369, ../scss/common.scss */
+    /* line 422, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-title {
       max-width: 227px;
       width: 100%;
@@ -384,7 +440,7 @@ button {
       font-size: 14px;
       line-height: 140%;
       color: #333; }
-    /* line 378, ../scss/common.scss */
+    /* line 431, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -396,22 +452,27 @@ button {
           -ms-flex-align: center;
               align-items: center;
       margin-top: 40px; }
-      /* line 383, ../scss/common.scss */
+      /* line 436, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download svg {
         margin-right: 8px; }
 
 /* ======================================
 //          Donation Section
 ====================================== */
-/* line 396, ../scss/common.scss */
+/* line 449, ../scss/common.scss */
 .donation__inner {
   position: relative;
   margin-bottom: 100px;
   margin-top: 125px; }
-  /* line 401, ../scss/common.scss */
+  @media (max-width: 1440px) {
+    /* line 449, ../scss/common.scss */
+    .donation__inner {
+      margin-top: 80px;
+      margin-bottom: 80px; } }
+  /* line 459, ../scss/common.scss */
   .donation__inner .pre-title {
     top: 25px; }
-  /* line 405, ../scss/common.scss */
+  /* line 463, ../scss/common.scss */
   .donation__inner .donation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -423,15 +484,25 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
-    /* line 409, ../scss/common.scss */
+    /* line 467, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-info {
       max-width: 690px;
-      width: 100%; }
-      /* line 413, ../scss/common.scss */
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      @media (max-width: 1440px) {
+        /* line 467, ../scss/common.scss */
+        .donation__inner .donation__content .donation__content-info {
+          max-width: 515px; } }
+      /* line 477, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info p {
         margin-top: 35px;
         margin-bottom: 30px; }
-      /* line 418, ../scss/common.scss */
+        @media (max-width: 1440px) {
+          /* line 477, ../scss/common.scss */
+          .donation__inner .donation__content .donation__content-info p {
+            margin-top: 30px; } }
+      /* line 486, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info .donation__content-btns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -439,13 +510,17 @@ button {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-        /* line 421, ../scss/common.scss */
+        /* line 489, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
           margin-left: 25px; }
-    /* line 427, ../scss/common.scss */
+    /* line 495, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-img {
       max-width: 222px;
       width: 100%; }
+      @media (max-width: 1440px) {
+        /* line 495, ../scss/common.scss */
+        .donation__inner .donation__content .donation__content-img {
+          display: none; } }
 
 /* line 2, ../../../modules/header/Header.module.scss */
 .header__inner {
@@ -470,8 +545,12 @@ button {
       -ms-flex-align: center;
           align-items: center;
   gap: 24px; }
+  @media (max-width: 1440px) {
+    /* line 13, ../../../modules/header/Header.module.scss */
+    .header__btn-group .main-btn {
+      display: none; } }
 
-/* line 15, ../../../modules/header/Header.module.scss */
+/* line 21, ../../../modules/header/Header.module.scss */
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,17 +559,13 @@ button {
       -ms-flex-align: center;
           align-items: center;
   gap: 70px; }
-  /* line 19, ../../../modules/header/Header.module.scss */
+  /* line 25, ../../../modules/header/Header.module.scss */
   .nav-list a:focus, .nav-list a:hover, .nav-list a:active a:visited {
     text-decoration: underline;
     color: #02839F;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in; }
 
-@media (max-width: 992px) and (max-width: 992px) {
-  /* line 29, ../../../modules/header/Header.module.scss */
-  .header__btn-group .main-btn {
-    display: none; } }
 /* line 3, ../../../modules/footer/Footer.module.scss */
 .footer .footer__inner {
   margin-bottom: 35px;
@@ -521,13 +596,37 @@ button {
   /* line 18, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__main-info {
     margin-bottom: 35px; }
-  /* line 22, ../../../modules/footer/Footer.module.scss */
+    @media (max-width: 1440px) {
+      /* line 18, ../../../modules/footer/Footer.module.scss */
+      .footer .footer__inner .footer__main-info {
+        -webkit-box-align: normal;
+            -ms-flex-align: normal;
+                align-items: normal; } }
+  @media (max-width: 1440px) {
+    /* line 26, ../../../modules/footer/Footer.module.scss */
+    .footer .footer__inner .footer__contact-info {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start; } }
+  /* line 33, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__contact-item {
     margin-right: 80px; }
-    /* line 25, ../../../modules/footer/Footer.module.scss */
+    @media (max-width: 1440px) {
+      /* line 33, ../../../modules/footer/Footer.module.scss */
+      .footer .footer__inner .footer__contact-item {
+        margin-bottom: 6px; } }
+    /* line 40, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item:last-child {
       margin-right: 0; }
-    /* line 29, ../../../modules/footer/Footer.module.scss */
+      @media (max-width: 1440px) {
+        /* line 40, ../../../modules/footer/Footer.module.scss */
+        .footer .footer__inner .footer__contact-item:last-child {
+          margin-bottom: 0; } }
+    /* line 48, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item .footer__contact-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -535,42 +634,22 @@ button {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      /* line 32, ../../../modules/footer/Footer.module.scss */
+      /* line 51, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item .footer__contact-link svg {
         margin-right: 5px; }
-  /* line 40, ../../../modules/footer/Footer.module.scss */
+  /* line 59, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info p:first-child {
     max-width: 337px;
     width: 100%; }
-  /* line 45, ../../../modules/footer/Footer.module.scss */
-  .footer .footer__inner .footer__sub-info p:nth-child(2) {
-    max-width: 140px;
-    width: 100%; }
+    @media (max-width: 1440px) {
+      /* line 59, ../../../modules/footer/Footer.module.scss */
+      .footer .footer__inner .footer__sub-info p:first-child {
+        max-width: 160px; } }
+  /* line 68, ../../../modules/footer/Footer.module.scss */
+  .footer .footer__inner .footer__sub-info .footer__sub-info--group p {
+    text-align: right;
+    margin-bottom: 10px; }
 
-@media (max-width: 992px) and (max-width: 992px) {
-  /* line 58, ../../../modules/footer/Footer.module.scss */
-  .footer .footer__inner .footer__main-info {
-    -webkit-box-align: normal;
-        -ms-flex-align: normal;
-            align-items: normal; }
-  /* line 63, ../../../modules/footer/Footer.module.scss */
-  .footer .footer__inner .footer__contact-info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start; }
-    /* line 67, ../../../modules/footer/Footer.module.scss */
-    .footer .footer__inner .footer__contact-info .footer__contact-item {
-      margin-bottom: 6px; }
-      /* line 70, ../../../modules/footer/Footer.module.scss */
-      .footer .footer__inner .footer__contact-info .footer__contact-item:last-child {
-        margin-bottom: 0; }
-  /* line 77, ../../../modules/footer/Footer.module.scss */
-  .footer .footer__inner .footer__sub-info p:first-child {
-    max-width: 160px; } }
 /* Preloader */
 /* Анимация вращения лого */
 @-webkit-keyframes spin {

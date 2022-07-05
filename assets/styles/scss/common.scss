@@ -22,10 +22,9 @@ body {
   color: $primary-text;
   background-color: $background-color;
   background-image: url("/assets/images/common/background.png");
-  background-size: cover;
+  background-size: auto;
   background-position: center;
 }
-
 
 .main {
   -webkit-box-flex: 1;
@@ -219,6 +218,15 @@ button {
   }
 }
 
+@include media-tablet {
+  .main-btn {
+    font-size: 12px;
+    line-height: 15px;
+    min-width: 155px;
+  }
+}
+
+
 /* ======================================
 //            General Section
 ====================================== */
@@ -228,6 +236,12 @@ button {
   position: relative;
   border-bottom: 1px solid $border-color;
 
+  @include media-mobile {
+    flex-direction: column;
+    position: relative;
+  }
+
+
   .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -235,6 +249,17 @@ button {
     line-height: 85px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+
+    @include media-mobile {
+          font-size: 35px;
+          line-height: 43px;
+          max-width: 280px;
+
+      span {
+        font-size: 35px;
+        line-height: 43px;
+      }
+    }
 
     span {
       font-weight: 800;
@@ -255,11 +280,34 @@ button {
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
+
+    @include media-mobile {
+      font-size: 16px;
+      max-width: 310px;
+      margin-top: 25px;
+      margin-bottom: 35px;
+    }
+
   }
+
 
   .general__img {
     max-width: 527px;
     width: 100%;
+
+    @include media-tablet {
+      max-width: 505px;
+      position: absolute;
+      right: -60px;
+      top: 145px;
+    }
+
+    @include media-mobile {
+      position: relative;
+      max-width: 335px;
+      top: 0;
+      right: 0;
+    }
   }
 }
 
@@ -284,20 +332,6 @@ button {
   }
 }
 
-@include media-mobile {
-  .general__img {
-    max-width: 505px;
-
-    img {
-      &:first-child {
-        display: none;
-      }
-      &:nth-child(2) {
-        display: block;
-      }
-    }
-  }
-}
 
 /* ======================================
 //            How-it-works Section
@@ -310,6 +344,11 @@ button {
   border-bottom: 1px solid $border-color;
   position: relative;
 
+  @include media-tablet {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
+
   .how-it-works__wrap {
     width: 100%;
   }
@@ -319,6 +358,10 @@ button {
     margin-right: auto;
     max-width: 690px;
     width: 100%;
+
+    @include media-tablet {
+      max-width: 512px;
+    }
 
     p {
       margin-top: 30px;
@@ -349,6 +392,11 @@ button {
   width: 100%;
   margin-top: 50px;
 
+  @include media-tablet {
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
   .how-it-works__card {
     padding: 20px;
     margin-right: 22px;
@@ -360,6 +408,11 @@ button {
     backdrop-filter: blur(20px);
     border-radius: 8px;
     border: 1px solid #F6F6F6;
+
+    @include media-tablet {
+      width: 48%;
+      margin-right: 0;
+    }
 
     &:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
@@ -398,6 +451,11 @@ button {
   margin-bottom: 100px;
   margin-top: 125px;
 
+  @include media-tablet {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
   .pre-title {
     top: 25px;
   }
@@ -409,10 +467,20 @@ button {
     .donation__content-info {
       max-width: 690px;
       width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include media-tablet {
+        max-width: 515px;
+      }
 
       p {
         margin-top: 35px;
         margin-bottom: 30px;
+
+        @include media-tablet {
+          margin-top: 30px;
+        }
       }
 
       .donation__content-btns {
@@ -427,6 +495,10 @@ button {
     .donation__content-img {
       max-width: 222px;
       width: 100%;
+
+      @include media-tablet {
+        display: none;
+      }
     }
   }
 }
