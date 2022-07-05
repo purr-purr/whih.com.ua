@@ -18,8 +18,8 @@ window.onload = function () {
 }
 
 $(document).ready(function () {
-    $('#home-desc__read-more-btn').on('click', function () {
-        $('.home-desc__info--hide-text').css('display', 'block');
+    $('#how-it-works__read-more-btn').on('click', function () {
+        $('.how-it-works__content--hidden-text').css('display', 'block');
         $(this).hide();
     });
 });
