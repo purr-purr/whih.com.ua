@@ -20,6 +20,7 @@ body {
   font-weight: 300;
   font-style: normal;
   color: $primary;
+  background-color: $background-color;
 }
 
 
@@ -59,11 +60,13 @@ a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
   text-decoration: none;
-  transition: color .3s linear;
+  @include transition(1s);
 }
 
 a:focus, a:hover, a:active a:visited {
-  color: var(--primary-green);
+  text-decoration: underline;
+  color: $blue;
+  @include transition(1s);
 }
 
 /* Убираем стандартный маркер Chrome */
@@ -90,6 +93,25 @@ details > summary {
 /* ======================================
 //            Buttons
 ====================================== */
+
+.main-btn {
+  min-width: 180px;
+  height: 47px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: $white;
+  background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
+  border-radius: 8px;
+  @include transition(1);
+  cursor: pointer;
+
+  &:hover {
+    background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
+    @include transition(1);
+  }
+}
 
 .read-more-btn {
   @include flex-align(center);
@@ -153,8 +175,9 @@ details > summary {
   }
 
   p {
-    max-width: 100px;
-    width: 100%;
+    font-size: 10px;
+    width: 100px;
+    line-height: 12px;
   }
 }
 

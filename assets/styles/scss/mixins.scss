@@ -16,7 +16,7 @@
 }
 
 @mixin transition($delay) {
-  transition: all $delay ease-in-out;
+  transition: all $delay ease-in;
 }
 
 /* Breakpoint mixins */

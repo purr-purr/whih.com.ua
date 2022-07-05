@@ -1,5 +1,18 @@
 .header {
   &__inner {
    @include flex-justify-align(space-between, center);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid $border-color;
   }
+
+  &__btn-group {
+    @include flex-align(center);
+    gap: 24px;
+  }
+}
+
+.nav-list {
+  @include flex-align(center);
+  gap: 70px;
 }
