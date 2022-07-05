@@ -87,6 +87,7 @@ button {
 ====================================== */
 
 .main-btn {
+  @include flex-justify-align(center, center);
   min-width: 180px;
   height: 47px;
   font-weight: 500;
