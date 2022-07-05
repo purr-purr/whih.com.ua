@@ -251,6 +251,25 @@ details > summary {
     max-width: 527px;
     width: 100%; }
 
+/* line 235, ../scss/common.scss */
+.general__quote {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("/assets/images/general/bg-blur.svg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  /* line 243, ../scss/common.scss */
+  .general__quote p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 520px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center; }
+
 /* line 1, ../../../modules/header/Header.module.scss */
 .header {
   background-color: var(--light-green-bg); }
