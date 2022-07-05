@@ -1,31 +1,6 @@
 .header {
-  background-color: var(--light-green-bg);
-
   &__inner {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    position: relative;
-
-    @include media-mobile {
-      height: 80px;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  }
-  &__logo {
-    position: absolute;
-    left: 0;
-    top: 60px;
-    display: block;
-    width: 137px;
-    min-width: 137px;
-    height: 49px;
-
-    @include media-mobile {
-      top: 20px;
-      width: 113px;
-      min-width: 113px;
-      height: 40px;
-    }
+   @include flex-justify-align(space-between, center);
+    @include section-border;
   }
 }
