@@ -220,40 +220,37 @@ details > summary {
     background-color: #d3d3d3;
     width: 100%;
     height: 1px; }
-
-/* line 201, ../scss/common.scss */
-.general__title {
-  max-width: 600px;
-  font-weight: 500;
-  font-size: 70px;
-  line-height: 85px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase; }
-  /* line 209, ../scss/common.scss */
-  .general__title span {
-    font-weight: 800;
-    font-size: 75px;
-    line-height: 91px;
-    letter-spacing: 0.03em;
-    background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
-
-/* line 220, ../scss/common.scss */
-.general__desc {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  max-width: 525px;
-  width: 100%;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 400; }
-
-/* line 230, ../scss/common.scss */
-.general__img {
-  max-width: 527px;
-  width: 100%;
-  height: 347px; }
+  /* line 200, ../scss/common.scss */
+  .general__inner .general__title {
+    max-width: 600px;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 85px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase; }
+    /* line 208, ../scss/common.scss */
+    .general__inner .general__title span {
+      font-weight: 800;
+      font-size: 75px;
+      line-height: 91px;
+      letter-spacing: 0.03em;
+      background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  /* line 219, ../scss/common.scss */
+  .general__inner .general__desc {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    max-width: 525px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400; }
+  /* line 229, ../scss/common.scss */
+  .general__inner .general__img {
+    max-width: 527px;
+    width: 100%;
+    height: 347px; }
 
 /* line 1, ../../../modules/header/Header.module.scss */
 .header {
