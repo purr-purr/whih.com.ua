@@ -21,6 +21,9 @@ body {
   font-style: normal;
   color: $primary-text;
   background-color: $background-color;
+  background-image: url("/assets/images/common/background.png");
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -223,8 +226,6 @@ button {
 .general__inner {
   @include flex-justify-align(space-between, center);
   position: relative;
-  margin-top: 145px;
-  padding-bottom: 110px;
   border-bottom: 1px solid $border-color;
 
   .general__title {
@@ -266,7 +267,7 @@ button {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url("/assets/images/general/bg-blur.svg");
+  background-image: url("/assets/images/general/bg-blur.png");
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 1px solid $border-color;
