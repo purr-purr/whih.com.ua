@@ -64,6 +64,10 @@ a, a:focus, a:hover, a:active a:visited {
   @include transition(1s);
 }
 
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* ======================================
 //            Layout
 ====================================== */
@@ -76,7 +80,7 @@ a, a:focus, a:hover, a:active a:visited {
 }
 
 /* ======================================
-//            Buttons
+//            Common used
 ====================================== */
 
 .main-btn {
@@ -191,6 +195,12 @@ a, a:focus, a:hover, a:active a:visited {
   }
 }
 
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  color: $primary;
+}
+
 /* ======================================
 //            General Section
 ====================================== */
@@ -255,5 +265,65 @@ a, a:focus, a:hover, a:active a:visited {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+  }
+}
+
+/* ======================================
+//            How-it-works Section
+====================================== */
+
+.how-it-works__inner {
+  display: flex;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid #D3D3D3;
+
+  .how-it-works__pretitle {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+  }
+
+  .how-it-works__content {
+    margin: 0 auto;
+    max-width: 690px;
+    width: 100%;
+
+    p {
+      margin-top: 30px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 140%;
+      color: $primary;
+    }
+
+    .how-it-works__content--hidden-text {
+      display: none;
+    }
+  }
+}
+
+.read-more-btn {
+  @include flex-align(center);
+  margin-left: auto;
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  svg {
+    display: block;
+    width: 15px;
+    height: 8px;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: #02839F;
+    transition: all .3s ease-in-out;
   }
 }
