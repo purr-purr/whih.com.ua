@@ -21,3 +21,18 @@ $(function() {
         $(this).hide();
     });
 });
+
+$(function() {
+    $('.open-btn').on('click', function(event){
+        $('.modal-bg').addClass('modal-bg--active');
+    });
+
+    $('.modal-bg, .modal__close').on('click', function(event){
+        $('.modal-bg').removeClass('modal-bg--active');
+    });
+
+    $('.modal').on('click', function(event){
+        event.stopPropagation();
+    });
+});
+
