@@ -1004,3 +1004,95 @@ input::-webkit-inner-spin-button {
       }
     }
 }
+
+/* ======================================
+//        Payment result pages
+====================================== */
+
+.payment-info {
+  margin-top: 230px;
+  margin-bottom: 185px;
+
+  @include media-mobile {
+    margin-top: 32px;
+    margin-bottom: 90px;
+  }
+
+  .payment-info__inner {
+    @include flex-align(center);
+    @include media-mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .payment-info__img {
+      max-width: 200px;
+      width: 100%;
+      margin-right: 60px;
+
+      @include media-mobile {
+        margin-right: 0;
+      }
+    }
+
+    .payment-info__img.unsuccessful {
+      max-width: 115px;
+      width: 100%;
+      margin-right: 110px;
+
+      @include media-mobile {
+        margin-right: 0;
+      }
+    }
+
+    .payment-info__result {
+
+      p {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        max-width: 460px;
+        font-size: 14px;
+        line-height: 140%;
+
+        @include media-mobile {
+          margin-top: 25px;
+          margin-bottom: 25px;
+          font-size: 12px;
+          max-width: 345px;
+        }
+      }
+
+      .payment-info__btn-group {
+        @include flex-align(center);
+        @include media-mobile {
+          justify-content: center;
+          flex-direction: column;
+        }
+
+        .linker-btn:first-child {
+          margin-right: 45px;
+
+          @include media-mobile {
+            margin-right: 10px;
+            margin-bottom: 20px;
+          }
+
+          svg {
+            transform: rotate(180deg);
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.payment-info.unsuccessful {
+  @include media-mobile {
+    margin-top: 60px;
+  }
+
+  .payment-info__result {
+    margin-top: 50px;
+  }
+}
