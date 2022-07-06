@@ -242,6 +242,7 @@ input::-webkit-inner-spin-button {
   background: transparent;
   transition: all .2s ease-in-out;
   cursor: pointer;
+  color: $primary-text;
 
   @include media-mobile {
     font-size: 12px;
