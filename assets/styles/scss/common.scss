@@ -70,6 +70,11 @@ button {
   font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar { width: 3px; height: 3px;}
+::-webkit-scrollbar-button { height: 0; }
+::-webkit-scrollbar-thumb {height: 50px; background-color: #02839F; border-radius: 50px;}
+::-webkit-scrollbar-track-piece { background-color: transparent;}
+
 /* ======================================
 //            Layout
 ====================================== */
@@ -88,6 +93,7 @@ button {
 .main-btn {
   @include flex-justify-align(center, center);
   min-width: 180px;
+  width: 180px;
   height: 47px;
   font-weight: 500;
   font-size: 14px;
@@ -251,8 +257,6 @@ button {
 
 .modal-bg {
   display: none;
-  align-items: center;
-  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -260,29 +264,25 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, .5);
   cursor: pointer;
+  padding: 15px;
   z-index: 99998;
+
+  @include media-tablet {
+    padding: 10px;
+  }
 }
 
 .modal {
-  max-width: 1200px;
   width: 100%;
   padding: 100px;
-  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   cursor: auto;
   border-radius: 8px;
   position: relative;
   z-index: 99999;
-
-  &:before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 328px;
-    height: 305px;
-    background: url("../../images/system/any/modal-yellow-blur.png") no-repeat center / 100%;
-  }
+  overflow-y: scroll;
 }
 
 .modal__close {
@@ -309,41 +309,98 @@ button {
 }
 
 .props-modal {
+  max-width: 1200px;
+  @include media-tablet {
+    max-width: 693px;
+    padding: 80px 97px 30px;
+  }
+
+  @include media-mobile {
+    max-width: 332px;
+    padding: 50px 16px;
+    border-radius: 10px;
+  }
+
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 328px;
+    height: 305px;
+    z-index: -1;
+    background: url("../../images/system/any/modal-yellow-blur.png") no-repeat center / 100%;
+
+    @include media-tablet {
+      top: -32px;
+      left: 23px;
+    }
+
+    @include media-mobile {
+      top: -66px;
+      left: -90px;
+    }
+  }
+
   &__title {
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 32px;
+
+    @include media-mobile {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
     display: flex;
     gap: 102px;
+
+    @include media-tablet {
+      gap: 30px;
+      flex-direction: column;
+    }
+
+    @include media-mobile {
+      gap: 20px;
+    }
   }
 
   &__column {
     max-width: 408px;
     width: 100%;
+
+    @include media-mobile {
+      max-width: 100%;
+    }
   }
 
   &__list-title {
-    @include flex-align(center);
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 10px;
 
+    @include media-mobile {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
     span {
       font-weight: 600;
       color: $blue;
-      margin-left: 3px;
+      white-space: nowrap;
     }
   }
 
   &__pay-pal-icon {
+    display: inline-block;
+    vertical-align: middle;
     width: 71px;
     height: 19px;
-    margin-left: 10px;
   }
 
   dd {
@@ -351,6 +408,14 @@ button {
 
     &:not(:last-child) {
       margin-bottom: 50px;
+
+      @include media-tablet {
+        margin-bottom: 30px;
+      }
+
+      @include media-tablet {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -717,4 +782,12 @@ button {
       }
     }
   }
+}
+
+/* ======================================
+//          Donation Page
+====================================== */
+
+.donation-page {
+  padding-top: 50px;
 }
