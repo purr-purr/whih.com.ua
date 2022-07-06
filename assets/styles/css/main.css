@@ -29,7 +29,7 @@ body {
   font-style: normal;
   color: #333;
   background-color: #fff;
-  background-image: url("/assets/images/common/background.png");
+  background-image: url("../../../assets/images/common/background.png");
   background-size: auto; }
 
 /* line 28, ../scss/common.scss */
@@ -586,7 +586,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url("/assets/images/general/bg-blur.png");
+  background-image: url("../../../assets/images/general/bg-blur.png");
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
@@ -770,12 +770,12 @@ input::-webkit-inner-spin-button {
           height: 13px;
           left: 0;
           bottom: 3px;
-          background: url("/assets/images/system/icon/download.svg");
+          background: url("../../../assets/images/system/icon/download.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
         /* line 721, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:hover:after {
-          background: url("/assets/images/system/icon/download-filled.svg");
+          background: url("../../../assets/images/system/icon/download-filled.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
       /* line 727, ../scss/common.scss */
@@ -789,13 +789,13 @@ input::-webkit-inner-spin-button {
           height: 8px;
           right: 5px;
           bottom: -5px;
-          background: url("/assets/images/system/icon/arrow.svg");
+          background: url("../../../assets/images/system/icon/arrow.svg");
           z-index: 2;
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
         /* line 742, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:hover:after {
-          background: url("/assets/images/system/icon/arrow-filled.svg");
+          background: url("../../../assets/images/system/icon/arrow-filled.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
 

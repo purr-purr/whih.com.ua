@@ -21,7 +21,7 @@ body {
   font-style: normal;
   color: $primary-text;
   background-color: $background-color;
-  background-image: url("/assets/images/common/background.png");
+  background-image: url("../../../assets/images/common/background.png");
   background-size: auto;
 }
 
@@ -543,7 +543,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: url("/assets/images/general/bg-blur.png");
+  background-image: url("../../../assets/images/general/bg-blur.png");
   background-repeat: no-repeat;
   background-position: center;
   border-bottom: 1px solid $border-color;
@@ -714,12 +714,12 @@ input::-webkit-inner-spin-button {
           height: 13px;
           left: 0;
           bottom: 3px;
-          background: url("/assets/images/system/icon/download.svg");
+          background: url("../../../assets/images/system/icon/download.svg");
           @include transition(.2s);
         }
 
         &:hover:after {
-          background: url("/assets/images/system/icon/download-filled.svg");
+          background: url("../../../assets/images/system/icon/download-filled.svg");
           @include transition(.2s);
         }
       }
@@ -734,13 +734,13 @@ input::-webkit-inner-spin-button {
           height: 8px;
           right: 5px;
           bottom: -5px;
-          background: url("/assets/images/system/icon/arrow.svg");
+          background: url("../../../assets/images/system/icon/arrow.svg");
           z-index: 2;
           @include transition(.2s);
         }
 
         &:hover:after {
-          background: url("/assets/images/system/icon/arrow-filled.svg");
+          background: url("../../../assets/images/system/icon/arrow-filled.svg");
           @include transition(.2s);
         }
       }
