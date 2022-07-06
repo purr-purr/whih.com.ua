@@ -929,6 +929,16 @@ input::-webkit-inner-spin-button {
   }
 }
 
+.donation-page__input-amount--en {
+  &:before {
+    content: "uah";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+  }
+}
+
 .donation-page__total {
 
   h3 {

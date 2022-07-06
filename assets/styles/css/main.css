@@ -861,6 +861,13 @@ input::-webkit-inner-spin-button {
     top: 0;
     font-size: 14px; }
 
+.donation-page__input-amount--en:before {
+  content: "uah";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px; }
+
 @media (max-width: 1440px) {
   .donation-page__total h3 {
     font-weight: 500;
