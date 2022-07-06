@@ -10,10 +10,11 @@ $signKey = 'fd2c3a6bd6161d0e99082267b378a789a1d49961';
 $amount = $_POST['amount'];
 $currency = $_POST['currency'];
 $description = $_POST['description'];
+$language = $_POST['language'];
+$info = $_POST['name'];
 
-$info = '';
 $lifetime = 24;
-$lang = 'ru';
+$lang = ($language == 'uk') ? 'ru' : 'en';
 
 $paymentData = [
     'payment' => [
@@ -27,8 +28,8 @@ $paymentData = [
             ),
         ],
         'urls' => [
-            'good' => 'https://google.com.ua',
-            'bad' => 'https://google.com.ua',
+            'good' => ($language == 'uk') ? 'https://whih.com.ua/successful-payment.html' : 'https://whih.com.ua/successful-payment_en.html',
+            'bad' => ($language == 'uk') ? 'https://whih.com.ua/unsuccessful-payment.html' : 'https://whih.com.ua/unsuccessful-payment_en.html',
         ],
         'transactions' => [
             'transaction' => [
@@ -43,7 +44,6 @@ $paymentData = [
     ]
 ];
 
-// Test
 $xmlComposer = new XMLComposer($paymentData);
 $xml = $xmlComposer->compose();
 $json = SendRequest::send($xml);

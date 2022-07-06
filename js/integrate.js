@@ -5,13 +5,17 @@ let nameInput = form.querySelector('input[type=name]')
 let descriptionInput = form.querySelector('input[type=text]')
 let amountInput = form.querySelector('div.donation-page__input-amount > input[type=number]')
 
+let lang = document.documentElement.lang
+
 submitButton.addEventListener(
     'click',
     function () {
         let params = {
             amount: amountInput.value,
             currency: 'UAH',
-            description: `Ім'я: ${nameInput.value}, опис: ${descriptionInput.value}`,
+            description: descriptionInput.value,
+            language: lang,
+            name: nameInput.value
         }
         let paramsString = ''
 
