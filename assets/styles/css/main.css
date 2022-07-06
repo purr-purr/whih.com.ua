@@ -5,14 +5,12 @@
     Author:         Anton Shaposhnikov
 	Email:			shaposhnikov.web@gmail.com
 --------------------------------------------------------------*/
-/* line 7, ../scss/common.scss */
 html {
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100%; }
 
-/* line 13, ../scss/common.scss */
 body {
   font-family: 'Montserrat', sans-serif;
   width: 100%;
@@ -32,39 +30,32 @@ body {
   background-image: url("/assets/images/common/background.png");
   background-size: auto; }
 
-/* line 28, ../scss/common.scss */
 .main {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   overflow: hidden; }
 
-/* line 35, ../scss/common.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-/* line 42, ../scss/common.scss */
 :active, :focus {
   outline: none; }
 
-/* line 46, ../scss/common.scss */
 img {
   display: block;
   width: 100%;
   max-width: 100%; }
 
-/* line 52, ../scss/common.scss */
 ul {
   list-style-type: none; }
 
-/* line 56, ../scss/common.scss */
 strong {
   font-weight: bold; }
 
-/* line 60, ../scss/common.scss */
 a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
@@ -72,46 +63,37 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in; }
 
-/* line 67, ../scss/common.scss */
 button {
   font-family: 'Montserrat', sans-serif; }
 
-/* line 71, ../scss/common.scss */
 details summary::-webkit-details-marker {
   display: none; }
 
-/* line 75, ../scss/common.scss */
 details > summary {
   list-style: none; }
 
-/* line 79, ../scss/common.scss */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none; }
 
-/* line 84, ../scss/common.scss */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px; }
 
-/* line 85, ../scss/common.scss */
 ::-webkit-scrollbar-button {
   height: 0; }
 
-/* line 86, ../scss/common.scss */
 ::-webkit-scrollbar-thumb {
   height: 50px;
   background-color: #02839F;
   border-radius: 50px; }
 
-/* line 87, ../scss/common.scss */
 ::-webkit-scrollbar-track-piece {
   background-color: transparent; }
 
 /* ======================================
 //            Layout
 ====================================== */
-/* line 93, ../scss/common.scss */
 .c-container {
   max-width: 1170px;
   height: 100%;
@@ -121,7 +103,6 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //            Common used
 ====================================== */
-/* line 104, ../scss/common.scss */
 .main-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,18 +127,15 @@ input::-webkit-inner-spin-button {
   transition: all 1 ease-in;
   cursor: pointer; }
   @media (max-width: 744px) {
-    /* line 104, ../scss/common.scss */
     .main-btn {
       font-size: 12px;
       line-height: 15px;
       min-width: 155px; } }
-  /* line 125, ../scss/common.scss */
   .main-btn:hover {
     background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
     -webkit-transition: all 1 ease-in;
     transition: all 1 ease-in; }
 
-/* line 131, ../scss/common.scss */
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,7 +143,6 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 134, ../scss/common.scss */
   .logo .logo__title {
     position: relative;
     margin-right: 25px;
@@ -177,7 +154,6 @@ input::-webkit-inner-spin-button {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #242424; }
-    /* line 146, ../scss/common.scss */
     .logo .logo__title:after {
       top: 20px;
       right: -23px;
@@ -188,31 +164,25 @@ input::-webkit-inner-spin-button {
               transform: rotate(90deg);
       width: 20px;
       height: 1px; }
-    /* line 157, ../scss/common.scss */
     .logo .logo__title span {
       font-size: 17px;
       font-weight: 800;
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 166, ../scss/common.scss */
   .logo p {
     font-size: 10px;
     width: 100px;
     line-height: 12px; }
 
-/* line 173, ../scss/common.scss */
 .lang-switcher {
   font-size: 14px; }
   @media (max-width: 744px) {
-    /* line 173, ../scss/common.scss */
     .lang-switcher {
       font-size: 12px; } }
-  /* line 180, ../scss/common.scss */
   .lang-switcher a:first-child {
     margin-right: 10px;
     position: relative; }
-    /* line 184, ../scss/common.scss */
     .lang-switcher a:first-child:after {
       top: 10px;
       right: -13px;
@@ -224,27 +194,22 @@ input::-webkit-inner-spin-button {
       width: 13px;
       height: 1px; }
       @media (max-width: 1440px) {
-        /* line 184, ../scss/common.scss */
         .lang-switcher a:first-child:after {
           top: 7px; } }
-  /* line 200, ../scss/common.scss */
   .lang-switcher .active {
     font-weight: 500;
     color: #02839F; }
 
-/* line 206, ../scss/common.scss */
 .title {
   font-weight: 500;
   font-size: 40px;
   color: #333; }
   @media (max-width: 744px) {
-    /* line 206, ../scss/common.scss */
     .title {
       font-size: 20px;
       line-height: 24px;
       margin-top: 20px; } }
 
-/* line 218, ../scss/common.scss */
 .pre-title {
   position: absolute;
   top: 110px;
@@ -253,16 +218,13 @@ input::-webkit-inner-spin-button {
   font-size: 10px;
   line-height: 140%; }
   @media (max-width: 1440px) {
-    /* line 218, ../scss/common.scss */
     .pre-title {
       top: 70px; } }
   @media (max-width: 744px) {
-    /* line 218, ../scss/common.scss */
     .pre-title {
       position: relative;
       top: 0; } }
 
-/* line 236, ../scss/common.scss */
 .linker-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,25 +241,20 @@ input::-webkit-inner-spin-button {
   transition: all .2s ease-in-out;
   cursor: pointer; }
   @media (max-width: 744px) {
-    /* line 236, ../scss/common.scss */
     .linker-btn {
       font-size: 12px; } }
-  /* line 250, ../scss/common.scss */
   .linker-btn svg {
     display: block;
     width: 15px;
     height: 8px;
     margin-left: 10px; }
-    /* line 256, ../scss/common.scss */
     .linker-btn svg path {
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
-  /* line 261, ../scss/common.scss */
   .linker-btn:hover {
     color: #02839F;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
-    /* line 265, ../scss/common.scss */
     .linker-btn:hover svg path {
       fill: #02839F;
       -webkit-transition: all .2s ease-in-out;
@@ -306,7 +263,6 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //            Modal
 ====================================== */
-/* line 277, ../scss/common.scss */
 .modal-bg {
   display: none;
   position: fixed;
@@ -319,11 +275,9 @@ input::-webkit-inner-spin-button {
   padding: 15px;
   z-index: 99998; }
   @media (max-width: 1440px) {
-    /* line 277, ../scss/common.scss */
     .modal-bg {
       padding: 10px; } }
 
-/* line 294, ../scss/common.scss */
 .modal {
   width: 100%;
   padding: 100px;
@@ -336,7 +290,6 @@ input::-webkit-inner-spin-button {
   z-index: 99999;
   overflow-y: scroll; }
 
-/* line 307, ../scss/common.scss */
 .modal__close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -357,32 +310,26 @@ input::-webkit-inner-spin-button {
   border: none;
   outline: none;
   background: none; }
-  /* line 320, ../scss/common.scss */
   .modal__close img {
     width: 10px;
     height: 10px; }
 
-/* line 326, ../scss/common.scss */
 .modal-bg--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 331, ../scss/common.scss */
 .props-modal {
   max-width: 1200px; }
   @media (max-width: 1440px) {
-    /* line 331, ../scss/common.scss */
     .props-modal {
       max-width: 693px;
       padding: 80px 97px 30px; } }
   @media (max-width: 744px) {
-    /* line 331, ../scss/common.scss */
     .props-modal {
       max-width: 332px;
       padding: 50px 16px;
       border-radius: 10px; } }
-  /* line 344, ../scss/common.scss */
   .props-modal:before {
     content: ' ';
     position: absolute;
@@ -393,35 +340,29 @@ input::-webkit-inner-spin-button {
     z-index: -1;
     background: url("../../images/system/any/modal-yellow-blur.png") no-repeat center/100%; }
     @media (max-width: 1440px) {
-      /* line 344, ../scss/common.scss */
       .props-modal:before {
         top: -32px;
         left: 23px; } }
     @media (max-width: 744px) {
-      /* line 344, ../scss/common.scss */
       .props-modal:before {
         top: -66px;
         left: -90px; } }
-  /* line 365, ../scss/common.scss */
   .props-modal__title {
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 32px; }
     @media (max-width: 744px) {
-      /* line 365, ../scss/common.scss */
       .props-modal__title {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 20px; } }
-  /* line 378, ../scss/common.scss */
   .props-modal__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 102px; }
     @media (max-width: 1440px) {
-      /* line 378, ../scss/common.scss */
       .props-modal__list {
         gap: 30px;
         -webkit-box-orient: vertical;
@@ -429,58 +370,46 @@ input::-webkit-inner-spin-button {
             -ms-flex-direction: column;
                 flex-direction: column; } }
     @media (max-width: 744px) {
-      /* line 378, ../scss/common.scss */
       .props-modal__list {
         gap: 20px; } }
-  /* line 392, ../scss/common.scss */
   .props-modal__column {
     max-width: 408px;
     width: 100%; }
     @media (max-width: 744px) {
-      /* line 392, ../scss/common.scss */
       .props-modal__column {
         max-width: 100%; } }
-  /* line 401, ../scss/common.scss */
   .props-modal__list-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 10px; }
     @media (max-width: 744px) {
-      /* line 401, ../scss/common.scss */
       .props-modal__list-title {
         font-size: 16px;
         line-height: 20px; } }
-    /* line 412, ../scss/common.scss */
     .props-modal__list-title span {
       font-weight: 600;
       color: #02839F;
       white-space: nowrap; }
-  /* line 419, ../scss/common.scss */
   .props-modal__pay-pal-icon {
     display: inline-block;
     vertical-align: middle;
     width: 71px;
     height: 19px; }
-  /* line 426, ../scss/common.scss */
   .props-modal dd {
     line-height: 20px; }
-    /* line 429, ../scss/common.scss */
     .props-modal dd:not(:last-child) {
       margin-bottom: 50px; }
       @media (max-width: 1440px) {
-        /* line 429, ../scss/common.scss */
         .props-modal dd:not(:last-child) {
           margin-bottom: 30px; } }
       @media (max-width: 1440px) {
-        /* line 429, ../scss/common.scss */
         .props-modal dd:not(:last-child) {
           margin-bottom: 20px; } }
 
 /* ======================================
 //            General Section
 ====================================== */
-/* line 447, ../scss/common.scss */
 .general__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,12 +423,10 @@ input::-webkit-inner-spin-button {
   position: relative;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 1440px) {
-    /* line 447, ../scss/common.scss */
     .general__inner {
       margin-top: 70px;
       padding-bottom: 330px; } }
   @media (max-width: 744px) {
-    /* line 447, ../scss/common.scss */
     .general__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -511,7 +438,6 @@ input::-webkit-inner-spin-button {
           -ms-flex-align: start;
               align-items: start;
       margin-top: 47px; } }
-  /* line 466, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -520,12 +446,10 @@ input::-webkit-inner-spin-button {
     letter-spacing: 0.02em;
     text-transform: uppercase; }
     @media (max-width: 744px) {
-      /* line 466, ../scss/common.scss */
       .general__inner .general__title {
         font-size: 35px;
         line-height: 43px;
         max-width: 280px; } }
-    /* line 480, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -535,11 +459,9 @@ input::-webkit-inner-spin-button {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media (max-width: 744px) {
-        /* line 480, ../scss/common.scss */
         .general__inner .general__title span {
           font-size: 35px;
           line-height: 43px; } }
-  /* line 496, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -549,30 +471,25 @@ input::-webkit-inner-spin-button {
     line-height: 22px;
     font-weight: 400; }
     @media (max-width: 1440px) {
-      /* line 496, ../scss/common.scss */
       .general__inner .general__desc {
         margin-top: 25px;
         margin-bottom: 30px; } }
     @media (max-width: 744px) {
-      /* line 496, ../scss/common.scss */
       .general__inner .general__desc {
         font-size: 16px;
         max-width: 310px;
         margin-top: 16px;
         margin-bottom: 20px; } }
-  /* line 520, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 520, ../scss/common.scss */
       .general__inner .general__img {
         max-width: 505px;
         position: absolute;
         right: -60px;
         top: 145px; } }
     @media (max-width: 744px) {
-      /* line 520, ../scss/common.scss */
       .general__inner .general__img {
         position: relative;
         max-width: 335px;
@@ -581,7 +498,6 @@ input::-webkit-inner-spin-button {
         margin: 0 auto;
         height: 250px; } }
 
-/* line 542, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -591,11 +507,9 @@ input::-webkit-inner-spin-button {
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 744px) {
-    /* line 542, ../scss/common.scss */
     .general__quote {
       padding-top: 50px;
       padding-bottom: 50px; } }
-  /* line 556, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -606,7 +520,6 @@ input::-webkit-inner-spin-button {
     line-height: 22px;
     text-align: center; }
     @media (max-width: 744px) {
-      /* line 556, ../scss/common.scss */
       .general__quote p {
         max-width: 300px;
         font-size: 16px;
@@ -615,7 +528,6 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //            How-it-works Section
 ====================================== */
-/* line 579, ../scss/common.scss */
 .how-it-works__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -625,12 +537,10 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #D3D3D3;
   position: relative; }
   @media (max-width: 1440px) {
-    /* line 579, ../scss/common.scss */
     .how-it-works__inner {
       padding-bottom: 80px;
       padding-top: 80px; } }
   @media (max-width: 744px) {
-    /* line 579, ../scss/common.scss */
     .how-it-works__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -638,25 +548,20 @@ input::-webkit-inner-spin-button {
               flex-direction: column;
       padding-bottom: 60px;
       padding-top: 50px; } }
-  /* line 597, ../scss/common.scss */
   .how-it-works__inner .how-it-works__wrap {
     width: 100%; }
-  /* line 601, ../scss/common.scss */
   .how-it-works__inner .how-it-works__content {
     margin-left: auto;
     margin-right: auto;
     max-width: 690px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 601, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 512px; } }
     @media (max-width: 744px) {
-      /* line 601, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 315px;
         margin-left: unset; } }
-    /* line 616, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content p {
       margin-top: 30px;
       font-weight: 300;
@@ -664,23 +569,18 @@ input::-webkit-inner-spin-button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 616, ../scss/common.scss */
         .how-it-works__inner .how-it-works__content p {
           font-size: 12px;
           line-height: 15px;
           margin-top: 20px; } }
-    /* line 630, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content--hidden-text {
       display: none; }
-      /* line 633, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content--hidden-text.active {
         display: block; }
-    /* line 638, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content .linker-btn {
       margin-left: auto;
       margin-top: 10px; }
 
-/* line 645, ../scss/common.scss */
 .how-it-works__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -693,13 +593,11 @@ input::-webkit-inner-spin-button {
   width: 100%;
   margin-top: 50px; }
   @media (max-width: 1440px) {
-    /* line 645, ../scss/common.scss */
     .how-it-works__cards {
       margin-top: 30px;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  /* line 656, ../scss/common.scss */
   .how-it-works__cards .how-it-works__card {
     padding: 20px;
     margin-right: 22px;
@@ -714,21 +612,17 @@ input::-webkit-inner-spin-button {
     border-radius: 8px;
     border: 1px solid #F6F6F6; }
     @media (max-width: 1440px) {
-      /* line 656, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 48%;
         margin-right: 0; } }
     @media (max-width: 744px) {
-      /* line 656, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 100%;
         height: 130px; } }
-    /* line 678, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
       -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
               filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34)); }
-    /* line 683, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-title {
       max-width: 227px;
       width: 100%;
@@ -737,12 +631,10 @@ input::-webkit-inner-spin-button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 683, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-title {
           font-size: 12px;
           line-height: 15px;
           max-width: 292px; } }
-    /* line 698, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -755,14 +647,11 @@ input::-webkit-inner-spin-button {
               align-items: center;
       margin-top: 40px; }
       @media (max-width: 744px) {
-        /* line 698, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
           font-size: 10px; } }
-      /* line 706, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download {
         position: relative;
         padding-left: 20px; }
-        /* line 710, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:after {
           position: absolute;
           content: "";
@@ -773,15 +662,12 @@ input::-webkit-inner-spin-button {
           background: url("/assets/images/system/icon/download.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 721, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:hover:after {
           background: url("/assets/images/system/icon/download-filled.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-      /* line 727, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link {
         position: relative; }
-        /* line 730, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:after {
           position: absolute;
           content: "";
@@ -793,7 +679,6 @@ input::-webkit-inner-spin-button {
           z-index: 2;
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 742, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:hover:after {
           background: url("/assets/images/system/icon/arrow-filled.svg");
           -webkit-transition: all 0.2s ease-in;
@@ -802,29 +687,23 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //          Donation Section
 ====================================== */
-/* line 756, ../scss/common.scss */
 .donation__inner {
   position: relative;
   margin-bottom: 100px;
   margin-top: 125px; }
   @media (max-width: 1440px) {
-    /* line 756, ../scss/common.scss */
     .donation__inner {
       margin-top: 80px;
       margin-bottom: 80px; } }
   @media (max-width: 744px) {
-    /* line 756, ../scss/common.scss */
     .donation__inner {
       margin-top: 50px;
       margin-bottom: 65px; } }
-  /* line 771, ../scss/common.scss */
   .donation__inner .pre-title {
     top: 25px; }
     @media (max-width: 1440px) {
-      /* line 771, ../scss/common.scss */
       .donation__inner .pre-title {
         top: 0; } }
-  /* line 779, ../scss/common.scss */
   .donation__inner .donation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -836,36 +715,29 @@ input::-webkit-inner-spin-button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
-    /* line 783, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-info {
       max-width: 690px;
       width: 100%;
       margin-left: auto; }
       @media (max-width: 1440px) {
-        /* line 783, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           max-width: 515px;
           margin-right: auto; } }
       @media (max-width: 744px) {
-        /* line 783, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           margin-left: unset; } }
-      /* line 797, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info p {
         margin-top: 35px;
         margin-bottom: 30px; }
         @media (max-width: 1440px) {
-          /* line 797, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-top: 30px; } }
         @media (max-width: 744px) {
-          /* line 797, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-bottom: 20px;
             margin-top: 20px;
             font-size: 12px;
             line-height: 15px; } }
-      /* line 813, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info .donation__content-btns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -874,7 +746,6 @@ input::-webkit-inner-spin-button {
             -ms-flex-align: center;
                 align-items: center; }
         @media (max-width: 744px) {
-          /* line 813, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info .donation__content-btns {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -883,30 +754,24 @@ input::-webkit-inner-spin-button {
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: start; } }
-        /* line 821, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
           margin-left: 25px; }
           @media (max-width: 744px) {
-            /* line 821, ../scss/common.scss */
             .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
               margin-left: 0;
               margin-top: 30px; } }
-    /* line 832, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-img {
       max-width: 222px;
       width: 100%; }
       @media (max-width: 1440px) {
-        /* line 832, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-img {
           display: none; } }
 
 /* ======================================
 //          Donation Page
 ====================================== */
-/* line 847, ../scss/common.scss */
 .donation-page {
   padding-top: 50px; }
-  /* line 850, ../scss/common.scss */
   .donation-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -916,22 +781,17 @@ input::-webkit-inner-spin-button {
             align-items: self-start;
     margin-bottom: 50px; }
     @media (max-width: 1440px) {
-      /* line 850, ../scss/common.scss */
       .donation-page__inner {
         display: block; } }
-    /* line 857, ../scss/common.scss */
     .donation-page__inner .pre-title {
       position: relative;
       top: 0; }
       @media (max-width: 1440px) {
-        /* line 857, ../scss/common.scss */
         .donation-page__inner .pre-title {
           font-size: 8px; } }
-  /* line 867, ../scss/common.scss */
   .donation-page__content {
     margin: 0 auto; }
 
-/* line 872, ../scss/common.scss */
 .donation-page__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -942,10 +802,8 @@ input::-webkit-inner-spin-button {
           flex-direction: column;
   margin-top: 60px; }
   @media (max-width: 1440px) {
-    /* line 872, ../scss/common.scss */
     .donation-page__form {
       margin-top: 30px; } }
-  /* line 881, ../scss/common.scss */
   .donation-page__form .donation-page__input {
     margin-bottom: 40px;
     padding-bottom: 14px;
@@ -957,12 +815,10 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 881, ../scss/common.scss */
       .donation-page__form .donation-page__input {
         padding-bottom: 10px;
         margin-bottom: 25px;
         font-size: 12px; } }
-    /* line 898, ../scss/common.scss */
     .donation-page__form .donation-page__input::-webkit-input-placeholder {
       font-family: Montserrat,sans-serif;
       font-weight: 300;
@@ -984,10 +840,8 @@ input::-webkit-inner-spin-button {
       font-size: 14px;
       color: #333; }
 
-/* line 907, ../scss/common.scss */
 .donation-page__input-amount {
   position: relative; }
-  /* line 910, ../scss/common.scss */
   .donation-page__input-amount:after {
     content: " ";
     position: absolute;
@@ -998,7 +852,6 @@ input::-webkit-inner-spin-button {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     background-color: #D3D3D3; }
-  /* line 921, ../scss/common.scss */
   .donation-page__input-amount:before {
     content: "грн";
     position: absolute;
@@ -1007,15 +860,12 @@ input::-webkit-inner-spin-button {
     font-size: 14px; }
 
 @media (max-width: 1440px) {
-  /* line 932, ../scss/common.scss */
   .donation-page__total h3 {
     font-weight: 500;
     font-size: 12px; } }
 @media (max-width: 1440px) {
-  /* line 939, ../scss/common.scss */
   .donation-page__total .donation-page__subtitle {
     font-size: 12px; } }
-/* line 945, ../scss/common.scss */
 .donation-page__total .donation-page__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,10 +876,8 @@ input::-webkit-inner-spin-button {
           flex-direction: column;
   margin-top: 30px; }
   @media (max-width: 1440px) {
-    /* line 945, ../scss/common.scss */
     .donation-page__total .donation-page__list {
       margin-top: 15px; } }
-  /* line 954, ../scss/common.scss */
   .donation-page__total .donation-page__list .donation-page__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1040,15 +888,12 @@ input::-webkit-inner-spin-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 957, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item:first-child {
       margin-bottom: 10px; }
-    /* line 961, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item img {
       width: 36px;
       height: 26px;
       margin-right: 10px; }
-    /* line 967, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item .donation-page__currency-rate {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1058,7 +903,6 @@ input::-webkit-inner-spin-button {
               align-items: center;
       color: #616161; }
 
-/* line 975, ../scss/common.scss */
 .donation-page__approve {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1068,41 +912,32 @@ input::-webkit-inner-spin-button {
           align-items: center;
   margin-top: 30px; }
   @media (max-width: 1440px) {
-    /* line 975, ../scss/common.scss */
     .donation-page__approve {
       margin-top: 20px; } }
-  /* line 983, ../scss/common.scss */
   .donation-page__approve button {
     color: #333; }
-  /* line 987, ../scss/common.scss */
   .donation-page__approve button:disabled {
     background: linear-gradient(93.68deg, #F5F5F5 -1.05%, #BEBEBE 100%); }
-  /* line 991, ../scss/common.scss */
   .donation-page__approve p {
     margin-left: 25px;
     font-size: 14px; }
     @media (max-width: 1440px) {
-      /* line 991, ../scss/common.scss */
       .donation-page__approve p {
         font-size: 12px;
         margin-left: 20px;
         max-width: 150px; } }
-    /* line 1001, ../scss/common.scss */
     .donation-page__approve p span {
       font-weight: 500; }
 
-/* line 1008, ../scss/common.scss */
 .second-step {
   max-width: 1200px;
   padding: 50px 100px;
   background-color: #fffff8; }
   @media (max-width: 1440px) {
-    /* line 1008, ../scss/common.scss */
     .second-step {
       max-width: 332px;
       padding: 50px 16px;
       border-radius: 10px; } }
-  /* line 1019, ../scss/common.scss */
   .second-step__title {
     text-align: center;
     font-weight: 500;
@@ -1110,12 +945,10 @@ input::-webkit-inner-spin-button {
     line-height: 49px;
     margin-bottom: 30px; }
     @media (max-width: 1440px) {
-      /* line 1019, ../scss/common.scss */
       .second-step__title {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 20px; } }
-  /* line 1033, ../scss/common.scss */
   .second-step__text {
     line-height: 20px;
     text-align: center;
@@ -1123,20 +956,19 @@ input::-webkit-inner-spin-button {
     margin-left: auto;
     margin-right: auto; }
     @media (max-width: 1440px) {
-      /* line 1033, ../scss/common.scss */
       .second-step__text {
         font-size: 12px;
         line-height: 15px; } }
-    /* line 1045, ../scss/common.scss */
+    @media (max-width: 1440px) {
+      .second-step__text--last {
+        text-align: left; } }
     .second-step__text a {
       -webkit-text-decoration-line: underline;
               text-decoration-line: underline;
       color: #02839F; }
-      /* line 1049, ../scss/common.scss */
       .second-step__text a:hover {
         text-decoration: none; }
 
-/* line 1056, ../scss/common.scss */
 .payment-info {
   max-width: 997px;
   width: 100%;
@@ -1144,10 +976,8 @@ input::-webkit-inner-spin-button {
   margin-right: auto;
   margin-bottom: 30px; }
   @media (max-width: 1440px) {
-    /* line 1056, ../scss/common.scss */
     .payment-info {
       margin-bottom: 15px; } }
-  /* line 1067, ../scss/common.scss */
   .payment-info__head {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1170,7 +1000,6 @@ input::-webkit-inner-spin-button {
     border-radius: 10px;
     border: 1px solid #F5F5F5; }
     @media (max-width: 1440px) {
-      /* line 1067, ../scss/common.scss */
       .payment-info__head {
         height: 120px;
         padding-left: 20px;
@@ -1185,24 +1014,20 @@ input::-webkit-inner-spin-button {
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly; } }
-  /* line 1092, ../scss/common.scss */
   .payment-info__head-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     margin-right: 30px; }
     @media (max-width: 1440px) {
-      /* line 1092, ../scss/common.scss */
       .payment-info__head-title {
         font-size: 16px;
         line-height: 20px;
         margin-right: 0; } }
-  /* line 1105, ../scss/common.scss */
   .payment-info .detail-btn {
     margin-left: auto;
     padding-right: 20px;
     position: relative; }
-    /* line 1110, ../scss/common.scss */
     .payment-info .detail-btn:after {
       content: '';
       position: absolute;
@@ -1211,10 +1036,8 @@ input::-webkit-inner-spin-button {
       width: 9px;
       height: 12px;
       background: url("../../images/system/icon/arrow-up.svg") no-repeat center/100%; }
-  /* line 1121, ../scss/common.scss */
   .payment-info[open] .detail-btn:after {
     background-image: url("../../images/system/icon/arrow-down.svg"); }
-  /* line 1125, ../scss/common.scss */
   .payment-info__content {
     background-color: #fff;
     -webkit-box-shadow: 0 2px 15px rgba(235, 235, 235, 0.34);
@@ -1222,22 +1045,17 @@ input::-webkit-inner-spin-button {
     border-radius: 0 0 10px 10px;
     padding: 20px 104px 20px; }
     @media (max-width: 1440px) {
-      /* line 1125, ../scss/common.scss */
       .payment-info__content {
         padding: 20px; } }
 
-/* line 1137, ../scss/common.scss */
 .payment-detail {
   border-bottom: 1px solid #D3D3D3;
   margin-bottom: 20px; }
   @media (max-width: 1440px) {
-    /* line 1137, ../scss/common.scss */
     .payment-detail {
       margin-bottom: 10px; } }
-  /* line 1146, ../scss/common.scss */
   .payment-detail > li:not(:last-child) {
     border-bottom: 1px dashed #D3D3D3; }
-  /* line 1151, ../scss/common.scss */
   .payment-detail__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1248,7 +1066,6 @@ input::-webkit-inner-spin-button {
     padding-bottom: 10px;
     padding-top: 10px; }
     @media (max-width: 1440px) {
-      /* line 1151, ../scss/common.scss */
       .payment-detail__item {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -1257,7 +1074,6 @@ input::-webkit-inner-spin-button {
         -webkit-box-align: baseline;
             -ms-flex-align: baseline;
                 align-items: baseline; } }
-    /* line 1161, ../scss/common.scss */
     .payment-detail__item dt {
       font-weight: 400;
       font-size: 16px;
@@ -1265,7 +1081,6 @@ input::-webkit-inner-spin-button {
       min-width: 180px;
       margin-right: 20px; }
       @media (max-width: 1440px) {
-        /* line 1161, ../scss/common.scss */
         .payment-detail__item dt {
           font-weight: 500;
           font-size: 14px;
@@ -1274,34 +1089,28 @@ input::-webkit-inner-spin-button {
           margin-right: 0;
           margin-bottom: 10px; } }
 
-/* line 1180, ../scss/common.scss */
 .google-pay-btn {
   min-width: 384px;
   height: 68px;
   background: #000;
   margin: 20px auto; }
   @media (max-width: 1440px) {
-    /* line 1180, ../scss/common.scss */
     .google-pay-btn {
       min-width: 100%;
       height: 46px;
       margin-top: 15px;
       margin-bottom: 15px; } }
-  /* line 1193, ../scss/common.scss */
   .google-pay-btn:hover {
     background: #000;
     opacity: .8; }
-  /* line 1198, ../scss/common.scss */
   .google-pay-btn img {
     width: 80px;
     height: 25px; }
     @media (max-width: 1440px) {
-      /* line 1198, ../scss/common.scss */
       .google-pay-btn img {
         width: 70px;
         height: 20px; } }
 
-/* line 1209, ../scss/common.scss */
 .payment-card {
   width: 480px;
   height: 300px;
@@ -1314,7 +1123,6 @@ input::-webkit-inner-spin-button {
           backdrop-filter: blur(20px);
   border-radius: 30px; }
   @media (max-width: 1440px) {
-    /* line 1209, ../scss/common.scss */
     .payment-card {
       background-color: transparent;
       -webkit-filter: none;
@@ -1326,16 +1134,13 @@ input::-webkit-inner-spin-button {
       padding: 0;
       width: auto;
       height: auto; } }
-  /* line 1230, ../scss/common.scss */
   .payment-card__chip {
     width: 45px;
     height: 38px;
     margin-bottom: 22px; }
     @media (max-width: 1440px) {
-      /* line 1230, ../scss/common.scss */
       .payment-card__chip {
         display: none; } }
-  /* line 1240, ../scss/common.scss */
   .payment-card__input-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1348,9 +1153,8 @@ input::-webkit-inner-spin-button {
             align-items: center;
     margin-top: 20px; }
     @media (max-width: 1440px) {
-      /* line 1240, ../scss/common.scss */
       .payment-card__input-group {
-        margin-top: 0;
+        margin-top: 15px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
@@ -1359,7 +1163,6 @@ input::-webkit-inner-spin-button {
             -ms-flex-align: baseline;
                 align-items: baseline;
         gap: 15px; } }
-  /* line 1252, ../scss/common.scss */
   .payment-card__input-sub-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1369,20 +1172,16 @@ input::-webkit-inner-spin-button {
             align-items: center;
     gap: 50px; }
     @media (max-width: 1440px) {
-      /* line 1252, ../scss/common.scss */
       .payment-card__input-sub-group {
         gap: 20px; } }
-  /* line 1261, ../scss/common.scss */
   .payment-card label {
     display: block;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; }
     @media (max-width: 1440px) {
-      /* line 1261, ../scss/common.scss */
       .payment-card label {
         width: 100%; } }
-  /* line 1270, ../scss/common.scss */
   .payment-card span {
     display: block;
     font-weight: 400;
@@ -1390,21 +1189,23 @@ input::-webkit-inner-spin-button {
     line-height: 20px;
     color: #333;
     margin-bottom: 10px; }
-  /* line 1279, ../scss/common.scss */
   .payment-card input {
     border: none;
     border-bottom: 1px solid #D3D3D3;
     height: 20px;
     margin-left: auto;
-    margin-right: auto; }
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400; }
     @media (max-width: 1440px) {
-      /* line 1279, ../scss/common.scss */
       .payment-card input {
+        font-size: 12px;
+        line-height: 15px;
+        color: #333;
         background-color: transparent; } }
-    /* line 1290, ../scss/common.scss */
     .payment-card input:invalid {
       border-color: red; }
-    /* line 1294, ../scss/common.scss */
     .payment-card input::-webkit-input-placeholder {
       font-weight: 300;
       font-size: 14px;
@@ -1426,7 +1227,6 @@ input::-webkit-inner-spin-button {
       line-height: 20px;
       color: #D3D3D3; }
       @media (max-width: 1440px) {
-        /* line 1294, ../scss/common.scss */
         .payment-card input::-webkit-input-placeholder {
           font-size: 12px;
           line-height: 15px;
@@ -1443,38 +1243,29 @@ input::-webkit-inner-spin-button {
           font-size: 12px;
           line-height: 15px;
           color: #333; } }
-  /* line 1308, ../scss/common.scss */
   .payment-card__name {
     width: 219px; }
     @media (max-width: 1440px) {
-      /* line 1308, ../scss/common.scss */
       .payment-card__name {
         width: 100%; } }
-  /* line 1316, ../scss/common.scss */
   .payment-card__number {
     width: 170px; }
     @media (max-width: 1440px) {
-      /* line 1316, ../scss/common.scss */
       .payment-card__number {
         width: 100%; } }
-  /* line 1324, ../scss/common.scss */
   .payment-card__date {
     display: block;
     width: 52px; }
     @media (max-width: 1440px) {
-      /* line 1324, ../scss/common.scss */
       .payment-card__date {
         width: 140px; } }
-  /* line 1333, ../scss/common.scss */
   .payment-card__cvv {
     display: block;
     width: 23px; }
     @media (max-width: 1440px) {
-      /* line 1333, ../scss/common.scss */
       .payment-card__cvv {
         width: 140px; } }
 
-/* line 1343, ../scss/common.scss */
 .finish-pay {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1489,7 +1280,18 @@ input::-webkit-inner-spin-button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content; }
-  /* line 1351, ../scss/common.scss */
+  @media (max-width: 1440px) {
+    .finish-pay {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: baseline;
+          -ms-flex-align: baseline;
+              align-items: baseline;
+      margin-bottom: 25px;
+      margin-left: 0;
+      gap: 25px; } }
   .finish-pay .go-back-btn {
     font-weight: 500;
     font-size: 14px;
@@ -1500,10 +1302,15 @@ input::-webkit-inner-spin-button {
     outline: none;
     position: relative;
     cursor: pointer; }
-    /* line 1362, ../scss/common.scss */
+    @media (max-width: 1440px) {
+      .finish-pay .go-back-btn {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        font-size: 12px;
+        line-height: 17px; } }
     .finish-pay .go-back-btn:hover {
       text-decoration: underline; }
-    /* line 1366, ../scss/common.scss */
     .finish-pay .go-back-btn:before {
       content: '';
       position: absolute;
@@ -1513,7 +1320,6 @@ input::-webkit-inner-spin-button {
       height: 9px;
       background: url("../../images/system/icon/arrow-left.svg") no-repeat center/100%; }
 
-/* line 2, ../../../modules/header/Header.module.scss */
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1528,7 +1334,6 @@ input::-webkit-inner-spin-button {
   padding-bottom: 30px;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 744px) {
-    /* line 2, ../../../modules/header/Header.module.scss */
     .header__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1539,25 +1344,21 @@ input::-webkit-inner-spin-button {
               align-items: unset;
       padding-top: 20px;
       padding-bottom: 20px; } }
-/* line 16, ../../../modules/header/Header.module.scss */
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 240px; }
   @media (max-width: 1440px) {
-    /* line 16, ../../../modules/header/Header.module.scss */
     .header__wrapper {
       gap: 115px; } }
   @media (max-width: 744px) {
-    /* line 16, ../../../modules/header/Header.module.scss */
     .header__wrapper {
       gap: 80px;
       -webkit-box-pack: inherit;
           -ms-flex-pack: inherit;
               justify-content: inherit;
       margin-top: 15px; } }
-/* line 31, ../../../modules/header/Header.module.scss */
 .header__btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1567,11 +1368,9 @@ input::-webkit-inner-spin-button {
           align-items: center;
   gap: 24px; }
   @media (max-width: 1440px) {
-    /* line 35, ../../../modules/header/Header.module.scss */
     .header__btn-group .main-btn {
       display: none; } }
 
-/* line 43, ../../../modules/header/Header.module.scss */
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1581,17 +1380,14 @@ input::-webkit-inner-spin-button {
           align-items: center;
   gap: 70px; }
   @media (max-width: 744px) {
-    /* line 43, ../../../modules/header/Header.module.scss */
     .nav-list {
       font-size: 12px; } }
-  /* line 50, ../../../modules/header/Header.module.scss */
   .nav-list a:focus, .nav-list a:hover, .nav-list a:active a:visited {
     text-decoration: underline;
     color: #02839F;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in; }
 
-/* line 3, ../../../modules/footer/Footer.module.scss */
 .footer .footer__inner {
   margin-bottom: 35px;
   padding-top: 35px;
@@ -1608,18 +1404,14 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   color: #616161; }
   @media (max-width: 744px) {
-    /* line 3, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner {
       padding-top: 20px;
       margin-bottom: 20px; } }
-  /* line 19, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .logo {
     margin-right: 50px; }
     @media (max-width: 1440px) {
-      /* line 19, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .logo {
         margin-right: 0; } }
-  /* line 27, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__main-info, .footer .footer__inner .footer__contact-info, .footer .footer__inner .footer__sub-info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1630,42 +1422,35 @@ input::-webkit-inner-spin-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-  /* line 31, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__main-info {
     margin-bottom: 35px; }
     @media (max-width: 1440px) {
-      /* line 31, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__main-info {
         -webkit-box-align: normal;
             -ms-flex-align: normal;
                 align-items: normal; } }
     @media (max-width: 744px) {
-      /* line 31, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__main-info {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         margin-bottom: 20px; } }
-  /* line 44, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__contact-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 135px; }
     @media (max-width: 1440px) {
-      /* line 44, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-wrapper {
         gap: 0; } }
     @media (max-width: 744px) {
-      /* line 44, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-wrapper {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
         margin-top: 20px; } }
   @media (max-width: 1440px) {
-    /* line 58, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-info {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -1674,27 +1459,21 @@ input::-webkit-inner-spin-button {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: start; } }
-  /* line 65, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__contact-item {
     margin-right: 50px; }
     @media (max-width: 1440px) {
-      /* line 65, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item {
         margin-bottom: 6px; } }
     @media (max-width: 744px) {
-      /* line 65, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item {
         margin-bottom: 10px;
         font-size: 8px;
         max-width: 121px; } }
-    /* line 78, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item:last-child {
       margin-right: 0; }
       @media (max-width: 1440px) {
-        /* line 78, ../../../modules/footer/Footer.module.scss */
         .footer .footer__inner .footer__contact-item:last-child {
           margin-bottom: 0; } }
-    /* line 86, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item .footer__contact-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1702,32 +1481,26 @@ input::-webkit-inner-spin-button {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      /* line 89, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item .footer__contact-link img {
         margin-right: 5px;
         width: 10px;
         height: 10px; }
   @media (max-width: 744px) {
-    /* line 97, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__sub-info {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
       font-size: 8px; } }
-  /* line 104, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info p:first-child {
     max-width: 337px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 104, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__sub-info p:first-child {
         max-width: 160px; } }
-  /* line 113, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info .footer__sub-info--group p {
     text-align: right;
     margin-bottom: 10px; }
     @media (max-width: 744px) {
-      /* line 113, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__sub-info .footer__sub-info--group p {
         margin-bottom: 0; } }
 
@@ -1745,7 +1518,6 @@ input::-webkit-inner-spin-button {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
-/* line 23, ../../../modules/preloader/Preloader.module.scss */
 .preloader {
   position: fixed;
   left: 0;
@@ -1754,7 +1526,6 @@ input::-webkit-inner-spin-button {
   bottom: 0;
   background-color: #fff;
   z-index: 999999; }
-  /* line 32, ../../../modules/preloader/Preloader.module.scss */
   .preloader__row {
     position: relative;
     top: calc((100% - 133px) / 2);
@@ -1767,13 +1538,11 @@ input::-webkit-inner-spin-button {
     -webkit-animation: spin 15s linear 0s infinite;
     animation: spin 15s linear 0s infinite; }
 
-/* line 47, ../../../modules/preloader/Preloader.module.scss */
 .loaded_hiding .preloader {
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
   opacity: 0; }
 
-/* line 54, ../../../modules/preloader/Preloader.module.scss */
 .loaded .preloader {
   display: none; }
 

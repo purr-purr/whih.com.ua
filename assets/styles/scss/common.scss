@@ -1042,6 +1042,12 @@ input::-webkit-inner-spin-button {
       line-height: 15px;
     }
 
+    &--last {
+      @include media-tablet {
+        text-align: left;
+      }
+    }
+
     a {
       text-decoration-line: underline;
       color: $blue;
@@ -1242,7 +1248,7 @@ input::-webkit-inner-spin-button {
     margin-top: 20px;
 
     @include media-tablet {
-      margin-top: 0;
+      margin-top: 15px;
       flex-direction: column;
       align-items: baseline;
       gap: 15px
@@ -1282,8 +1288,14 @@ input::-webkit-inner-spin-button {
     height: 20px;
     margin-left: auto;
     margin-right: auto;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
 
     @include media-tablet {
+      font-size: 12px;
+      line-height: 15px;
+      color: $primary-text;
       background-color: transparent;
     }
 
@@ -1348,6 +1360,14 @@ input::-webkit-inner-spin-button {
   margin-bottom: 30px;
   width: fit-content;
 
+  @include media-tablet {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 25px;
+    margin-left: 0;
+    gap: 25px;
+  }
+
   .go-back-btn {
     font-weight: 500;
     font-size: 14px;
@@ -1358,6 +1378,12 @@ input::-webkit-inner-spin-button {
     outline: none;
     position: relative;
     cursor: pointer;
+
+    @include media-tablet {
+      order: 1;
+      font-size: 12px;
+      line-height: 17px;
+    }
 
     &:hover {
       text-decoration: underline;
