@@ -152,10 +152,6 @@ input::-webkit-inner-spin-button {
       transform: rotate(90deg);
       width: 20px;
       height: 1px;
-
-      @include media-mobile {
-        top: 7px;
-      }
     }
 
     span {
@@ -194,6 +190,10 @@ input::-webkit-inner-spin-button {
       transform: rotate(90deg);
       width: 13px;
       height: 1px;
+
+      @include media-tablet {
+        top: 7px;
+      }
     }
   }
 
