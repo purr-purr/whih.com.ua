@@ -1,4 +1,4 @@
-let submitButton = document.querySelector('div.donation-page__approve > button.main-btn.open-btn')
+let submitButton = document.querySelector('div.donation-page__approve > button.main-btn')
 let form = document.querySelector('form.donation-page__form')
 
 let nameInput = form.querySelector('input[type=name]')

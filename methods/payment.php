@@ -13,6 +13,20 @@ $description = $_POST['description'];
 $language = $_POST['language'];
 $info = $_POST['name'];
 
+if (empty($amount)
+    ||
+    empty($currency)
+    ||
+    empty($info)
+) {
+    header("HTTP/1.1 500 Internal Server Error");
+    die();
+}
+
+if (empty($description)) {
+    $description = ($language == 'uk') ? 'Благодійна допомога' : 'Comment';
+}
+
 $lifetime = 24;
 $lang = ($language == 'uk') ? 'ru' : 'en';
 
