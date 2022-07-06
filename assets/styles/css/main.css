@@ -252,13 +252,17 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   font-size: 10px;
   line-height: 140%; }
+  @media (max-width: 1440px) {
+    /* line 218, ../scss/common.scss */
+    .pre-title {
+      top: 70px; } }
   @media (max-width: 744px) {
     /* line 218, ../scss/common.scss */
     .pre-title {
       position: relative;
       top: 0; } }
 
-/* line 232, ../scss/common.scss */
+/* line 236, ../scss/common.scss */
 .linker-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,25 +279,25 @@ input::-webkit-inner-spin-button {
   transition: all .2s ease-in-out;
   cursor: pointer; }
   @media (max-width: 744px) {
-    /* line 232, ../scss/common.scss */
+    /* line 236, ../scss/common.scss */
     .linker-btn {
       font-size: 12px; } }
-  /* line 246, ../scss/common.scss */
+  /* line 250, ../scss/common.scss */
   .linker-btn svg {
     display: block;
     width: 15px;
     height: 8px;
     margin-left: 10px; }
-    /* line 252, ../scss/common.scss */
+    /* line 256, ../scss/common.scss */
     .linker-btn svg path {
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
-  /* line 257, ../scss/common.scss */
+  /* line 261, ../scss/common.scss */
   .linker-btn:hover {
     color: #02839F;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
-    /* line 261, ../scss/common.scss */
+    /* line 265, ../scss/common.scss */
     .linker-btn:hover svg path {
       fill: #02839F;
       -webkit-transition: all .2s ease-in-out;
@@ -302,7 +306,7 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //            Modal
 ====================================== */
-/* line 273, ../scss/common.scss */
+/* line 277, ../scss/common.scss */
 .modal-bg {
   display: none;
   position: fixed;
@@ -315,11 +319,11 @@ input::-webkit-inner-spin-button {
   padding: 15px;
   z-index: 99998; }
   @media (max-width: 1440px) {
-    /* line 273, ../scss/common.scss */
+    /* line 277, ../scss/common.scss */
     .modal-bg {
       padding: 10px; } }
 
-/* line 290, ../scss/common.scss */
+/* line 294, ../scss/common.scss */
 .modal {
   width: 100%;
   padding: 100px;
@@ -332,7 +336,7 @@ input::-webkit-inner-spin-button {
   z-index: 99999;
   overflow-y: scroll; }
 
-/* line 303, ../scss/common.scss */
+/* line 307, ../scss/common.scss */
 .modal__close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,32 +357,32 @@ input::-webkit-inner-spin-button {
   border: none;
   outline: none;
   background: none; }
-  /* line 316, ../scss/common.scss */
+  /* line 320, ../scss/common.scss */
   .modal__close img {
     width: 10px;
     height: 10px; }
 
-/* line 322, ../scss/common.scss */
+/* line 326, ../scss/common.scss */
 .modal-bg--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 327, ../scss/common.scss */
+/* line 331, ../scss/common.scss */
 .props-modal {
   max-width: 1200px; }
   @media (max-width: 1440px) {
-    /* line 327, ../scss/common.scss */
+    /* line 331, ../scss/common.scss */
     .props-modal {
       max-width: 693px;
       padding: 80px 97px 30px; } }
   @media (max-width: 744px) {
-    /* line 327, ../scss/common.scss */
+    /* line 331, ../scss/common.scss */
     .props-modal {
       max-width: 332px;
       padding: 50px 16px;
       border-radius: 10px; } }
-  /* line 340, ../scss/common.scss */
+  /* line 344, ../scss/common.scss */
   .props-modal:before {
     content: ' ';
     position: absolute;
@@ -389,35 +393,35 @@ input::-webkit-inner-spin-button {
     z-index: -1;
     background: url("../../images/system/any/modal-yellow-blur.png") no-repeat center/100%; }
     @media (max-width: 1440px) {
-      /* line 340, ../scss/common.scss */
+      /* line 344, ../scss/common.scss */
       .props-modal:before {
         top: -32px;
         left: 23px; } }
     @media (max-width: 744px) {
-      /* line 340, ../scss/common.scss */
+      /* line 344, ../scss/common.scss */
       .props-modal:before {
         top: -66px;
         left: -90px; } }
-  /* line 361, ../scss/common.scss */
+  /* line 365, ../scss/common.scss */
   .props-modal__title {
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 32px; }
     @media (max-width: 744px) {
-      /* line 361, ../scss/common.scss */
+      /* line 365, ../scss/common.scss */
       .props-modal__title {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 20px; } }
-  /* line 374, ../scss/common.scss */
+  /* line 378, ../scss/common.scss */
   .props-modal__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 102px; }
     @media (max-width: 1440px) {
-      /* line 374, ../scss/common.scss */
+      /* line 378, ../scss/common.scss */
       .props-modal__list {
         gap: 30px;
         -webkit-box-orient: vertical;
@@ -425,58 +429,58 @@ input::-webkit-inner-spin-button {
             -ms-flex-direction: column;
                 flex-direction: column; } }
     @media (max-width: 744px) {
-      /* line 374, ../scss/common.scss */
+      /* line 378, ../scss/common.scss */
       .props-modal__list {
         gap: 20px; } }
-  /* line 388, ../scss/common.scss */
+  /* line 392, ../scss/common.scss */
   .props-modal__column {
     max-width: 408px;
     width: 100%; }
     @media (max-width: 744px) {
-      /* line 388, ../scss/common.scss */
+      /* line 392, ../scss/common.scss */
       .props-modal__column {
         max-width: 100%; } }
-  /* line 397, ../scss/common.scss */
+  /* line 401, ../scss/common.scss */
   .props-modal__list-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 10px; }
     @media (max-width: 744px) {
-      /* line 397, ../scss/common.scss */
+      /* line 401, ../scss/common.scss */
       .props-modal__list-title {
         font-size: 16px;
         line-height: 20px; } }
-    /* line 408, ../scss/common.scss */
+    /* line 412, ../scss/common.scss */
     .props-modal__list-title span {
       font-weight: 600;
       color: #02839F;
       white-space: nowrap; }
-  /* line 415, ../scss/common.scss */
+  /* line 419, ../scss/common.scss */
   .props-modal__pay-pal-icon {
     display: inline-block;
     vertical-align: middle;
     width: 71px;
     height: 19px; }
-  /* line 422, ../scss/common.scss */
+  /* line 426, ../scss/common.scss */
   .props-modal dd {
     line-height: 20px; }
-    /* line 425, ../scss/common.scss */
+    /* line 429, ../scss/common.scss */
     .props-modal dd:not(:last-child) {
       margin-bottom: 50px; }
       @media (max-width: 1440px) {
-        /* line 425, ../scss/common.scss */
+        /* line 429, ../scss/common.scss */
         .props-modal dd:not(:last-child) {
           margin-bottom: 30px; } }
       @media (max-width: 1440px) {
-        /* line 425, ../scss/common.scss */
+        /* line 429, ../scss/common.scss */
         .props-modal dd:not(:last-child) {
           margin-bottom: 20px; } }
 
 /* ======================================
 //            General Section
 ====================================== */
-/* line 443, ../scss/common.scss */
+/* line 447, ../scss/common.scss */
 .general__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -490,12 +494,12 @@ input::-webkit-inner-spin-button {
   position: relative;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 1440px) {
-    /* line 443, ../scss/common.scss */
+    /* line 447, ../scss/common.scss */
     .general__inner {
       margin-top: 70px;
       padding-bottom: 330px; } }
   @media (max-width: 744px) {
-    /* line 443, ../scss/common.scss */
+    /* line 447, ../scss/common.scss */
     .general__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -507,7 +511,7 @@ input::-webkit-inner-spin-button {
           -ms-flex-align: start;
               align-items: start;
       margin-top: 47px; } }
-  /* line 462, ../scss/common.scss */
+  /* line 466, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -516,12 +520,12 @@ input::-webkit-inner-spin-button {
     letter-spacing: 0.02em;
     text-transform: uppercase; }
     @media (max-width: 744px) {
-      /* line 462, ../scss/common.scss */
+      /* line 466, ../scss/common.scss */
       .general__inner .general__title {
         font-size: 35px;
         line-height: 43px;
         max-width: 280px; } }
-    /* line 476, ../scss/common.scss */
+    /* line 480, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -531,11 +535,11 @@ input::-webkit-inner-spin-button {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media (max-width: 744px) {
-        /* line 476, ../scss/common.scss */
+        /* line 480, ../scss/common.scss */
         .general__inner .general__title span {
           font-size: 35px;
           line-height: 43px; } }
-  /* line 492, ../scss/common.scss */
+  /* line 496, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -545,30 +549,30 @@ input::-webkit-inner-spin-button {
     line-height: 22px;
     font-weight: 400; }
     @media (max-width: 1440px) {
-      /* line 492, ../scss/common.scss */
+      /* line 496, ../scss/common.scss */
       .general__inner .general__desc {
         margin-top: 25px;
         margin-bottom: 30px; } }
     @media (max-width: 744px) {
-      /* line 492, ../scss/common.scss */
+      /* line 496, ../scss/common.scss */
       .general__inner .general__desc {
         font-size: 16px;
         max-width: 310px;
         margin-top: 16px;
         margin-bottom: 20px; } }
-  /* line 516, ../scss/common.scss */
+  /* line 520, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 516, ../scss/common.scss */
+      /* line 520, ../scss/common.scss */
       .general__inner .general__img {
         max-width: 505px;
         position: absolute;
         right: -60px;
         top: 145px; } }
     @media (max-width: 744px) {
-      /* line 516, ../scss/common.scss */
+      /* line 520, ../scss/common.scss */
       .general__inner .general__img {
         position: relative;
         max-width: 335px;
@@ -577,7 +581,7 @@ input::-webkit-inner-spin-button {
         margin: 0 auto;
         height: 250px; } }
 
-/* line 538, ../scss/common.scss */
+/* line 542, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -587,11 +591,11 @@ input::-webkit-inner-spin-button {
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 744px) {
-    /* line 538, ../scss/common.scss */
+    /* line 542, ../scss/common.scss */
     .general__quote {
       padding-top: 50px;
       padding-bottom: 50px; } }
-  /* line 552, ../scss/common.scss */
+  /* line 556, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -602,7 +606,7 @@ input::-webkit-inner-spin-button {
     line-height: 22px;
     text-align: center; }
     @media (max-width: 744px) {
-      /* line 552, ../scss/common.scss */
+      /* line 556, ../scss/common.scss */
       .general__quote p {
         max-width: 300px;
         font-size: 16px;
@@ -611,7 +615,7 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //            How-it-works Section
 ====================================== */
-/* line 575, ../scss/common.scss */
+/* line 579, ../scss/common.scss */
 .how-it-works__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -621,12 +625,12 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #D3D3D3;
   position: relative; }
   @media (max-width: 1440px) {
-    /* line 575, ../scss/common.scss */
+    /* line 579, ../scss/common.scss */
     .how-it-works__inner {
       padding-bottom: 80px;
       padding-top: 80px; } }
   @media (max-width: 744px) {
-    /* line 575, ../scss/common.scss */
+    /* line 579, ../scss/common.scss */
     .how-it-works__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -634,25 +638,25 @@ input::-webkit-inner-spin-button {
               flex-direction: column;
       padding-bottom: 60px;
       padding-top: 50px; } }
-  /* line 593, ../scss/common.scss */
+  /* line 597, ../scss/common.scss */
   .how-it-works__inner .how-it-works__wrap {
     width: 100%; }
-  /* line 597, ../scss/common.scss */
+  /* line 601, ../scss/common.scss */
   .how-it-works__inner .how-it-works__content {
     margin-left: auto;
     margin-right: auto;
     max-width: 690px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 597, ../scss/common.scss */
+      /* line 601, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 512px; } }
     @media (max-width: 744px) {
-      /* line 597, ../scss/common.scss */
+      /* line 601, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 315px;
         margin-left: unset; } }
-    /* line 612, ../scss/common.scss */
+    /* line 616, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content p {
       margin-top: 30px;
       font-weight: 300;
@@ -660,23 +664,23 @@ input::-webkit-inner-spin-button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 612, ../scss/common.scss */
+        /* line 616, ../scss/common.scss */
         .how-it-works__inner .how-it-works__content p {
           font-size: 12px;
           line-height: 15px;
           margin-top: 20px; } }
-    /* line 626, ../scss/common.scss */
+    /* line 630, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content--hidden-text {
       display: none; }
-      /* line 629, ../scss/common.scss */
+      /* line 633, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content--hidden-text.active {
         display: block; }
-    /* line 634, ../scss/common.scss */
+    /* line 638, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content .linker-btn {
       margin-left: auto;
       margin-top: 10px; }
 
-/* line 641, ../scss/common.scss */
+/* line 645, ../scss/common.scss */
 .how-it-works__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,13 +693,13 @@ input::-webkit-inner-spin-button {
   width: 100%;
   margin-top: 50px; }
   @media (max-width: 1440px) {
-    /* line 641, ../scss/common.scss */
+    /* line 645, ../scss/common.scss */
     .how-it-works__cards {
       margin-top: 30px;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  /* line 652, ../scss/common.scss */
+  /* line 656, ../scss/common.scss */
   .how-it-works__cards .how-it-works__card {
     padding: 20px;
     margin-right: 22px;
@@ -710,21 +714,21 @@ input::-webkit-inner-spin-button {
     border-radius: 8px;
     border: 1px solid #F6F6F6; }
     @media (max-width: 1440px) {
-      /* line 652, ../scss/common.scss */
+      /* line 656, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 48%;
         margin-right: 0; } }
     @media (max-width: 744px) {
-      /* line 652, ../scss/common.scss */
+      /* line 656, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 100%;
         height: 130px; } }
-    /* line 674, ../scss/common.scss */
+    /* line 678, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
       -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
               filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34)); }
-    /* line 679, ../scss/common.scss */
+    /* line 683, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-title {
       max-width: 227px;
       width: 100%;
@@ -733,12 +737,12 @@ input::-webkit-inner-spin-button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 679, ../scss/common.scss */
+        /* line 683, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-title {
           font-size: 12px;
           line-height: 15px;
           max-width: 292px; } }
-    /* line 694, ../scss/common.scss */
+    /* line 698, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -751,14 +755,14 @@ input::-webkit-inner-spin-button {
               align-items: center;
       margin-top: 40px; }
       @media (max-width: 744px) {
-        /* line 694, ../scss/common.scss */
+        /* line 698, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
           font-size: 10px; } }
-      /* line 702, ../scss/common.scss */
+      /* line 706, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download {
         position: relative;
         padding-left: 20px; }
-        /* line 706, ../scss/common.scss */
+        /* line 710, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:after {
           position: absolute;
           content: "";
@@ -769,15 +773,15 @@ input::-webkit-inner-spin-button {
           background: url("/assets/images/system/icon/download.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 717, ../scss/common.scss */
+        /* line 721, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:hover:after {
           background: url("/assets/images/system/icon/download-filled.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-      /* line 723, ../scss/common.scss */
+      /* line 727, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link {
         position: relative; }
-        /* line 726, ../scss/common.scss */
+        /* line 730, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:after {
           position: absolute;
           content: "";
@@ -789,7 +793,7 @@ input::-webkit-inner-spin-button {
           z-index: 2;
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 738, ../scss/common.scss */
+        /* line 742, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:hover:after {
           background: url("/assets/images/system/icon/arrow-filled.svg");
           -webkit-transition: all 0.2s ease-in;
@@ -798,29 +802,29 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //          Donation Section
 ====================================== */
-/* line 752, ../scss/common.scss */
+/* line 756, ../scss/common.scss */
 .donation__inner {
   position: relative;
   margin-bottom: 100px;
   margin-top: 125px; }
   @media (max-width: 1440px) {
-    /* line 752, ../scss/common.scss */
+    /* line 756, ../scss/common.scss */
     .donation__inner {
       margin-top: 80px;
       margin-bottom: 80px; } }
   @media (max-width: 744px) {
-    /* line 752, ../scss/common.scss */
+    /* line 756, ../scss/common.scss */
     .donation__inner {
       margin-top: 50px;
       margin-bottom: 65px; } }
-  /* line 767, ../scss/common.scss */
+  /* line 771, ../scss/common.scss */
   .donation__inner .pre-title {
     top: 25px; }
-    @media (max-width: 744px) {
-      /* line 767, ../scss/common.scss */
+    @media (max-width: 1440px) {
+      /* line 771, ../scss/common.scss */
       .donation__inner .pre-title {
         top: 0; } }
-  /* line 775, ../scss/common.scss */
+  /* line 779, ../scss/common.scss */
   .donation__inner .donation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -832,36 +836,36 @@ input::-webkit-inner-spin-button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
-    /* line 779, ../scss/common.scss */
+    /* line 783, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-info {
       max-width: 690px;
       width: 100%;
       margin-left: auto; }
       @media (max-width: 1440px) {
-        /* line 779, ../scss/common.scss */
+        /* line 783, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           max-width: 515px;
           margin-right: auto; } }
       @media (max-width: 744px) {
-        /* line 779, ../scss/common.scss */
+        /* line 783, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           margin-left: unset; } }
-      /* line 793, ../scss/common.scss */
+      /* line 797, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info p {
         margin-top: 35px;
         margin-bottom: 30px; }
         @media (max-width: 1440px) {
-          /* line 793, ../scss/common.scss */
+          /* line 797, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-top: 30px; } }
         @media (max-width: 744px) {
-          /* line 793, ../scss/common.scss */
+          /* line 797, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-bottom: 20px;
             margin-top: 20px;
             font-size: 12px;
             line-height: 15px; } }
-      /* line 809, ../scss/common.scss */
+      /* line 813, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info .donation__content-btns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -870,7 +874,7 @@ input::-webkit-inner-spin-button {
             -ms-flex-align: center;
                 align-items: center; }
         @media (max-width: 744px) {
-          /* line 809, ../scss/common.scss */
+          /* line 813, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info .donation__content-btns {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -879,30 +883,30 @@ input::-webkit-inner-spin-button {
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: start; } }
-        /* line 817, ../scss/common.scss */
+        /* line 821, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
           margin-left: 25px; }
           @media (max-width: 744px) {
-            /* line 817, ../scss/common.scss */
+            /* line 821, ../scss/common.scss */
             .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
               margin-left: 0;
               margin-top: 30px; } }
-    /* line 828, ../scss/common.scss */
+    /* line 832, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-img {
       max-width: 222px;
       width: 100%; }
       @media (max-width: 1440px) {
-        /* line 828, ../scss/common.scss */
+        /* line 832, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-img {
           display: none; } }
 
 /* ======================================
 //          Donation Page
 ====================================== */
-/* line 843, ../scss/common.scss */
+/* line 847, ../scss/common.scss */
 .donation-page {
   padding-top: 50px; }
-  /* line 846, ../scss/common.scss */
+  /* line 850, ../scss/common.scss */
   .donation-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -912,22 +916,22 @@ input::-webkit-inner-spin-button {
             align-items: self-start;
     margin-bottom: 50px; }
     @media (max-width: 1440px) {
-      /* line 846, ../scss/common.scss */
+      /* line 850, ../scss/common.scss */
       .donation-page__inner {
         display: block; } }
-    /* line 853, ../scss/common.scss */
+    /* line 857, ../scss/common.scss */
     .donation-page__inner .pre-title {
       position: relative;
       top: 0; }
       @media (max-width: 1440px) {
-        /* line 853, ../scss/common.scss */
+        /* line 857, ../scss/common.scss */
         .donation-page__inner .pre-title {
           font-size: 8px; } }
-  /* line 863, ../scss/common.scss */
+  /* line 867, ../scss/common.scss */
   .donation-page__content {
     margin: 0 auto; }
 
-/* line 868, ../scss/common.scss */
+/* line 872, ../scss/common.scss */
 .donation-page__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,10 +942,10 @@ input::-webkit-inner-spin-button {
           flex-direction: column;
   margin-top: 60px; }
   @media (max-width: 1440px) {
-    /* line 868, ../scss/common.scss */
+    /* line 872, ../scss/common.scss */
     .donation-page__form {
       margin-top: 30px; } }
-  /* line 877, ../scss/common.scss */
+  /* line 881, ../scss/common.scss */
   .donation-page__form .donation-page__input {
     margin-bottom: 40px;
     padding-bottom: 14px;
@@ -953,12 +957,12 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 877, ../scss/common.scss */
+      /* line 881, ../scss/common.scss */
       .donation-page__form .donation-page__input {
         padding-bottom: 10px;
         margin-bottom: 25px;
         font-size: 12px; } }
-    /* line 894, ../scss/common.scss */
+    /* line 898, ../scss/common.scss */
     .donation-page__form .donation-page__input::-webkit-input-placeholder {
       font-family: Montserrat,sans-serif;
       font-weight: 300;
@@ -980,10 +984,10 @@ input::-webkit-inner-spin-button {
       font-size: 14px;
       color: #333; }
 
-/* line 903, ../scss/common.scss */
+/* line 907, ../scss/common.scss */
 .donation-page__input-amount {
   position: relative; }
-  /* line 906, ../scss/common.scss */
+  /* line 910, ../scss/common.scss */
   .donation-page__input-amount:after {
     content: " ";
     position: absolute;
@@ -994,7 +998,7 @@ input::-webkit-inner-spin-button {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     background-color: #D3D3D3; }
-  /* line 917, ../scss/common.scss */
+  /* line 921, ../scss/common.scss */
   .donation-page__input-amount:before {
     content: "грн";
     position: absolute;
@@ -1003,15 +1007,15 @@ input::-webkit-inner-spin-button {
     font-size: 14px; }
 
 @media (max-width: 1440px) {
-  /* line 928, ../scss/common.scss */
+  /* line 932, ../scss/common.scss */
   .donation-page__total h3 {
     font-weight: 500;
     font-size: 12px; } }
 @media (max-width: 1440px) {
-  /* line 935, ../scss/common.scss */
+  /* line 939, ../scss/common.scss */
   .donation-page__total .donation-page__subtitle {
     font-size: 12px; } }
-/* line 941, ../scss/common.scss */
+/* line 945, ../scss/common.scss */
 .donation-page__total .donation-page__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1022,10 +1026,10 @@ input::-webkit-inner-spin-button {
           flex-direction: column;
   margin-top: 30px; }
   @media (max-width: 1440px) {
-    /* line 941, ../scss/common.scss */
+    /* line 945, ../scss/common.scss */
     .donation-page__total .donation-page__list {
       margin-top: 15px; } }
-  /* line 950, ../scss/common.scss */
+  /* line 954, ../scss/common.scss */
   .donation-page__total .donation-page__list .donation-page__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1036,15 +1040,15 @@ input::-webkit-inner-spin-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 953, ../scss/common.scss */
+    /* line 957, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item:first-child {
       margin-bottom: 10px; }
-    /* line 957, ../scss/common.scss */
+    /* line 961, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item img {
       width: 36px;
       height: 26px;
       margin-right: 10px; }
-    /* line 963, ../scss/common.scss */
+    /* line 967, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item .donation-page__currency-rate {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1054,7 +1058,7 @@ input::-webkit-inner-spin-button {
               align-items: center;
       color: #616161; }
 
-/* line 971, ../scss/common.scss */
+/* line 975, ../scss/common.scss */
 .donation-page__approve {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1064,46 +1068,46 @@ input::-webkit-inner-spin-button {
           align-items: center;
   margin-top: 30px; }
   @media (max-width: 1440px) {
-    /* line 971, ../scss/common.scss */
+    /* line 975, ../scss/common.scss */
     .donation-page__approve {
       margin-top: 20px; } }
-  /* line 979, ../scss/common.scss */
+  /* line 983, ../scss/common.scss */
   .donation-page__approve button {
     color: #333; }
-  /* line 983, ../scss/common.scss */
+  /* line 987, ../scss/common.scss */
   .donation-page__approve button:disabled {
     background: linear-gradient(93.68deg, #F5F5F5 -1.05%, #BEBEBE 100%); }
-  /* line 987, ../scss/common.scss */
+  /* line 991, ../scss/common.scss */
   .donation-page__approve p {
     margin-left: 25px;
     font-size: 14px; }
     @media (max-width: 1440px) {
-      /* line 987, ../scss/common.scss */
+      /* line 991, ../scss/common.scss */
       .donation-page__approve p {
         font-size: 12px;
         margin-left: 20px;
         max-width: 150px; } }
-    /* line 997, ../scss/common.scss */
+    /* line 1001, ../scss/common.scss */
     .donation-page__approve p span {
       font-weight: 500; }
 
-/* line 1004, ../scss/common.scss */
+/* line 1008, ../scss/common.scss */
 .second-step {
   max-width: 1200px;
   padding: 50px 100px;
   background-color: #fffff8; }
   @media (max-width: 1440px) {
-    /* line 1004, ../scss/common.scss */
+    /* line 1008, ../scss/common.scss */
     .second-step {
       max-width: 693px;
       padding: 50px 80px; } }
   @media (max-width: 744px) {
-    /* line 1004, ../scss/common.scss */
+    /* line 1008, ../scss/common.scss */
     .second-step {
       max-width: 332px;
       padding: 50px 16px;
       border-radius: 10px; } }
-  /* line 1020, ../scss/common.scss */
+  /* line 1024, ../scss/common.scss */
   .second-step__title {
     text-align: center;
     font-weight: 500;
@@ -1111,13 +1115,13 @@ input::-webkit-inner-spin-button {
     line-height: 49px;
     margin-bottom: 30px; }
 
-/* line 1029, ../scss/common.scss */
+/* line 1033, ../scss/common.scss */
 .payment-info {
   max-width: 997px;
   width: 100%;
   margin-left: auto;
   margin-right: auto; }
-  /* line 1035, ../scss/common.scss */
+  /* line 1039, ../scss/common.scss */
   .payment-info__heading {
     height: 70px;
     background: linear-gradient(90.34deg, #FFFFFF 2.39%, rgba(255, 255, 255, 0) 100.75%);

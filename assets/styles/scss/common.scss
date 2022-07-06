@@ -223,6 +223,10 @@ input::-webkit-inner-spin-button {
   font-size: 10px;
   line-height: 140%;
 
+  @include media-tablet {
+    top: 70px;
+  }
+
   @include media-mobile {
     position: relative;
     top: 0;
@@ -767,7 +771,7 @@ input::-webkit-inner-spin-button {
   .pre-title {
     top: 25px;
 
-    @include media-mobile {
+    @include media-tablet {
       top: 0;
     }
   }
