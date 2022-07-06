@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Breakpoint mixins */
 /*-------------------------------------------------------------
     Project:        Astramed
@@ -30,42 +29,41 @@ body {
   color: #333;
   background-color: #fff;
   background-image: url("/assets/images/common/background.png");
-  background-size: auto;
-  background-position: center; }
+  background-size: auto; }
 
-/* line 29, ../scss/common.scss */
+/* line 28, ../scss/common.scss */
 .main {
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
   overflow: hidden; }
 
-/* line 36, ../scss/common.scss */
+/* line 35, ../scss/common.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
-/* line 43, ../scss/common.scss */
+/* line 42, ../scss/common.scss */
 :active, :focus {
   outline: none; }
 
-/* line 47, ../scss/common.scss */
+/* line 46, ../scss/common.scss */
 img {
   display: block;
   width: 100%;
   max-width: 100%; }
 
-/* line 53, ../scss/common.scss */
+/* line 52, ../scss/common.scss */
 ul {
   list-style-type: none; }
 
-/* line 57, ../scss/common.scss */
+/* line 56, ../scss/common.scss */
 strong {
   font-weight: bold; }
 
-/* line 62, ../scss/common.scss */
+/* line 61, ../scss/common.scss */
 a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
@@ -73,14 +71,33 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in; }
 
-/* line 69, ../scss/common.scss */
+/* line 68, ../scss/common.scss */
 button {
   font-family: 'Montserrat', sans-serif; }
+
+/* line 72, ../scss/common.scss */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px; }
+
+/* line 73, ../scss/common.scss */
+::-webkit-scrollbar-button {
+  height: 0; }
+
+/* line 74, ../scss/common.scss */
+::-webkit-scrollbar-thumb {
+  height: 50px;
+  background-color: #02839F;
+  border-radius: 50px; }
+
+/* line 75, ../scss/common.scss */
+::-webkit-scrollbar-track-piece {
+  background-color: transparent; }
 
 /* ======================================
 //            Layout
 ====================================== */
-/* line 77, ../scss/common.scss */
+/* line 81, ../scss/common.scss */
 .c-container {
   max-width: 1170px;
   height: 100%;
@@ -90,7 +107,7 @@ button {
 /* ======================================
 //            Common used
 ====================================== */
-/* line 88, ../scss/common.scss */
+/* line 92, ../scss/common.scss */
 .main-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -102,6 +119,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   min-width: 180px;
+  width: 180px;
   height: 47px;
   font-weight: 500;
   font-size: 14px;
@@ -114,18 +132,18 @@ button {
   transition: all 1 ease-in;
   cursor: pointer; }
   @media (max-width: 744px) {
-    /* line 88, ../scss/common.scss */
+    /* line 92, ../scss/common.scss */
     .main-btn {
       font-size: 12px;
       line-height: 15px;
       min-width: 155px; } }
-  /* line 108, ../scss/common.scss */
+  /* line 113, ../scss/common.scss */
   .main-btn:hover {
     background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
     -webkit-transition: all 1 ease-in;
     transition: all 1 ease-in; }
 
-/* line 114, ../scss/common.scss */
+/* line 119, ../scss/common.scss */
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,7 +151,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 117, ../scss/common.scss */
+  /* line 122, ../scss/common.scss */
   .logo .logo__title {
     position: relative;
     margin-right: 25px;
@@ -145,7 +163,7 @@ button {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #242424; }
-    /* line 129, ../scss/common.scss */
+    /* line 134, ../scss/common.scss */
     .logo .logo__title:after {
       top: 20px;
       right: -23px;
@@ -156,31 +174,31 @@ button {
               transform: rotate(90deg);
       width: 20px;
       height: 1px; }
-    /* line 140, ../scss/common.scss */
+    /* line 145, ../scss/common.scss */
     .logo .logo__title span {
       font-size: 17px;
       font-weight: 800;
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 149, ../scss/common.scss */
+  /* line 154, ../scss/common.scss */
   .logo p {
     font-size: 10px;
     width: 100px;
     line-height: 12px; }
 
-/* line 156, ../scss/common.scss */
+/* line 161, ../scss/common.scss */
 .lang-switcher {
   font-size: 14px; }
   @media (max-width: 744px) {
-    /* line 156, ../scss/common.scss */
+    /* line 161, ../scss/common.scss */
     .lang-switcher {
       font-size: 12px; } }
-  /* line 163, ../scss/common.scss */
+  /* line 168, ../scss/common.scss */
   .lang-switcher a:first-child {
     margin-right: 10px;
     position: relative; }
-    /* line 167, ../scss/common.scss */
+    /* line 172, ../scss/common.scss */
     .lang-switcher a:first-child:after {
       top: 10px;
       right: -13px;
@@ -191,24 +209,24 @@ button {
               transform: rotate(90deg);
       width: 13px;
       height: 1px; }
-  /* line 179, ../scss/common.scss */
+  /* line 184, ../scss/common.scss */
   .lang-switcher .active {
     font-weight: 500;
     color: #02839F; }
 
-/* line 185, ../scss/common.scss */
+/* line 190, ../scss/common.scss */
 .title {
   font-weight: 500;
   font-size: 40px;
   color: #333; }
   @media (max-width: 744px) {
-    /* line 185, ../scss/common.scss */
+    /* line 190, ../scss/common.scss */
     .title {
       font-size: 20px;
       line-height: 24px;
       margin-top: 20px; } }
 
-/* line 197, ../scss/common.scss */
+/* line 202, ../scss/common.scss */
 .pre-title {
   position: absolute;
   top: 110px;
@@ -217,12 +235,12 @@ button {
   font-size: 10px;
   line-height: 140%; }
   @media (max-width: 744px) {
-    /* line 197, ../scss/common.scss */
+    /* line 202, ../scss/common.scss */
     .pre-title {
       position: relative;
       top: 0; } }
 
-/* line 211, ../scss/common.scss */
+/* line 216, ../scss/common.scss */
 .linker-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,25 +257,25 @@ button {
   transition: all .2s ease-in-out;
   cursor: pointer; }
   @media (max-width: 744px) {
-    /* line 211, ../scss/common.scss */
+    /* line 216, ../scss/common.scss */
     .linker-btn {
       font-size: 12px; } }
-  /* line 225, ../scss/common.scss */
+  /* line 230, ../scss/common.scss */
   .linker-btn svg {
     display: block;
     width: 15px;
     height: 8px;
     margin-left: 10px; }
-    /* line 231, ../scss/common.scss */
+    /* line 236, ../scss/common.scss */
     .linker-btn svg path {
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
-  /* line 236, ../scss/common.scss */
+  /* line 241, ../scss/common.scss */
   .linker-btn:hover {
     color: #02839F;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
-    /* line 240, ../scss/common.scss */
+    /* line 245, ../scss/common.scss */
     .linker-btn:hover svg path {
       fill: #02839F;
       -webkit-transition: all .2s ease-in-out;
@@ -266,15 +284,9 @@ button {
 /* ======================================
 //            Modal
 ====================================== */
-/* line 252, ../scss/common.scss */
+/* line 257, ../scss/common.scss */
 .modal-bg {
   display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -282,30 +294,27 @@ button {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
+  padding: 15px;
   z-index: 99998; }
+  @media (max-width: 1440px) {
+    /* line 257, ../scss/common.scss */
+    .modal-bg {
+      padding: 10px; } }
 
-/* line 266, ../scss/common.scss */
+/* line 274, ../scss/common.scss */
 .modal {
-  max-width: 1200px;
   width: 100%;
   padding: 100px;
-  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #fff;
   cursor: auto;
   border-radius: 8px;
   position: relative;
-  z-index: 99999; }
-  /* line 277, ../scss/common.scss */
-  .modal:before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 328px;
-    height: 305px;
-    background: url("../../images/system/any/modal-yellow-blur.png") no-repeat center/100%; }
+  z-index: 99999;
+  overflow-y: scroll; }
 
-/* line 288, ../scss/common.scss */
+/* line 287, ../scss/common.scss */
 .modal__close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,66 +335,130 @@ button {
   border: none;
   outline: none;
   background: none; }
-  /* line 301, ../scss/common.scss */
+  /* line 300, ../scss/common.scss */
   .modal__close img {
     width: 10px;
     height: 10px; }
 
-/* line 307, ../scss/common.scss */
+/* line 306, ../scss/common.scss */
 .modal-bg--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 312, ../scss/common.scss */
-.props-modal__title {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 49px;
-  margin-bottom: 32px; }
-/* line 319, ../scss/common.scss */
-.props-modal__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 102px; }
-/* line 324, ../scss/common.scss */
-.props-modal__column {
-  max-width: 408px;
-  width: 100%; }
-/* line 329, ../scss/common.scss */
-.props-modal__list-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 10px; }
-  /* line 336, ../scss/common.scss */
-  .props-modal__list-title span {
-    font-weight: 600;
-    color: #02839F;
-    margin-left: 3px; }
-/* line 343, ../scss/common.scss */
-.props-modal__pay-pal-icon {
-  width: 71px;
-  height: 19px;
-  margin-left: 10px; }
-/* line 349, ../scss/common.scss */
-.props-modal dd {
-  line-height: 20px; }
-  /* line 352, ../scss/common.scss */
-  .props-modal dd:not(:last-child) {
-    margin-bottom: 50px; }
+/* line 310, ../scss/common.scss */
+.props-modal {
+  max-width: 1200px; }
+  @media (max-width: 1440px) {
+    /* line 310, ../scss/common.scss */
+    .props-modal {
+      max-width: 693px;
+      padding: 80px 97px 30px; } }
+  @media (max-width: 744px) {
+    /* line 310, ../scss/common.scss */
+    .props-modal {
+      max-width: 332px;
+      padding: 50px 16px;
+      border-radius: 10px; } }
+  /* line 323, ../scss/common.scss */
+  .props-modal:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 328px;
+    height: 305px;
+    z-index: -1;
+    background: url("../../images/system/any/modal-yellow-blur.png") no-repeat center/100%; }
+    @media (max-width: 1440px) {
+      /* line 323, ../scss/common.scss */
+      .props-modal:before {
+        top: -32px;
+        left: 23px; } }
+    @media (max-width: 744px) {
+      /* line 323, ../scss/common.scss */
+      .props-modal:before {
+        top: -66px;
+        left: -90px; } }
+  /* line 344, ../scss/common.scss */
+  .props-modal__title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 32px; }
+    @media (max-width: 744px) {
+      /* line 344, ../scss/common.scss */
+      .props-modal__title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px; } }
+  /* line 357, ../scss/common.scss */
+  .props-modal__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 102px; }
+    @media (max-width: 1440px) {
+      /* line 357, ../scss/common.scss */
+      .props-modal__list {
+        gap: 30px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
+    @media (max-width: 744px) {
+      /* line 357, ../scss/common.scss */
+      .props-modal__list {
+        gap: 20px; } }
+  /* line 371, ../scss/common.scss */
+  .props-modal__column {
+    max-width: 408px;
+    width: 100%; }
+    @media (max-width: 744px) {
+      /* line 371, ../scss/common.scss */
+      .props-modal__column {
+        max-width: 100%; } }
+  /* line 380, ../scss/common.scss */
+  .props-modal__list-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px; }
+    @media (max-width: 744px) {
+      /* line 380, ../scss/common.scss */
+      .props-modal__list-title {
+        font-size: 16px;
+        line-height: 20px; } }
+    /* line 391, ../scss/common.scss */
+    .props-modal__list-title span {
+      font-weight: 600;
+      color: #02839F;
+      white-space: nowrap; }
+  /* line 398, ../scss/common.scss */
+  .props-modal__pay-pal-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 71px;
+    height: 19px; }
+  /* line 405, ../scss/common.scss */
+  .props-modal dd {
+    line-height: 20px; }
+    /* line 408, ../scss/common.scss */
+    .props-modal dd:not(:last-child) {
+      margin-bottom: 50px; }
+      @media (max-width: 1440px) {
+        /* line 408, ../scss/common.scss */
+        .props-modal dd:not(:last-child) {
+          margin-bottom: 30px; } }
+      @media (max-width: 1440px) {
+        /* line 408, ../scss/common.scss */
+        .props-modal dd:not(:last-child) {
+          margin-bottom: 20px; } }
 
 /* ======================================
 //            General Section
 ====================================== */
-/* line 362, ../scss/common.scss */
+/* line 426, ../scss/common.scss */
 .general__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,12 +472,12 @@ button {
   position: relative;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 1440px) {
-    /* line 362, ../scss/common.scss */
+    /* line 426, ../scss/common.scss */
     .general__inner {
       margin-top: 70px;
       padding-bottom: 330px; } }
   @media (max-width: 744px) {
-    /* line 362, ../scss/common.scss */
+    /* line 426, ../scss/common.scss */
     .general__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -416,7 +489,7 @@ button {
           -ms-flex-align: start;
               align-items: start;
       margin-top: 47px; } }
-  /* line 381, ../scss/common.scss */
+  /* line 445, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -425,12 +498,12 @@ button {
     letter-spacing: 0.02em;
     text-transform: uppercase; }
     @media (max-width: 744px) {
-      /* line 381, ../scss/common.scss */
+      /* line 445, ../scss/common.scss */
       .general__inner .general__title {
         font-size: 35px;
         line-height: 43px;
         max-width: 280px; } }
-    /* line 395, ../scss/common.scss */
+    /* line 459, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -440,11 +513,11 @@ button {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media (max-width: 744px) {
-        /* line 395, ../scss/common.scss */
+        /* line 459, ../scss/common.scss */
         .general__inner .general__title span {
           font-size: 35px;
           line-height: 43px; } }
-  /* line 411, ../scss/common.scss */
+  /* line 475, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -454,30 +527,30 @@ button {
     line-height: 22px;
     font-weight: 400; }
     @media (max-width: 1440px) {
-      /* line 411, ../scss/common.scss */
+      /* line 475, ../scss/common.scss */
       .general__inner .general__desc {
         margin-top: 25px;
         margin-bottom: 30px; } }
     @media (max-width: 744px) {
-      /* line 411, ../scss/common.scss */
+      /* line 475, ../scss/common.scss */
       .general__inner .general__desc {
         font-size: 16px;
         max-width: 310px;
         margin-top: 16px;
         margin-bottom: 20px; } }
-  /* line 435, ../scss/common.scss */
+  /* line 499, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 435, ../scss/common.scss */
+      /* line 499, ../scss/common.scss */
       .general__inner .general__img {
         max-width: 505px;
         position: absolute;
         right: -60px;
         top: 145px; } }
     @media (max-width: 744px) {
-      /* line 435, ../scss/common.scss */
+      /* line 499, ../scss/common.scss */
       .general__inner .general__img {
         position: relative;
         max-width: 335px;
@@ -486,7 +559,7 @@ button {
         margin: 0 auto;
         height: 250px; } }
 
-/* line 457, ../scss/common.scss */
+/* line 521, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -496,11 +569,11 @@ button {
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 744px) {
-    /* line 457, ../scss/common.scss */
+    /* line 521, ../scss/common.scss */
     .general__quote {
       padding-top: 50px;
       padding-bottom: 50px; } }
-  /* line 471, ../scss/common.scss */
+  /* line 535, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -511,7 +584,7 @@ button {
     line-height: 22px;
     text-align: center; }
     @media (max-width: 744px) {
-      /* line 471, ../scss/common.scss */
+      /* line 535, ../scss/common.scss */
       .general__quote p {
         max-width: 300px;
         font-size: 16px;
@@ -520,7 +593,7 @@ button {
 /* ======================================
 //            How-it-works Section
 ====================================== */
-/* line 494, ../scss/common.scss */
+/* line 558, ../scss/common.scss */
 .how-it-works__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,12 +603,12 @@ button {
   border-bottom: 1px solid #D3D3D3;
   position: relative; }
   @media (max-width: 1440px) {
-    /* line 494, ../scss/common.scss */
+    /* line 558, ../scss/common.scss */
     .how-it-works__inner {
       padding-bottom: 80px;
       padding-top: 80px; } }
   @media (max-width: 744px) {
-    /* line 494, ../scss/common.scss */
+    /* line 558, ../scss/common.scss */
     .how-it-works__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -543,25 +616,25 @@ button {
               flex-direction: column;
       padding-bottom: 60px;
       padding-top: 50px; } }
-  /* line 512, ../scss/common.scss */
+  /* line 576, ../scss/common.scss */
   .how-it-works__inner .how-it-works__wrap {
     width: 100%; }
-  /* line 516, ../scss/common.scss */
+  /* line 580, ../scss/common.scss */
   .how-it-works__inner .how-it-works__content {
     margin-left: auto;
     margin-right: auto;
     max-width: 690px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 516, ../scss/common.scss */
+      /* line 580, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 512px; } }
     @media (max-width: 744px) {
-      /* line 516, ../scss/common.scss */
+      /* line 580, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 315px;
         margin-left: unset; } }
-    /* line 531, ../scss/common.scss */
+    /* line 595, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content p {
       margin-top: 30px;
       font-weight: 300;
@@ -569,23 +642,23 @@ button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 531, ../scss/common.scss */
+        /* line 595, ../scss/common.scss */
         .how-it-works__inner .how-it-works__content p {
           font-size: 12px;
           line-height: 15px;
           margin-top: 20px; } }
-    /* line 545, ../scss/common.scss */
+    /* line 609, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content--hidden-text {
       display: none; }
-      /* line 548, ../scss/common.scss */
+      /* line 612, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content--hidden-text.active {
         display: block; }
-    /* line 553, ../scss/common.scss */
+    /* line 617, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content .linker-btn {
       margin-left: auto;
       margin-top: 10px; }
 
-/* line 560, ../scss/common.scss */
+/* line 624, ../scss/common.scss */
 .how-it-works__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,13 +671,13 @@ button {
   width: 100%;
   margin-top: 50px; }
   @media (max-width: 1440px) {
-    /* line 560, ../scss/common.scss */
+    /* line 624, ../scss/common.scss */
     .how-it-works__cards {
       margin-top: 30px;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  /* line 571, ../scss/common.scss */
+  /* line 635, ../scss/common.scss */
   .how-it-works__cards .how-it-works__card {
     padding: 20px;
     margin-right: 22px;
@@ -619,21 +692,21 @@ button {
     border-radius: 8px;
     border: 1px solid #F6F6F6; }
     @media (max-width: 1440px) {
-      /* line 571, ../scss/common.scss */
+      /* line 635, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 48%;
         margin-right: 0; } }
     @media (max-width: 744px) {
-      /* line 571, ../scss/common.scss */
+      /* line 635, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 100%;
         height: 130px; } }
-    /* line 593, ../scss/common.scss */
+    /* line 657, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
       -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
               filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34)); }
-    /* line 598, ../scss/common.scss */
+    /* line 662, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-title {
       max-width: 227px;
       width: 100%;
@@ -642,12 +715,12 @@ button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 598, ../scss/common.scss */
+        /* line 662, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-title {
           font-size: 12px;
           line-height: 15px;
           max-width: 292px; } }
-    /* line 613, ../scss/common.scss */
+    /* line 677, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -660,39 +733,76 @@ button {
               align-items: center;
       margin-top: 40px; }
       @media (max-width: 744px) {
-        /* line 613, ../scss/common.scss */
+        /* line 677, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
           font-size: 10px; } }
-      /* line 622, ../scss/common.scss */
-      .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download svg {
-        margin-right: 8px; }
+      /* line 685, ../scss/common.scss */
+      .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download {
+        position: relative;
+        padding-left: 20px; }
+        /* line 689, ../scss/common.scss */
+        .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:after {
+          position: absolute;
+          content: "";
+          width: 13px;
+          height: 13px;
+          left: 0;
+          bottom: 3px;
+          background: url("/assets/images/system/icon/download.svg");
+          -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in; }
+        /* line 700, ../scss/common.scss */
+        .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:hover:after {
+          background: url("/assets/images/system/icon/download-filled.svg");
+          -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in; }
+      /* line 706, ../scss/common.scss */
+      .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link {
+        position: relative; }
+        /* line 709, ../scss/common.scss */
+        .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:after {
+          position: absolute;
+          content: "";
+          width: 17px;
+          height: 8px;
+          right: 5px;
+          bottom: -5px;
+          background: url("/assets/images/system/icon/arrow.svg");
+          z-index: 2;
+          -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in; }
+        /* line 721, ../scss/common.scss */
+        .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:hover:after {
+          background: url("/assets/images/system/icon/arrow-filled.svg");
+          -webkit-transition: all 0.2s ease-in;
+          transition: all 0.2s ease-in; }
 
 /* ======================================
 //          Donation Section
 ====================================== */
-/* line 635, ../scss/common.scss */
+/* line 735, ../scss/common.scss */
 .donation__inner {
   position: relative;
   margin-bottom: 100px;
   margin-top: 125px; }
   @media (max-width: 1440px) {
-    /* line 635, ../scss/common.scss */
+    /* line 735, ../scss/common.scss */
     .donation__inner {
       margin-top: 80px;
       margin-bottom: 80px; } }
   @media (max-width: 744px) {
-    /* line 635, ../scss/common.scss */
+    /* line 735, ../scss/common.scss */
     .donation__inner {
       margin-top: 50px;
       margin-bottom: 65px; } }
-  /* line 650, ../scss/common.scss */
+  /* line 750, ../scss/common.scss */
   .donation__inner .pre-title {
     top: 25px; }
     @media (max-width: 744px) {
-      /* line 650, ../scss/common.scss */
+      /* line 750, ../scss/common.scss */
       .donation__inner .pre-title {
         top: 0; } }
-  /* line 658, ../scss/common.scss */
+  /* line 758, ../scss/common.scss */
   .donation__inner .donation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -704,36 +814,36 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
-    /* line 662, ../scss/common.scss */
+    /* line 762, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-info {
       max-width: 690px;
       width: 100%;
       margin-left: auto;
       margin-right: auto; }
       @media (max-width: 1440px) {
-        /* line 662, ../scss/common.scss */
+        /* line 762, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           max-width: 515px; } }
       @media (max-width: 744px) {
-        /* line 662, ../scss/common.scss */
+        /* line 762, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           margin-left: unset; } }
-      /* line 676, ../scss/common.scss */
+      /* line 776, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info p {
         margin-top: 35px;
         margin-bottom: 30px; }
         @media (max-width: 1440px) {
-          /* line 676, ../scss/common.scss */
+          /* line 776, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-top: 30px; } }
         @media (max-width: 744px) {
-          /* line 676, ../scss/common.scss */
+          /* line 776, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-bottom: 20px;
             margin-top: 20px;
             font-size: 12px;
             line-height: 15px; } }
-      /* line 692, ../scss/common.scss */
+      /* line 792, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info .donation__content-btns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -742,7 +852,7 @@ button {
             -ms-flex-align: center;
                 align-items: center; }
         @media (max-width: 744px) {
-          /* line 692, ../scss/common.scss */
+          /* line 792, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info .donation__content-btns {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -751,22 +861,29 @@ button {
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: start; } }
-        /* line 700, ../scss/common.scss */
+        /* line 800, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
           margin-left: 25px; }
           @media (max-width: 744px) {
-            /* line 700, ../scss/common.scss */
+            /* line 800, ../scss/common.scss */
             .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
               margin-left: 0;
               margin-top: 30px; } }
-    /* line 711, ../scss/common.scss */
+    /* line 811, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-img {
       max-width: 222px;
       width: 100%; }
       @media (max-width: 1440px) {
-        /* line 711, ../scss/common.scss */
+        /* line 811, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-img {
           display: none; } }
+
+/* ======================================
+//          Donation Page
+====================================== */
+/* line 826, ../scss/common.scss */
+.donation-page {
+  padding-top: 50px; }
 
 /* line 2, ../../../modules/header/Header.module.scss */
 .header__inner {
@@ -977,8 +1094,6 @@ button {
     text-align: right;
     margin-bottom: 10px; }
 
-/* Preloader */
-/* Анимация вращения лого */
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotate(0deg);
@@ -993,16 +1108,16 @@ button {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
-/* line 26, ../../../modules/preloader/Preloader.module.scss */
+/* line 23, ../../../modules/preloader/Preloader.module.scss */
 .preloader {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--light-green-bg);
+  background-color: #fff;
   z-index: 999999; }
-  /* line 35, ../../../modules/preloader/Preloader.module.scss */
+  /* line 32, ../../../modules/preloader/Preloader.module.scss */
   .preloader__row {
     position: relative;
     top: calc((100% - 227px) / 2);
@@ -1015,13 +1130,13 @@ button {
     -webkit-animation: spin 15s linear 0s infinite;
     animation: spin 15s linear 0s infinite; }
 
-/* line 50, ../../../modules/preloader/Preloader.module.scss */
+/* line 47, ../../../modules/preloader/Preloader.module.scss */
 .loaded_hiding .preloader {
   -webkit-transition: 0.3s opacity;
   transition: 0.3s opacity;
   opacity: 0; }
 
-/* line 57, ../../../modules/preloader/Preloader.module.scss */
+/* line 54, ../../../modules/preloader/Preloader.module.scss */
 .loaded .preloader {
   display: none; }
 

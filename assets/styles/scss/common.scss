@@ -23,7 +23,6 @@ body {
   background-color: $background-color;
   background-image: url("/assets/images/common/background.png");
   background-size: auto;
-  background-position: center;
 }
 
 .main {
@@ -684,8 +683,44 @@ button {
       }
 
       .how-it-works__card-download {
-        svg {
-          margin-right: 8px;
+        position: relative;
+        padding-left: 20px;
+
+        &:after {
+          position: absolute;
+          content: "";
+          width: 13px;
+          height: 13px;
+          left: 0;
+          bottom: 3px;
+          background: url("/assets/images/system/icon/download.svg");
+          @include transition(.2s);
+        }
+
+        &:hover:after {
+          background: url("/assets/images/system/icon/download-filled.svg");
+          @include transition(.2s);
+        }
+      }
+
+      .how-it-works__card-link {
+        position: relative;
+
+        &:after {
+          position: absolute;
+          content: "";
+          width: 17px;
+          height: 8px;
+          right: 5px;
+          bottom: -5px;
+          background: url("/assets/images/system/icon/arrow.svg");
+          z-index: 2;
+          @include transition(.2s);
+        }
+
+        &:hover:after {
+          background: url("/assets/images/system/icon/arrow-filled.svg");
+          @include transition(.2s);
         }
       }
     }
