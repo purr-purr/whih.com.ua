@@ -32,7 +32,9 @@ submitButton.addEventListener(
         http.onreadystatechange = function() {
             if (http.readyState == 4 && http.status == 200) {
                 let json = JSON.parse(http.responseText)
-                window.location = json.url
+                if (json.url) {
+                    window.location = json.url
+                }
             }
         }
         http.send(paramsString)
