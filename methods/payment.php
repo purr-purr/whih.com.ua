@@ -6,9 +6,11 @@ include_once '../classes/SendRequest.php';
 // Init variables
 $merchantID = '3808';
 $signKey = 'fd2c3a6bd6161d0e99082267b378a789a1d49961';
-$amount = 55;
-$currency = 'UAH';
-$description = 'desc';
+
+$amount = $_POST['amount'];
+$currency = $_POST['currency'];
+$description = $_POST['description'];
+
 $info = '';
 $lifetime = 24;
 $lang = 'ru';
