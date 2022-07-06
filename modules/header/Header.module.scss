@@ -53,3 +53,9 @@
       @include transition(1s);
     }
 }
+
+.nav-list__en {
+  @include media-mobile {
+    gap: 15px;
+  }
+}

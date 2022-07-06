@@ -169,7 +169,7 @@ input::-webkit-inner-spin-button {
   .logo .logo__title {
     position: relative;
     margin-right: 25px;
-    max-width: 135px;
+    max-width: 144px;
     width: 100%;
     font-weight: 500;
     font-size: 16px;
@@ -580,9 +580,10 @@ input::-webkit-inner-spin-button {
         top: -50px;
         right: 0;
         margin: 0 auto;
-        height: 250px; } }
+        height: 250px;
+        z-index: -1; } }
 
-/* line 543, ../scss/common.scss */
+/* line 544, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -592,11 +593,11 @@ input::-webkit-inner-spin-button {
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 744px) {
-    /* line 543, ../scss/common.scss */
+    /* line 544, ../scss/common.scss */
     .general__quote {
       padding-top: 50px;
       padding-bottom: 50px; } }
-  /* line 557, ../scss/common.scss */
+  /* line 558, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -607,7 +608,7 @@ input::-webkit-inner-spin-button {
     line-height: 22px;
     text-align: center; }
     @media (max-width: 744px) {
-      /* line 557, ../scss/common.scss */
+      /* line 558, ../scss/common.scss */
       .general__quote p {
         max-width: 300px;
         font-size: 16px;
@@ -616,7 +617,7 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //            How-it-works Section
 ====================================== */
-/* line 580, ../scss/common.scss */
+/* line 581, ../scss/common.scss */
 .how-it-works__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,12 +627,12 @@ input::-webkit-inner-spin-button {
   border-bottom: 1px solid #D3D3D3;
   position: relative; }
   @media (max-width: 1440px) {
-    /* line 580, ../scss/common.scss */
+    /* line 581, ../scss/common.scss */
     .how-it-works__inner {
       padding-bottom: 80px;
       padding-top: 80px; } }
   @media (max-width: 744px) {
-    /* line 580, ../scss/common.scss */
+    /* line 581, ../scss/common.scss */
     .how-it-works__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -639,25 +640,25 @@ input::-webkit-inner-spin-button {
               flex-direction: column;
       padding-bottom: 60px;
       padding-top: 50px; } }
-  /* line 598, ../scss/common.scss */
+  /* line 599, ../scss/common.scss */
   .how-it-works__inner .how-it-works__wrap {
     width: 100%; }
-  /* line 602, ../scss/common.scss */
+  /* line 603, ../scss/common.scss */
   .how-it-works__inner .how-it-works__content {
     margin-left: auto;
     margin-right: auto;
     max-width: 690px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 602, ../scss/common.scss */
+      /* line 603, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 512px; } }
     @media (max-width: 744px) {
-      /* line 602, ../scss/common.scss */
+      /* line 603, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 315px;
         margin-left: unset; } }
-    /* line 617, ../scss/common.scss */
+    /* line 618, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content p {
       margin-top: 30px;
       font-weight: 300;
@@ -665,23 +666,23 @@ input::-webkit-inner-spin-button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 617, ../scss/common.scss */
+        /* line 618, ../scss/common.scss */
         .how-it-works__inner .how-it-works__content p {
           font-size: 12px;
           line-height: 15px;
           margin-top: 20px; } }
-    /* line 631, ../scss/common.scss */
+    /* line 632, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content--hidden-text {
       display: none; }
-      /* line 634, ../scss/common.scss */
+      /* line 635, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content--hidden-text.active {
         display: block; }
-    /* line 639, ../scss/common.scss */
+    /* line 640, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content .linker-btn {
       margin-left: auto;
       margin-top: 10px; }
 
-/* line 646, ../scss/common.scss */
+/* line 647, ../scss/common.scss */
 .how-it-works__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,13 +695,13 @@ input::-webkit-inner-spin-button {
   width: 100%;
   margin-top: 50px; }
   @media (max-width: 1440px) {
-    /* line 646, ../scss/common.scss */
+    /* line 647, ../scss/common.scss */
     .how-it-works__cards {
       margin-top: 30px;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  /* line 657, ../scss/common.scss */
+  /* line 658, ../scss/common.scss */
   .how-it-works__cards .how-it-works__card {
     padding: 20px;
     margin-right: 22px;
@@ -715,21 +716,21 @@ input::-webkit-inner-spin-button {
     border-radius: 8px;
     border: 1px solid #F6F6F6; }
     @media (max-width: 1440px) {
-      /* line 657, ../scss/common.scss */
+      /* line 658, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 48%;
         margin-right: 0; } }
     @media (max-width: 744px) {
-      /* line 657, ../scss/common.scss */
+      /* line 658, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 100%;
         height: 130px; } }
-    /* line 679, ../scss/common.scss */
+    /* line 680, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
       -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
               filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34)); }
-    /* line 684, ../scss/common.scss */
+    /* line 685, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-title {
       max-width: 227px;
       width: 100%;
@@ -738,12 +739,12 @@ input::-webkit-inner-spin-button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 684, ../scss/common.scss */
+        /* line 685, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-title {
           font-size: 12px;
           line-height: 15px;
           max-width: 292px; } }
-    /* line 699, ../scss/common.scss */
+    /* line 700, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -756,14 +757,14 @@ input::-webkit-inner-spin-button {
               align-items: center;
       margin-top: 40px; }
       @media (max-width: 744px) {
-        /* line 699, ../scss/common.scss */
+        /* line 700, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
           font-size: 10px; } }
-      /* line 707, ../scss/common.scss */
+      /* line 708, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download {
         position: relative;
         padding-left: 20px; }
-        /* line 711, ../scss/common.scss */
+        /* line 712, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:after {
           position: absolute;
           content: "";
@@ -774,15 +775,15 @@ input::-webkit-inner-spin-button {
           background: url("../../../assets/images/system/icon/download.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 722, ../scss/common.scss */
+        /* line 723, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:hover:after {
           background: url("../../../assets/images/system/icon/download-filled.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-      /* line 728, ../scss/common.scss */
+      /* line 729, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link {
         position: relative; }
-        /* line 731, ../scss/common.scss */
+        /* line 732, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:after {
           position: absolute;
           content: "";
@@ -794,7 +795,7 @@ input::-webkit-inner-spin-button {
           z-index: 2;
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 743, ../scss/common.scss */
+        /* line 744, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:hover:after {
           background: url("../../../assets/images/system/icon/arrow-filled.svg");
           -webkit-transition: all 0.2s ease-in;
@@ -803,29 +804,29 @@ input::-webkit-inner-spin-button {
 /* ======================================
 //          Donation Section
 ====================================== */
-/* line 757, ../scss/common.scss */
+/* line 758, ../scss/common.scss */
 .donation__inner {
   position: relative;
   margin-bottom: 100px;
   margin-top: 125px; }
   @media (max-width: 1440px) {
-    /* line 757, ../scss/common.scss */
+    /* line 758, ../scss/common.scss */
     .donation__inner {
       margin-top: 80px;
       margin-bottom: 80px; } }
   @media (max-width: 744px) {
-    /* line 757, ../scss/common.scss */
+    /* line 758, ../scss/common.scss */
     .donation__inner {
       margin-top: 50px;
       margin-bottom: 65px; } }
-  /* line 772, ../scss/common.scss */
+  /* line 773, ../scss/common.scss */
   .donation__inner .pre-title {
     top: 25px; }
     @media (max-width: 1440px) {
-      /* line 772, ../scss/common.scss */
+      /* line 773, ../scss/common.scss */
       .donation__inner .pre-title {
         top: 0; } }
-  /* line 780, ../scss/common.scss */
+  /* line 781, ../scss/common.scss */
   .donation__inner .donation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -837,36 +838,36 @@ input::-webkit-inner-spin-button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
-    /* line 784, ../scss/common.scss */
+    /* line 785, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-info {
       max-width: 690px;
       width: 100%;
       margin-left: auto; }
       @media (max-width: 1440px) {
-        /* line 784, ../scss/common.scss */
+        /* line 785, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           max-width: 515px;
           margin-right: auto; } }
       @media (max-width: 744px) {
-        /* line 784, ../scss/common.scss */
+        /* line 785, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           margin-left: unset; } }
-      /* line 798, ../scss/common.scss */
+      /* line 799, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info p {
         margin-top: 35px;
         margin-bottom: 30px; }
         @media (max-width: 1440px) {
-          /* line 798, ../scss/common.scss */
+          /* line 799, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-top: 30px; } }
         @media (max-width: 744px) {
-          /* line 798, ../scss/common.scss */
+          /* line 799, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-bottom: 20px;
             margin-top: 20px;
             font-size: 12px;
             line-height: 15px; } }
-      /* line 814, ../scss/common.scss */
+      /* line 815, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info .donation__content-btns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -875,7 +876,7 @@ input::-webkit-inner-spin-button {
             -ms-flex-align: center;
                 align-items: center; }
         @media (max-width: 744px) {
-          /* line 814, ../scss/common.scss */
+          /* line 815, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info .donation__content-btns {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -884,30 +885,30 @@ input::-webkit-inner-spin-button {
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: start; } }
-        /* line 822, ../scss/common.scss */
+        /* line 823, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
           margin-left: 25px; }
           @media (max-width: 744px) {
-            /* line 822, ../scss/common.scss */
+            /* line 823, ../scss/common.scss */
             .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
               margin-left: 0;
               margin-top: 30px; } }
-    /* line 833, ../scss/common.scss */
+    /* line 834, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-img {
       max-width: 222px;
       width: 100%; }
       @media (max-width: 1440px) {
-        /* line 833, ../scss/common.scss */
+        /* line 834, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-img {
           display: none; } }
 
 /* ======================================
 //          Donation Page
 ====================================== */
-/* line 848, ../scss/common.scss */
+/* line 849, ../scss/common.scss */
 .donation-page {
   padding-top: 50px; }
-  /* line 851, ../scss/common.scss */
+  /* line 852, ../scss/common.scss */
   .donation-page__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -917,22 +918,22 @@ input::-webkit-inner-spin-button {
             align-items: self-start;
     margin-bottom: 50px; }
     @media (max-width: 1440px) {
-      /* line 851, ../scss/common.scss */
+      /* line 852, ../scss/common.scss */
       .donation-page__inner {
         display: block; } }
-    /* line 858, ../scss/common.scss */
+    /* line 859, ../scss/common.scss */
     .donation-page__inner .pre-title {
       position: relative;
       top: 0; }
       @media (max-width: 1440px) {
-        /* line 858, ../scss/common.scss */
+        /* line 859, ../scss/common.scss */
         .donation-page__inner .pre-title {
           font-size: 8px; } }
-  /* line 868, ../scss/common.scss */
+  /* line 869, ../scss/common.scss */
   .donation-page__content {
     margin: 0 auto; }
 
-/* line 873, ../scss/common.scss */
+/* line 874, ../scss/common.scss */
 .donation-page__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -943,10 +944,10 @@ input::-webkit-inner-spin-button {
           flex-direction: column;
   margin-top: 60px; }
   @media (max-width: 1440px) {
-    /* line 873, ../scss/common.scss */
+    /* line 874, ../scss/common.scss */
     .donation-page__form {
       margin-top: 30px; } }
-  /* line 882, ../scss/common.scss */
+  /* line 883, ../scss/common.scss */
   .donation-page__form .donation-page__input {
     margin-bottom: 40px;
     padding-bottom: 14px;
@@ -958,12 +959,12 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 882, ../scss/common.scss */
+      /* line 883, ../scss/common.scss */
       .donation-page__form .donation-page__input {
         padding-bottom: 10px;
         margin-bottom: 25px;
         font-size: 12px; } }
-    /* line 899, ../scss/common.scss */
+    /* line 900, ../scss/common.scss */
     .donation-page__form .donation-page__input::-webkit-input-placeholder {
       font-family: Montserrat,sans-serif;
       font-weight: 300;
@@ -985,10 +986,10 @@ input::-webkit-inner-spin-button {
       font-size: 14px;
       color: #333; }
 
-/* line 908, ../scss/common.scss */
+/* line 909, ../scss/common.scss */
 .donation-page__input-amount {
   position: relative; }
-  /* line 911, ../scss/common.scss */
+  /* line 912, ../scss/common.scss */
   .donation-page__input-amount:after {
     content: " ";
     position: absolute;
@@ -999,7 +1000,7 @@ input::-webkit-inner-spin-button {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     background-color: #D3D3D3; }
-  /* line 922, ../scss/common.scss */
+  /* line 923, ../scss/common.scss */
   .donation-page__input-amount:before {
     content: "грн";
     position: absolute;
@@ -1008,15 +1009,15 @@ input::-webkit-inner-spin-button {
     font-size: 14px; }
 
 @media (max-width: 1440px) {
-  /* line 933, ../scss/common.scss */
+  /* line 934, ../scss/common.scss */
   .donation-page__total h3 {
     font-weight: 500;
     font-size: 12px; } }
 @media (max-width: 1440px) {
-  /* line 940, ../scss/common.scss */
+  /* line 941, ../scss/common.scss */
   .donation-page__total .donation-page__subtitle {
     font-size: 12px; } }
-/* line 946, ../scss/common.scss */
+/* line 947, ../scss/common.scss */
 .donation-page__total .donation-page__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1027,10 +1028,10 @@ input::-webkit-inner-spin-button {
           flex-direction: column;
   margin-top: 30px; }
   @media (max-width: 1440px) {
-    /* line 946, ../scss/common.scss */
+    /* line 947, ../scss/common.scss */
     .donation-page__total .donation-page__list {
       margin-top: 15px; } }
-  /* line 955, ../scss/common.scss */
+  /* line 956, ../scss/common.scss */
   .donation-page__total .donation-page__list .donation-page__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1041,15 +1042,15 @@ input::-webkit-inner-spin-button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    /* line 958, ../scss/common.scss */
+    /* line 959, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item:first-child {
       margin-bottom: 10px; }
-    /* line 962, ../scss/common.scss */
+    /* line 963, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item img {
       width: 36px;
       height: 26px;
       margin-right: 10px; }
-    /* line 968, ../scss/common.scss */
+    /* line 969, ../scss/common.scss */
     .donation-page__total .donation-page__list .donation-page__item .donation-page__currency-rate {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1059,7 +1060,7 @@ input::-webkit-inner-spin-button {
               align-items: center;
       color: #616161; }
 
-/* line 976, ../scss/common.scss */
+/* line 977, ../scss/common.scss */
 .donation-page__approve {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1069,42 +1070,42 @@ input::-webkit-inner-spin-button {
           align-items: center;
   margin-top: 30px; }
   @media (max-width: 1440px) {
-    /* line 976, ../scss/common.scss */
+    /* line 977, ../scss/common.scss */
     .donation-page__approve {
       margin-top: 20px; } }
-  /* line 984, ../scss/common.scss */
+  /* line 985, ../scss/common.scss */
   .donation-page__approve button {
     color: #333; }
-  /* line 988, ../scss/common.scss */
+  /* line 989, ../scss/common.scss */
   .donation-page__approve button:disabled {
     background: linear-gradient(93.68deg, #F5F5F5 -1.05%, #BEBEBE 100%); }
-  /* line 992, ../scss/common.scss */
+  /* line 993, ../scss/common.scss */
   .donation-page__approve p {
     margin-left: 25px;
     font-size: 14px; }
     @media (max-width: 1440px) {
-      /* line 992, ../scss/common.scss */
+      /* line 993, ../scss/common.scss */
       .donation-page__approve p {
         font-size: 12px;
         margin-left: 20px;
         max-width: 150px; } }
-    /* line 1002, ../scss/common.scss */
+    /* line 1003, ../scss/common.scss */
     .donation-page__approve p span {
       font-weight: 500; }
 
 /* ======================================
 //        Payment result pages
 ====================================== */
-/* line 1012, ../scss/common.scss */
+/* line 1013, ../scss/common.scss */
 .payment-info {
   margin-top: 230px;
   margin-bottom: 185px; }
   @media (max-width: 744px) {
-    /* line 1012, ../scss/common.scss */
+    /* line 1013, ../scss/common.scss */
     .payment-info {
       margin-top: 32px;
       margin-bottom: 90px; } }
-  /* line 1021, ../scss/common.scss */
+  /* line 1022, ../scss/common.scss */
   .payment-info .payment-info__inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1113,32 +1114,32 @@ input::-webkit-inner-spin-button {
         -ms-flex-align: center;
             align-items: center; }
     @media (max-width: 744px) {
-      /* line 1021, ../scss/common.scss */
+      /* line 1022, ../scss/common.scss */
       .payment-info .payment-info__inner {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
         text-align: center; } }
-    /* line 1028, ../scss/common.scss */
+    /* line 1029, ../scss/common.scss */
     .payment-info .payment-info__inner .payment-info__img {
       max-width: 200px;
       width: 100%;
       margin-right: 60px; }
       @media (max-width: 744px) {
-        /* line 1028, ../scss/common.scss */
+        /* line 1029, ../scss/common.scss */
         .payment-info .payment-info__inner .payment-info__img {
           margin-right: 0; } }
-    /* line 1038, ../scss/common.scss */
+    /* line 1039, ../scss/common.scss */
     .payment-info .payment-info__inner .payment-info__img.unsuccessful {
       max-width: 115px;
       width: 100%;
       margin-right: 110px; }
       @media (max-width: 744px) {
-        /* line 1038, ../scss/common.scss */
+        /* line 1039, ../scss/common.scss */
         .payment-info .payment-info__inner .payment-info__img.unsuccessful {
           margin-right: 0; } }
-    /* line 1050, ../scss/common.scss */
+    /* line 1051, ../scss/common.scss */
     .payment-info .payment-info__inner .payment-info__result p {
       margin-top: 50px;
       margin-bottom: 30px;
@@ -1146,13 +1147,13 @@ input::-webkit-inner-spin-button {
       font-size: 14px;
       line-height: 140%; }
       @media (max-width: 744px) {
-        /* line 1050, ../scss/common.scss */
+        /* line 1051, ../scss/common.scss */
         .payment-info .payment-info__inner .payment-info__result p {
           margin-top: 25px;
           margin-bottom: 25px;
           font-size: 12px;
           max-width: 345px; } }
-    /* line 1065, ../scss/common.scss */
+    /* line 1066, ../scss/common.scss */
     .payment-info .payment-info__inner .payment-info__result .payment-info__btn-group {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1161,7 +1162,7 @@ input::-webkit-inner-spin-button {
           -ms-flex-align: center;
               align-items: center; }
       @media (max-width: 744px) {
-        /* line 1065, ../scss/common.scss */
+        /* line 1066, ../scss/common.scss */
         .payment-info .payment-info__inner .payment-info__result .payment-info__btn-group {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
@@ -1170,25 +1171,25 @@ input::-webkit-inner-spin-button {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column; } }
-      /* line 1072, ../scss/common.scss */
+      /* line 1073, ../scss/common.scss */
       .payment-info .payment-info__inner .payment-info__result .payment-info__btn-group .linker-btn:first-child {
         margin-right: 45px; }
         @media (max-width: 744px) {
-          /* line 1072, ../scss/common.scss */
+          /* line 1073, ../scss/common.scss */
           .payment-info .payment-info__inner .payment-info__result .payment-info__btn-group .linker-btn:first-child {
             margin-right: 10px;
             margin-bottom: 20px; } }
-        /* line 1080, ../scss/common.scss */
+        /* line 1081, ../scss/common.scss */
         .payment-info .payment-info__inner .payment-info__result .payment-info__btn-group .linker-btn:first-child svg {
           -webkit-transform: rotate(180deg);
                   transform: rotate(180deg);
           margin-right: 10px; }
 
 @media (max-width: 744px) {
-  /* line 1090, ../scss/common.scss */
+  /* line 1091, ../scss/common.scss */
   .payment-info.unsuccessful {
     margin-top: 60px; } }
-/* line 1095, ../scss/common.scss */
+/* line 1096, ../scss/common.scss */
 .payment-info.unsuccessful .payment-info__result {
   margin-top: 50px; }
 
@@ -1269,6 +1270,11 @@ input::-webkit-inner-spin-button {
     color: #02839F;
     -webkit-transition: all 1s ease-in;
     transition: all 1s ease-in; }
+
+@media (max-width: 744px) {
+  /* line 57, ../../../modules/header/Header.module.scss */
+  .nav-list__en {
+    gap: 15px; } }
 
 /* line 3, ../../../modules/footer/Footer.module.scss */
 .footer .footer__inner {
