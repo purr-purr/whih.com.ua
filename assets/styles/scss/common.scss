@@ -1011,11 +1011,6 @@ input::-webkit-inner-spin-button {
   background-color: #fffff8;
 
   @include media-tablet {
-    max-width: 693px;
-    padding: 50px 80px;
-  }
-
-  @include media-mobile {
     max-width: 332px;
     padding: 50px 16px;
     border-radius: 10px;
@@ -1027,6 +1022,34 @@ input::-webkit-inner-spin-button {
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 30px;
+
+    @include media-tablet {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+    line-height: 20px;
+    text-align: center;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-tablet {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    a {
+      text-decoration-line: underline;
+      color: $blue;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -1035,12 +1058,319 @@ input::-webkit-inner-spin-button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 
-  &__heading {
+  @include media-tablet {
+    margin-bottom: 15px;
+  }
+
+  &__head {
+    @include flex-align(center);
     height: 70px;
-    background: linear-gradient(90.34deg, #FFFFFF 2.39%, rgba(255, 255, 255, 0) 100.75%);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 104px;
+    padding-right: 104px;
+    cursor: pointer;
     filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+    background-color: $white;
     backdrop-filter: blur(20px);
     border-radius: 10px;
+    border: 1px solid $second-border-color;
+
+    @include media-tablet {
+      height: 120px;
+      padding-left: 20px;
+      padding-right: 20px;
+      flex-direction: column;
+      align-items: baseline;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__head-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-right: 30px;
+
+    @include media-tablet {
+      font-size: 16px;
+      line-height: 20px;
+      margin-right: 0;
+    }
+  }
+
+  .detail-btn {
+    margin-left: auto;
+    padding-right: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: calc((100% - 12px) / 2);
+      right: 0;
+      width: 9px;
+      height: 12px;
+      background: url("../../images/system/icon/arrow-up.svg") no-repeat center / 100%;
+    }
+  }
+
+  &[open] .detail-btn:after {
+    background-image: url("../../images/system/icon/arrow-down.svg");
+  }
+
+  &__content {
+    background-color: $white;
+    box-shadow: 0 2px 15px rgba(235, 235, 235, 0.34);
+    border-radius: 0 0 10px 10px;
+    padding: 20px 104px 20px;
+
+    @include media-tablet {
+      padding: 20px;
+    }
+  }
+}
+
+.payment-detail {
+  border-bottom: 1px solid $border-color;
+  margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 10px;
+  }
+
+  &>li {
+    &:not(:last-child) {
+      border-bottom: 1px dashed $border-color;
+    }
+  }
+
+  &__item {
+    @include flex-align(center);
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+    @include media-tablet {
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    dt {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      min-width: 180px;
+      margin-right: 20px;
+
+      @include media-tablet {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        min-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.google-pay-btn {
+  min-width: 384px;
+  height: 68px;
+  background: $black;
+  margin: 20px auto;
+
+  @include media-tablet {
+    min-width: 100%;
+    height: 46px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &:hover {
+    background: $black;
+    opacity: .8;
+  }
+
+  img {
+    width: 80px;
+    height: 25px;
+
+    @include media-tablet {
+      width: 70px;
+      height: 20px;
+    }
+  }
+}
+
+.payment-card {
+  width: 480px;
+  height: 300px;
+  padding: 65px 48px 55px;
+  margin: 30px auto;
+  background-color: $white;
+  filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.35));
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+
+  @include media-tablet {
+    background-color: transparent;
+    filter: none;
+    backdrop-filter: none;
+    margin-top: 23px;
+    margin-bottom: 15px;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  &__chip {
+    width: 45px;
+    height: 38px;
+    margin-bottom: 22px;
+
+    @include media-tablet {
+      display: none;
+    }
+  }
+
+  &__input-group {
+    @include flex-justify-align(space-between, center);
+    margin-top: 20px;
+
+    @include media-tablet {
+      margin-top: 0;
+      flex-direction: column;
+      align-items: baseline;
+      gap: 15px
+    }
+  }
+
+  &__input-sub-group {
+    @include flex-align(center);
+    gap: 50px;
+
+    @include media-tablet {
+      gap: 20px;
+    }
+  }
+
+  label {
+    display: block;
+    width: fit-content;
+
+    @include media-tablet {
+      width: 100%;
+    }
+  }
+
+  span {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: $primary-text;
+    margin-bottom: 10px;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid $border-color;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-tablet {
+      background-color: transparent;
+    }
+
+    &:invalid {
+      border-color: red;
+    }
+
+    &::placeholder {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 20px;
+      color: $border-color;
+
+      @include media-tablet {
+        font-size: 12px;
+        line-height: 15px;
+        color: $primary-text;
+      }
+    }
+  }
+
+  &__name {
+    width: 219px;
+
+    @include media-tablet {
+      width: 100%;
+    }
+  }
+
+  &__number {
+    width: 170px;
+
+    @include media-tablet {
+      width: 100%;
+    }
+  }
+
+  &__date {
+    display: block;
+    width: 52px;
+
+    @include media-tablet {
+      width: 140px;
+    }
+  }
+
+  &__cvv {
+    display: block;
+    width: 23px;
+
+    @include media-tablet {
+      width: 140px;
+    }
+  }
+}
+
+.finish-pay {
+  @include flex-align(center);
+  gap: 34px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  width: fit-content;
+
+  .go-back-btn {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    padding-left: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: calc((100% - 9px) / 2);
+      left: 0;
+      width: 15px;
+      height: 9px;
+      background: url("../../images/system/icon/arrow-left.svg") no-repeat center / 100%;
+    }
   }
 }
