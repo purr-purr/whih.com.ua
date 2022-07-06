@@ -27,7 +27,7 @@ $(function() {
         $('.modal-bg').addClass('modal-bg--active');
     });
 
-    $('.modal-bg, .modal__close').on('click', function(event){
+    $('.modal-bg, .modal__close, .close-second-step').on('click', function(event){
         $('.modal-bg').removeClass('modal-bg--active');
     });
 

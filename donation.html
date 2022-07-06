@@ -70,7 +70,8 @@
                             </li>
                         </ul>
                         <div class="donation-page__approve">
-                            <button class="main-btn" disabled>Зробити донат</button>
+                            <button class="main-btn open-btn">Зробити
+                                донат</button>
                             <p><span>0% комісія</span> на оплату цієї послуги</p>
                         </div>
                     </div>
@@ -144,9 +145,9 @@
                 <img class="payment-card__chip"
                      src="../../../assets/images/system/icon/chip.svg" alt="Chip">
                 
-                <label class="payment-card__name" for="name">
+                <label for="name">
                     <span>Ім’я та прізвище власника</span>
-                    <input placeholder="Ivan Ivanenko" type="text" id="name">
+                    <input class="payment-card__name" placeholder="Ivan Ivanenko" type="text" id="name">
                 </label>
 
                 <div class="payment-card__input-group">
@@ -172,24 +173,25 @@
             </div>
 
             <div class="finish-pay">
-                <button class="go-back-btn">Повернутися назад</button>
-
+                <button class="go-back-btn close-second-step">Повернутися
+                    назад</button>
                 <button class="main-btn">Оплатити</button>
             </div>
 
-            <p class="second-step__text">Натискаючи кнопку “Оплатити”, ви погоджуєтеся з умовами
+            <p class="second-step__text second-step__text--last">Натискаючи
+                кнопку “Оплатити”, ви
+                погоджуєтеся з умовами
                 <a href="https://www.ipay.ua/media/files/public-offer.pdf"
                    target="_blank"
                 >публічного договору</a>.
             </p>
 
             <button class="modal__close">
-                <img src="../../..//images/system/icon/close.svg" alt="close">
+                <img src="../../../images/system/icon/close.svg" alt="close">
             </button>
         </div>
     </div>
 </main>
-
 <!--========== FOOTER LAYOUT ==========-->
 <footer id="included__footer" class="footer"></footer>
 <!--========== THE END FOOTER LAYOUT ==========-->
