@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Breakpoint mixins */
 /*-------------------------------------------------------------
     Project:        Astramed
@@ -63,7 +64,7 @@ ul {
 strong {
   font-weight: bold; }
 
-/* line 61, ../scss/common.scss */
+/* line 60, ../scss/common.scss */
 a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
@@ -71,33 +72,46 @@ a, a:focus, a:hover, a:active a:visited {
   -webkit-transition: all 1s ease-in;
   transition: all 1s ease-in; }
 
-/* line 68, ../scss/common.scss */
+/* line 67, ../scss/common.scss */
 button {
   font-family: 'Montserrat', sans-serif; }
 
-/* line 72, ../scss/common.scss */
+/* line 71, ../scss/common.scss */
+details summary::-webkit-details-marker {
+  display: none; }
+
+/* line 75, ../scss/common.scss */
+details > summary {
+  list-style: none; }
+
+/* line 79, ../scss/common.scss */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
+
+/* line 84, ../scss/common.scss */
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px; }
 
-/* line 73, ../scss/common.scss */
+/* line 85, ../scss/common.scss */
 ::-webkit-scrollbar-button {
   height: 0; }
 
-/* line 74, ../scss/common.scss */
+/* line 86, ../scss/common.scss */
 ::-webkit-scrollbar-thumb {
   height: 50px;
   background-color: #02839F;
   border-radius: 50px; }
 
-/* line 75, ../scss/common.scss */
+/* line 87, ../scss/common.scss */
 ::-webkit-scrollbar-track-piece {
   background-color: transparent; }
 
 /* ======================================
 //            Layout
 ====================================== */
-/* line 81, ../scss/common.scss */
+/* line 93, ../scss/common.scss */
 .c-container {
   max-width: 1170px;
   height: 100%;
@@ -107,7 +121,7 @@ button {
 /* ======================================
 //            Common used
 ====================================== */
-/* line 92, ../scss/common.scss */
+/* line 104, ../scss/common.scss */
 .main-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,18 +146,18 @@ button {
   transition: all 1 ease-in;
   cursor: pointer; }
   @media (max-width: 744px) {
-    /* line 92, ../scss/common.scss */
+    /* line 104, ../scss/common.scss */
     .main-btn {
       font-size: 12px;
       line-height: 15px;
       min-width: 155px; } }
-  /* line 113, ../scss/common.scss */
+  /* line 125, ../scss/common.scss */
   .main-btn:hover {
     background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
     -webkit-transition: all 1 ease-in;
     transition: all 1 ease-in; }
 
-/* line 119, ../scss/common.scss */
+/* line 131, ../scss/common.scss */
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,7 +165,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  /* line 122, ../scss/common.scss */
+  /* line 134, ../scss/common.scss */
   .logo .logo__title {
     position: relative;
     margin-right: 25px;
@@ -163,7 +177,7 @@ button {
     letter-spacing: 0.02em;
     text-transform: uppercase;
     color: #242424; }
-    /* line 134, ../scss/common.scss */
+    /* line 146, ../scss/common.scss */
     .logo .logo__title:after {
       top: 20px;
       right: -23px;
@@ -174,31 +188,35 @@ button {
               transform: rotate(90deg);
       width: 20px;
       height: 1px; }
-    /* line 145, ../scss/common.scss */
+      @media (max-width: 744px) {
+        /* line 146, ../scss/common.scss */
+        .logo .logo__title:after {
+          top: 7px; } }
+    /* line 161, ../scss/common.scss */
     .logo .logo__title span {
       font-size: 17px;
       font-weight: 800;
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  /* line 154, ../scss/common.scss */
+  /* line 170, ../scss/common.scss */
   .logo p {
     font-size: 10px;
     width: 100px;
     line-height: 12px; }
 
-/* line 161, ../scss/common.scss */
+/* line 177, ../scss/common.scss */
 .lang-switcher {
   font-size: 14px; }
   @media (max-width: 744px) {
-    /* line 161, ../scss/common.scss */
+    /* line 177, ../scss/common.scss */
     .lang-switcher {
       font-size: 12px; } }
-  /* line 168, ../scss/common.scss */
+  /* line 184, ../scss/common.scss */
   .lang-switcher a:first-child {
     margin-right: 10px;
     position: relative; }
-    /* line 172, ../scss/common.scss */
+    /* line 188, ../scss/common.scss */
     .lang-switcher a:first-child:after {
       top: 10px;
       right: -13px;
@@ -209,24 +227,24 @@ button {
               transform: rotate(90deg);
       width: 13px;
       height: 1px; }
-  /* line 184, ../scss/common.scss */
+  /* line 200, ../scss/common.scss */
   .lang-switcher .active {
     font-weight: 500;
     color: #02839F; }
 
-/* line 190, ../scss/common.scss */
+/* line 206, ../scss/common.scss */
 .title {
   font-weight: 500;
   font-size: 40px;
   color: #333; }
   @media (max-width: 744px) {
-    /* line 190, ../scss/common.scss */
+    /* line 206, ../scss/common.scss */
     .title {
       font-size: 20px;
       line-height: 24px;
       margin-top: 20px; } }
 
-/* line 202, ../scss/common.scss */
+/* line 218, ../scss/common.scss */
 .pre-title {
   position: absolute;
   top: 110px;
@@ -235,12 +253,12 @@ button {
   font-size: 10px;
   line-height: 140%; }
   @media (max-width: 744px) {
-    /* line 202, ../scss/common.scss */
+    /* line 218, ../scss/common.scss */
     .pre-title {
       position: relative;
       top: 0; } }
 
-/* line 216, ../scss/common.scss */
+/* line 232, ../scss/common.scss */
 .linker-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -257,25 +275,25 @@ button {
   transition: all .2s ease-in-out;
   cursor: pointer; }
   @media (max-width: 744px) {
-    /* line 216, ../scss/common.scss */
+    /* line 232, ../scss/common.scss */
     .linker-btn {
       font-size: 12px; } }
-  /* line 230, ../scss/common.scss */
+  /* line 246, ../scss/common.scss */
   .linker-btn svg {
     display: block;
     width: 15px;
     height: 8px;
     margin-left: 10px; }
-    /* line 236, ../scss/common.scss */
+    /* line 252, ../scss/common.scss */
     .linker-btn svg path {
       -webkit-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out; }
-  /* line 241, ../scss/common.scss */
+  /* line 257, ../scss/common.scss */
   .linker-btn:hover {
     color: #02839F;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out; }
-    /* line 245, ../scss/common.scss */
+    /* line 261, ../scss/common.scss */
     .linker-btn:hover svg path {
       fill: #02839F;
       -webkit-transition: all .2s ease-in-out;
@@ -284,7 +302,7 @@ button {
 /* ======================================
 //            Modal
 ====================================== */
-/* line 257, ../scss/common.scss */
+/* line 273, ../scss/common.scss */
 .modal-bg {
   display: none;
   position: fixed;
@@ -297,11 +315,11 @@ button {
   padding: 15px;
   z-index: 99998; }
   @media (max-width: 1440px) {
-    /* line 257, ../scss/common.scss */
+    /* line 273, ../scss/common.scss */
     .modal-bg {
       padding: 10px; } }
 
-/* line 274, ../scss/common.scss */
+/* line 290, ../scss/common.scss */
 .modal {
   width: 100%;
   padding: 100px;
@@ -314,7 +332,7 @@ button {
   z-index: 99999;
   overflow-y: scroll; }
 
-/* line 287, ../scss/common.scss */
+/* line 303, ../scss/common.scss */
 .modal__close {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -335,32 +353,32 @@ button {
   border: none;
   outline: none;
   background: none; }
-  /* line 300, ../scss/common.scss */
+  /* line 316, ../scss/common.scss */
   .modal__close img {
     width: 10px;
     height: 10px; }
 
-/* line 306, ../scss/common.scss */
+/* line 322, ../scss/common.scss */
 .modal-bg--active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 310, ../scss/common.scss */
+/* line 327, ../scss/common.scss */
 .props-modal {
   max-width: 1200px; }
   @media (max-width: 1440px) {
-    /* line 310, ../scss/common.scss */
+    /* line 327, ../scss/common.scss */
     .props-modal {
       max-width: 693px;
       padding: 80px 97px 30px; } }
   @media (max-width: 744px) {
-    /* line 310, ../scss/common.scss */
+    /* line 327, ../scss/common.scss */
     .props-modal {
       max-width: 332px;
       padding: 50px 16px;
       border-radius: 10px; } }
-  /* line 323, ../scss/common.scss */
+  /* line 340, ../scss/common.scss */
   .props-modal:before {
     content: ' ';
     position: absolute;
@@ -371,35 +389,35 @@ button {
     z-index: -1;
     background: url("../../images/system/any/modal-yellow-blur.png") no-repeat center/100%; }
     @media (max-width: 1440px) {
-      /* line 323, ../scss/common.scss */
+      /* line 340, ../scss/common.scss */
       .props-modal:before {
         top: -32px;
         left: 23px; } }
     @media (max-width: 744px) {
-      /* line 323, ../scss/common.scss */
+      /* line 340, ../scss/common.scss */
       .props-modal:before {
         top: -66px;
         left: -90px; } }
-  /* line 344, ../scss/common.scss */
+  /* line 361, ../scss/common.scss */
   .props-modal__title {
     font-weight: 500;
     font-size: 40px;
     line-height: 49px;
     margin-bottom: 32px; }
     @media (max-width: 744px) {
-      /* line 344, ../scss/common.scss */
+      /* line 361, ../scss/common.scss */
       .props-modal__title {
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 20px; } }
-  /* line 357, ../scss/common.scss */
+  /* line 374, ../scss/common.scss */
   .props-modal__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 102px; }
     @media (max-width: 1440px) {
-      /* line 357, ../scss/common.scss */
+      /* line 374, ../scss/common.scss */
       .props-modal__list {
         gap: 30px;
         -webkit-box-orient: vertical;
@@ -407,58 +425,58 @@ button {
             -ms-flex-direction: column;
                 flex-direction: column; } }
     @media (max-width: 744px) {
-      /* line 357, ../scss/common.scss */
+      /* line 374, ../scss/common.scss */
       .props-modal__list {
         gap: 20px; } }
-  /* line 371, ../scss/common.scss */
+  /* line 388, ../scss/common.scss */
   .props-modal__column {
     max-width: 408px;
     width: 100%; }
     @media (max-width: 744px) {
-      /* line 371, ../scss/common.scss */
+      /* line 388, ../scss/common.scss */
       .props-modal__column {
         max-width: 100%; } }
-  /* line 380, ../scss/common.scss */
+  /* line 397, ../scss/common.scss */
   .props-modal__list-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     margin-bottom: 10px; }
     @media (max-width: 744px) {
-      /* line 380, ../scss/common.scss */
+      /* line 397, ../scss/common.scss */
       .props-modal__list-title {
         font-size: 16px;
         line-height: 20px; } }
-    /* line 391, ../scss/common.scss */
+    /* line 408, ../scss/common.scss */
     .props-modal__list-title span {
       font-weight: 600;
       color: #02839F;
       white-space: nowrap; }
-  /* line 398, ../scss/common.scss */
+  /* line 415, ../scss/common.scss */
   .props-modal__pay-pal-icon {
     display: inline-block;
     vertical-align: middle;
     width: 71px;
     height: 19px; }
-  /* line 405, ../scss/common.scss */
+  /* line 422, ../scss/common.scss */
   .props-modal dd {
     line-height: 20px; }
-    /* line 408, ../scss/common.scss */
+    /* line 425, ../scss/common.scss */
     .props-modal dd:not(:last-child) {
       margin-bottom: 50px; }
       @media (max-width: 1440px) {
-        /* line 408, ../scss/common.scss */
+        /* line 425, ../scss/common.scss */
         .props-modal dd:not(:last-child) {
           margin-bottom: 30px; } }
       @media (max-width: 1440px) {
-        /* line 408, ../scss/common.scss */
+        /* line 425, ../scss/common.scss */
         .props-modal dd:not(:last-child) {
           margin-bottom: 20px; } }
 
 /* ======================================
 //            General Section
 ====================================== */
-/* line 426, ../scss/common.scss */
+/* line 443, ../scss/common.scss */
 .general__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -472,12 +490,12 @@ button {
   position: relative;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 1440px) {
-    /* line 426, ../scss/common.scss */
+    /* line 443, ../scss/common.scss */
     .general__inner {
       margin-top: 70px;
       padding-bottom: 330px; } }
   @media (max-width: 744px) {
-    /* line 426, ../scss/common.scss */
+    /* line 443, ../scss/common.scss */
     .general__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -489,7 +507,7 @@ button {
           -ms-flex-align: start;
               align-items: start;
       margin-top: 47px; } }
-  /* line 445, ../scss/common.scss */
+  /* line 462, ../scss/common.scss */
   .general__inner .general__title {
     max-width: 600px;
     font-weight: 500;
@@ -498,12 +516,12 @@ button {
     letter-spacing: 0.02em;
     text-transform: uppercase; }
     @media (max-width: 744px) {
-      /* line 445, ../scss/common.scss */
+      /* line 462, ../scss/common.scss */
       .general__inner .general__title {
         font-size: 35px;
         line-height: 43px;
         max-width: 280px; } }
-    /* line 459, ../scss/common.scss */
+    /* line 476, ../scss/common.scss */
     .general__inner .general__title span {
       font-weight: 800;
       font-size: 75px;
@@ -513,11 +531,11 @@ button {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
       @media (max-width: 744px) {
-        /* line 459, ../scss/common.scss */
+        /* line 476, ../scss/common.scss */
         .general__inner .general__title span {
           font-size: 35px;
           line-height: 43px; } }
-  /* line 475, ../scss/common.scss */
+  /* line 492, ../scss/common.scss */
   .general__inner .general__desc {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -527,30 +545,30 @@ button {
     line-height: 22px;
     font-weight: 400; }
     @media (max-width: 1440px) {
-      /* line 475, ../scss/common.scss */
+      /* line 492, ../scss/common.scss */
       .general__inner .general__desc {
         margin-top: 25px;
         margin-bottom: 30px; } }
     @media (max-width: 744px) {
-      /* line 475, ../scss/common.scss */
+      /* line 492, ../scss/common.scss */
       .general__inner .general__desc {
         font-size: 16px;
         max-width: 310px;
         margin-top: 16px;
         margin-bottom: 20px; } }
-  /* line 499, ../scss/common.scss */
+  /* line 516, ../scss/common.scss */
   .general__inner .general__img {
     max-width: 527px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 499, ../scss/common.scss */
+      /* line 516, ../scss/common.scss */
       .general__inner .general__img {
         max-width: 505px;
         position: absolute;
         right: -60px;
         top: 145px; } }
     @media (max-width: 744px) {
-      /* line 499, ../scss/common.scss */
+      /* line 516, ../scss/common.scss */
       .general__inner .general__img {
         position: relative;
         max-width: 335px;
@@ -559,7 +577,7 @@ button {
         margin: 0 auto;
         height: 250px; } }
 
-/* line 521, ../scss/common.scss */
+/* line 538, ../scss/common.scss */
 .general__quote {
   position: relative;
   padding-top: 100px;
@@ -569,11 +587,11 @@ button {
   background-position: center;
   border-bottom: 1px solid #D3D3D3; }
   @media (max-width: 744px) {
-    /* line 521, ../scss/common.scss */
+    /* line 538, ../scss/common.scss */
     .general__quote {
       padding-top: 50px;
       padding-bottom: 50px; } }
-  /* line 535, ../scss/common.scss */
+  /* line 552, ../scss/common.scss */
   .general__quote p {
     margin-left: auto;
     margin-right: auto;
@@ -584,7 +602,7 @@ button {
     line-height: 22px;
     text-align: center; }
     @media (max-width: 744px) {
-      /* line 535, ../scss/common.scss */
+      /* line 552, ../scss/common.scss */
       .general__quote p {
         max-width: 300px;
         font-size: 16px;
@@ -593,7 +611,7 @@ button {
 /* ======================================
 //            How-it-works Section
 ====================================== */
-/* line 558, ../scss/common.scss */
+/* line 575, ../scss/common.scss */
 .how-it-works__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,12 +621,12 @@ button {
   border-bottom: 1px solid #D3D3D3;
   position: relative; }
   @media (max-width: 1440px) {
-    /* line 558, ../scss/common.scss */
+    /* line 575, ../scss/common.scss */
     .how-it-works__inner {
       padding-bottom: 80px;
       padding-top: 80px; } }
   @media (max-width: 744px) {
-    /* line 558, ../scss/common.scss */
+    /* line 575, ../scss/common.scss */
     .how-it-works__inner {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -616,25 +634,25 @@ button {
               flex-direction: column;
       padding-bottom: 60px;
       padding-top: 50px; } }
-  /* line 576, ../scss/common.scss */
+  /* line 593, ../scss/common.scss */
   .how-it-works__inner .how-it-works__wrap {
     width: 100%; }
-  /* line 580, ../scss/common.scss */
+  /* line 597, ../scss/common.scss */
   .how-it-works__inner .how-it-works__content {
     margin-left: auto;
     margin-right: auto;
     max-width: 690px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 580, ../scss/common.scss */
+      /* line 597, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 512px; } }
     @media (max-width: 744px) {
-      /* line 580, ../scss/common.scss */
+      /* line 597, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content {
         max-width: 315px;
         margin-left: unset; } }
-    /* line 595, ../scss/common.scss */
+    /* line 612, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content p {
       margin-top: 30px;
       font-weight: 300;
@@ -642,23 +660,23 @@ button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 595, ../scss/common.scss */
+        /* line 612, ../scss/common.scss */
         .how-it-works__inner .how-it-works__content p {
           font-size: 12px;
           line-height: 15px;
           margin-top: 20px; } }
-    /* line 609, ../scss/common.scss */
+    /* line 626, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content--hidden-text {
       display: none; }
-      /* line 612, ../scss/common.scss */
+      /* line 629, ../scss/common.scss */
       .how-it-works__inner .how-it-works__content--hidden-text.active {
         display: block; }
-    /* line 617, ../scss/common.scss */
+    /* line 634, ../scss/common.scss */
     .how-it-works__inner .how-it-works__content .linker-btn {
       margin-left: auto;
       margin-top: 10px; }
 
-/* line 624, ../scss/common.scss */
+/* line 641, ../scss/common.scss */
 .how-it-works__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -671,13 +689,13 @@ button {
   width: 100%;
   margin-top: 50px; }
   @media (max-width: 1440px) {
-    /* line 624, ../scss/common.scss */
+    /* line 641, ../scss/common.scss */
     .how-it-works__cards {
       margin-top: 30px;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; } }
-  /* line 635, ../scss/common.scss */
+  /* line 652, ../scss/common.scss */
   .how-it-works__cards .how-it-works__card {
     padding: 20px;
     margin-right: 22px;
@@ -692,21 +710,21 @@ button {
     border-radius: 8px;
     border: 1px solid #F6F6F6; }
     @media (max-width: 1440px) {
-      /* line 635, ../scss/common.scss */
+      /* line 652, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 48%;
         margin-right: 0; } }
     @media (max-width: 744px) {
-      /* line 635, ../scss/common.scss */
+      /* line 652, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card {
         width: 100%;
         height: 130px; } }
-    /* line 657, ../scss/common.scss */
+    /* line 674, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
       -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
               filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34)); }
-    /* line 662, ../scss/common.scss */
+    /* line 679, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-title {
       max-width: 227px;
       width: 100%;
@@ -715,12 +733,12 @@ button {
       line-height: 140%;
       color: #333; }
       @media (max-width: 744px) {
-        /* line 662, ../scss/common.scss */
+        /* line 679, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-title {
           font-size: 12px;
           line-height: 15px;
           max-width: 292px; } }
-    /* line 677, ../scss/common.scss */
+    /* line 694, ../scss/common.scss */
     .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -733,14 +751,14 @@ button {
               align-items: center;
       margin-top: 40px; }
       @media (max-width: 744px) {
-        /* line 677, ../scss/common.scss */
+        /* line 694, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns {
           font-size: 10px; } }
-      /* line 685, ../scss/common.scss */
+      /* line 702, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download {
         position: relative;
         padding-left: 20px; }
-        /* line 689, ../scss/common.scss */
+        /* line 706, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:after {
           position: absolute;
           content: "";
@@ -751,15 +769,15 @@ button {
           background: url("/assets/images/system/icon/download.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 700, ../scss/common.scss */
+        /* line 717, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-download:hover:after {
           background: url("/assets/images/system/icon/download-filled.svg");
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-      /* line 706, ../scss/common.scss */
+      /* line 723, ../scss/common.scss */
       .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link {
         position: relative; }
-        /* line 709, ../scss/common.scss */
+        /* line 726, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:after {
           position: absolute;
           content: "";
@@ -771,7 +789,7 @@ button {
           z-index: 2;
           -webkit-transition: all 0.2s ease-in;
           transition: all 0.2s ease-in; }
-        /* line 721, ../scss/common.scss */
+        /* line 738, ../scss/common.scss */
         .how-it-works__cards .how-it-works__card .how-it-works__card-btns .how-it-works__card-link:hover:after {
           background: url("/assets/images/system/icon/arrow-filled.svg");
           -webkit-transition: all 0.2s ease-in;
@@ -780,29 +798,29 @@ button {
 /* ======================================
 //          Donation Section
 ====================================== */
-/* line 735, ../scss/common.scss */
+/* line 752, ../scss/common.scss */
 .donation__inner {
   position: relative;
   margin-bottom: 100px;
   margin-top: 125px; }
   @media (max-width: 1440px) {
-    /* line 735, ../scss/common.scss */
+    /* line 752, ../scss/common.scss */
     .donation__inner {
       margin-top: 80px;
       margin-bottom: 80px; } }
   @media (max-width: 744px) {
-    /* line 735, ../scss/common.scss */
+    /* line 752, ../scss/common.scss */
     .donation__inner {
       margin-top: 50px;
       margin-bottom: 65px; } }
-  /* line 750, ../scss/common.scss */
+  /* line 767, ../scss/common.scss */
   .donation__inner .pre-title {
     top: 25px; }
     @media (max-width: 744px) {
-      /* line 750, ../scss/common.scss */
+      /* line 767, ../scss/common.scss */
       .donation__inner .pre-title {
         top: 0; } }
-  /* line 758, ../scss/common.scss */
+  /* line 775, ../scss/common.scss */
   .donation__inner .donation__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -814,36 +832,36 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto; }
-    /* line 762, ../scss/common.scss */
+    /* line 779, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-info {
       max-width: 690px;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto; }
+      margin-left: auto; }
       @media (max-width: 1440px) {
-        /* line 762, ../scss/common.scss */
+        /* line 779, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
-          max-width: 515px; } }
+          max-width: 515px;
+          margin-right: auto; } }
       @media (max-width: 744px) {
-        /* line 762, ../scss/common.scss */
+        /* line 779, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info {
           margin-left: unset; } }
-      /* line 776, ../scss/common.scss */
+      /* line 793, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info p {
         margin-top: 35px;
         margin-bottom: 30px; }
         @media (max-width: 1440px) {
-          /* line 776, ../scss/common.scss */
+          /* line 793, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-top: 30px; } }
         @media (max-width: 744px) {
-          /* line 776, ../scss/common.scss */
+          /* line 793, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info p {
             margin-bottom: 20px;
             margin-top: 20px;
             font-size: 12px;
             line-height: 15px; } }
-      /* line 792, ../scss/common.scss */
+      /* line 809, ../scss/common.scss */
       .donation__inner .donation__content .donation__content-info .donation__content-btns {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -852,7 +870,7 @@ button {
             -ms-flex-align: center;
                 align-items: center; }
         @media (max-width: 744px) {
-          /* line 792, ../scss/common.scss */
+          /* line 809, ../scss/common.scss */
           .donation__inner .donation__content .donation__content-info .donation__content-btns {
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
@@ -861,29 +879,253 @@ button {
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: start; } }
-        /* line 800, ../scss/common.scss */
+        /* line 817, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
           margin-left: 25px; }
           @media (max-width: 744px) {
-            /* line 800, ../scss/common.scss */
+            /* line 817, ../scss/common.scss */
             .donation__inner .donation__content .donation__content-info .donation__content-btns .linker-btn {
               margin-left: 0;
               margin-top: 30px; } }
-    /* line 811, ../scss/common.scss */
+    /* line 828, ../scss/common.scss */
     .donation__inner .donation__content .donation__content-img {
       max-width: 222px;
       width: 100%; }
       @media (max-width: 1440px) {
-        /* line 811, ../scss/common.scss */
+        /* line 828, ../scss/common.scss */
         .donation__inner .donation__content .donation__content-img {
           display: none; } }
 
 /* ======================================
 //          Donation Page
 ====================================== */
-/* line 826, ../scss/common.scss */
+/* line 843, ../scss/common.scss */
 .donation-page {
   padding-top: 50px; }
+  /* line 846, ../scss/common.scss */
+  .donation-page__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: self-start;
+        -ms-flex-align: self-start;
+            align-items: self-start;
+    margin-bottom: 50px; }
+    @media (max-width: 1440px) {
+      /* line 846, ../scss/common.scss */
+      .donation-page__inner {
+        display: block; } }
+    /* line 853, ../scss/common.scss */
+    .donation-page__inner .pre-title {
+      position: relative;
+      top: 0; }
+      @media (max-width: 1440px) {
+        /* line 853, ../scss/common.scss */
+        .donation-page__inner .pre-title {
+          font-size: 8px; } }
+  /* line 863, ../scss/common.scss */
+  .donation-page__content {
+    margin: 0 auto; }
+
+/* line 868, ../scss/common.scss */
+.donation-page__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px; }
+  @media (max-width: 1440px) {
+    /* line 868, ../scss/common.scss */
+    .donation-page__form {
+      margin-top: 30px; } }
+  /* line 877, ../scss/common.scss */
+  .donation-page__form .donation-page__input {
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+    background: none;
+    font-family: Montserrat,sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%; }
+    @media (max-width: 1440px) {
+      /* line 877, ../scss/common.scss */
+      .donation-page__form .donation-page__input {
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        font-size: 12px; } }
+    /* line 894, ../scss/common.scss */
+    .donation-page__form .donation-page__input::-webkit-input-placeholder {
+      font-family: Montserrat,sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #333; }
+    .donation-page__form .donation-page__input:-ms-input-placeholder {
+      font-family: Montserrat,sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #333; }
+    .donation-page__form .donation-page__input::-ms-input-placeholder {
+      font-family: Montserrat,sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #333; }
+    .donation-page__form .donation-page__input::placeholder {
+      font-family: Montserrat,sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: #333; }
+
+/* line 903, ../scss/common.scss */
+.donation-page__input-amount {
+  position: relative; }
+  /* line 906, ../scss/common.scss */
+  .donation-page__input-amount:after {
+    content: " ";
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 17px;
+    height: 1px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    background-color: #D3D3D3; }
+  /* line 917, ../scss/common.scss */
+  .donation-page__input-amount:before {
+    content: "грн";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px; }
+
+@media (max-width: 1440px) {
+  /* line 928, ../scss/common.scss */
+  .donation-page__total h3 {
+    font-weight: 500;
+    font-size: 12px; } }
+@media (max-width: 1440px) {
+  /* line 935, ../scss/common.scss */
+  .donation-page__total .donation-page__subtitle {
+    font-size: 12px; } }
+/* line 941, ../scss/common.scss */
+.donation-page__total .donation-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px; }
+  @media (max-width: 1440px) {
+    /* line 941, ../scss/common.scss */
+    .donation-page__total .donation-page__list {
+      margin-top: 15px; } }
+  /* line 950, ../scss/common.scss */
+  .donation-page__total .donation-page__list .donation-page__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 953, ../scss/common.scss */
+    .donation-page__total .donation-page__list .donation-page__item:first-child {
+      margin-bottom: 10px; }
+    /* line 957, ../scss/common.scss */
+    .donation-page__total .donation-page__list .donation-page__item img {
+      width: 36px;
+      height: 26px;
+      margin-right: 10px; }
+    /* line 963, ../scss/common.scss */
+    .donation-page__total .donation-page__list .donation-page__item .donation-page__currency-rate {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      color: #616161; }
+
+/* line 971, ../scss/common.scss */
+.donation-page__approve {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px; }
+  @media (max-width: 1440px) {
+    /* line 971, ../scss/common.scss */
+    .donation-page__approve {
+      margin-top: 20px; } }
+  /* line 979, ../scss/common.scss */
+  .donation-page__approve button {
+    color: #333; }
+  /* line 983, ../scss/common.scss */
+  .donation-page__approve button:disabled {
+    background: linear-gradient(93.68deg, #F5F5F5 -1.05%, #BEBEBE 100%); }
+  /* line 987, ../scss/common.scss */
+  .donation-page__approve p {
+    margin-left: 25px;
+    font-size: 14px; }
+    @media (max-width: 1440px) {
+      /* line 987, ../scss/common.scss */
+      .donation-page__approve p {
+        font-size: 12px;
+        margin-left: 20px;
+        max-width: 150px; } }
+    /* line 997, ../scss/common.scss */
+    .donation-page__approve p span {
+      font-weight: 500; }
+
+/* line 1004, ../scss/common.scss */
+.second-step {
+  max-width: 1200px;
+  padding: 50px 100px;
+  background-color: #fffff8; }
+  @media (max-width: 1440px) {
+    /* line 1004, ../scss/common.scss */
+    .second-step {
+      max-width: 693px;
+      padding: 50px 80px; } }
+  @media (max-width: 744px) {
+    /* line 1004, ../scss/common.scss */
+    .second-step {
+      max-width: 332px;
+      padding: 50px 16px;
+      border-radius: 10px; } }
+  /* line 1020, ../scss/common.scss */
+  .second-step__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 30px; }
+
+/* line 1029, ../scss/common.scss */
+.payment-info {
+  max-width: 997px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 1035, ../scss/common.scss */
+  .payment-info__heading {
+    height: 70px;
+    background: linear-gradient(90.34deg, #FFFFFF 2.39%, rgba(255, 255, 255, 0) 100.75%);
+    -webkit-filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+            filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 10px; }
 
 /* line 2, ../../../modules/header/Header.module.scss */
 .header__inner {
@@ -1056,15 +1298,17 @@ button {
     @media (max-width: 744px) {
       /* line 65, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__contact-item {
-        margin-bottom: 10px; } }
-    /* line 76, ../../../modules/footer/Footer.module.scss */
+        margin-bottom: 10px;
+        font-size: 8px;
+        max-width: 121px; } }
+    /* line 78, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item:last-child {
       margin-right: 0; }
       @media (max-width: 1440px) {
-        /* line 76, ../../../modules/footer/Footer.module.scss */
+        /* line 78, ../../../modules/footer/Footer.module.scss */
         .footer .footer__inner .footer__contact-item:last-child {
           margin-bottom: 0; } }
-    /* line 84, ../../../modules/footer/Footer.module.scss */
+    /* line 86, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__contact-item .footer__contact-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1072,27 +1316,34 @@ button {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      /* line 87, ../../../modules/footer/Footer.module.scss */
-      .footer .footer__inner .footer__contact-item .footer__contact-link svg {
-        margin-right: 5px; }
+      /* line 89, ../../../modules/footer/Footer.module.scss */
+      .footer .footer__inner .footer__contact-item .footer__contact-link img {
+        margin-right: 5px;
+        width: 10px;
+        height: 10px; }
   @media (max-width: 744px) {
-    /* line 93, ../../../modules/footer/Footer.module.scss */
+    /* line 97, ../../../modules/footer/Footer.module.scss */
     .footer .footer__inner .footer__sub-info {
       -webkit-box-align: start;
           -ms-flex-align: start;
-              align-items: flex-start; } }
-  /* line 99, ../../../modules/footer/Footer.module.scss */
+              align-items: flex-start;
+      font-size: 8px; } }
+  /* line 104, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info p:first-child {
     max-width: 337px;
     width: 100%; }
     @media (max-width: 1440px) {
-      /* line 99, ../../../modules/footer/Footer.module.scss */
+      /* line 104, ../../../modules/footer/Footer.module.scss */
       .footer .footer__inner .footer__sub-info p:first-child {
         max-width: 160px; } }
-  /* line 108, ../../../modules/footer/Footer.module.scss */
+  /* line 113, ../../../modules/footer/Footer.module.scss */
   .footer .footer__inner .footer__sub-info .footer__sub-info--group p {
     text-align: right;
     margin-bottom: 10px; }
+    @media (max-width: 744px) {
+      /* line 113, ../../../modules/footer/Footer.module.scss */
+      .footer .footer__inner .footer__sub-info .footer__sub-info--group p {
+        margin-bottom: 0; } }
 
 @-webkit-keyframes spin {
   from {
@@ -1120,13 +1371,13 @@ button {
   /* line 32, ../../../modules/preloader/Preloader.module.scss */
   .preloader__row {
     position: relative;
-    top: calc((100% - 227px) / 2);
-    left: calc((100% - 227px) / 2);
-    width: 227px;
-    height: 227px;
+    top: calc((100% - 133px) / 2);
+    left: calc((100% - 133px) / 2);
+    width: 133px;
+    height: 133px;
     z-index: 9999999;
     background: url("/assets/images/system/any/preloader.svg") no-repeat center center;
-    background-size: 227px;
+    background-size: 133px;
     -webkit-animation: spin 15s linear 0s infinite;
     animation: spin 15s linear 0s infinite; }
 

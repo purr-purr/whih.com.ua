@@ -76,6 +76,11 @@ details > summary {
   list-style: none;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 ::-webkit-scrollbar { width: 3px; height: 3px;}
 ::-webkit-scrollbar-button { height: 0; }
 ::-webkit-scrollbar-thumb {height: 50px; background-color: #02839F; border-radius: 50px;}
@@ -147,6 +152,10 @@ details > summary {
       transform: rotate(90deg);
       width: 20px;
       height: 1px;
+
+      @include media-mobile {
+        top: 7px;
+      }
     }
 
     span {
@@ -771,10 +780,10 @@ details > summary {
       max-width: 690px;
       width: 100%;
       margin-left: auto;
-      margin-right: auto;
 
       @include media-tablet {
         max-width: 515px;
+        margin-right: auto;
       }
 
       @include media-mobile {
@@ -833,6 +842,162 @@ details > summary {
 
 .donation-page {
   padding-top: 50px;
+
+  &__inner {
+      @include flex-align(self-start);
+    margin-bottom: 50px;
+      @include media-tablet {
+        display: block;
+      }
+
+      .pre-title {
+        position: relative;
+        top: 0;
+
+        @include media-tablet {
+          font-size: 8px;
+        }
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+  }
+}
+
+.donation-page__form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  @include media-tablet {
+    margin-top: 30px;
+  }
+
+  .donation-page__input {
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    border: none;
+    border-bottom: 1px solid $border-color;
+    background: none;
+    font-family: Montserrat,sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    width: 100%;
+
+    @include media-tablet {
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-size: 12px;
+    }
+
+    &::placeholder {
+      font-family: Montserrat,sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      color: $primary-text;
+    }
+  }
+}
+
+.donation-page__input-amount {
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    width: 17px;
+    height: 1px;
+    transform: rotate(90deg);
+    background-color: $border-color;
+  }
+
+  &:before {
+    content: "грн";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 14px;
+  }
+}
+
+.donation-page__total {
+
+  h3 {
+    @include media-tablet {
+      font-weight: 500;
+      font-size: 12px;
+    }
+  }
+
+  .donation-page__subtitle {
+    @include media-tablet {
+      font-size: 12px;
+    }
+  }
+
+  .donation-page__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    @include media-tablet {
+      margin-top: 15px;
+    }
+
+    .donation-page__item {
+      @include flex-justify-align(space-between, center);
+
+      &:first-child {
+        margin-bottom: 10px;
+      }
+
+      img {
+        width: 36px;
+        height: 26px;
+        margin-right: 10px;
+      }
+
+      .donation-page__currency-rate {
+        @include flex-align(center);
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.donation-page__approve {
+    @include flex-align(center);
+    margin-top: 30px;
+
+    @include media-tablet {
+      margin-top: 20px;
+    }
+
+    button {
+      color: $primary-text;
+    }
+
+    button:disabled {
+      background: linear-gradient(93.68deg, #F5F5F5 -1.05%, #BEBEBE 100%);
+    }
+
+    p {
+      margin-left: 25px;
+      font-size: 14px;
+
+      @include media-tablet {
+        font-size: 12px;
+        margin-left: 20px;
+        max-width: 150px;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
 }
 
 // Donation Second Step Modal
