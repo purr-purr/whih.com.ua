@@ -57,7 +57,6 @@ strong {
   font-weight: bold;
 }
 
-
 a, a:focus, a:hover, a:active a:visited {
   outline: 0;
   color: inherit;
@@ -67,6 +66,14 @@ a, a:focus, a:hover, a:active a:visited {
 
 button {
   font-family: 'Montserrat', sans-serif;
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+details > summary {
+  list-style: none;
 }
 
 ::-webkit-scrollbar { width: 3px; height: 3px;}
@@ -307,6 +314,7 @@ button {
   display: flex;
 }
 
+// Donation Props Modal
 .props-modal {
   max-width: 1200px;
   @include media-tablet {
@@ -825,4 +833,45 @@ button {
 
 .donation-page {
   padding-top: 50px;
+}
+
+// Donation Second Step Modal
+.second-step {
+  max-width: 1200px;
+  padding: 50px 100px;
+  background-color: #fffff8;
+
+  @include media-tablet {
+    max-width: 693px;
+    padding: 50px 80px;
+  }
+
+  @include media-mobile {
+    max-width: 332px;
+    padding: 50px 16px;
+    border-radius: 10px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    margin-bottom: 30px;
+  }
+}
+
+.payment-info {
+  max-width: 997px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__heading {
+    height: 70px;
+    background: linear-gradient(90.34deg, #FFFFFF 2.39%, rgba(255, 255, 255, 0) 100.75%);
+    filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+  }
 }
