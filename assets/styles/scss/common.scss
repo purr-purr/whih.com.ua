@@ -112,6 +112,12 @@ details > summary {
   @include transition(1);
   cursor: pointer;
 
+  @include media-mobile {
+    font-size: 12px;
+    line-height: 15px;
+    min-width: 155px;
+  }
+
   &:hover {
     background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
     @include transition(1);
@@ -163,6 +169,10 @@ details > summary {
 .lang-switcher {
   font-size: 14px;
 
+  @include media-mobile {
+    font-size: 12px;
+  }
+
   a:first-child {
     margin-right: 10px;
     position: relative;
@@ -189,6 +199,12 @@ details > summary {
   font-weight: 500;
   font-size: 40px;
   color: $primary-text;
+
+  @include media-mobile {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 20px;
+  }
 }
 
 .pre-title {
@@ -198,6 +214,11 @@ details > summary {
   font-weight: 500;
   font-size: 10px;
   line-height: 140%;
+
+  @include media-mobile {
+    position: relative;
+    top: 0;
+  }
 }
 
 .linker-btn {
@@ -209,6 +230,10 @@ details > summary {
   background: transparent;
   transition: all .2s ease-in-out;
   cursor: pointer;
+
+  @include media-mobile {
+    font-size: 12px;
+  }
 
   svg {
     display: block;
@@ -229,14 +254,6 @@ details > summary {
       fill: $blue;
       transition: all .2s ease-in-out;
     }
-  }
-}
-
-@include media-tablet {
-  .main-btn {
-    font-size: 12px;
-    line-height: 15px;
-    min-width: 155px;
   }
 }
 
@@ -420,9 +437,17 @@ details > summary {
   position: relative;
   border-bottom: 1px solid $border-color;
 
+  @include media-tablet {
+    margin-top: 70px;
+    padding-bottom: 330px;
+  }
+
   @include media-mobile {
     flex-direction: column;
     position: relative;
+    padding-bottom: 0;
+    align-items: start;
+    margin-top: 47px;
   }
 
 
@@ -438,11 +463,6 @@ details > summary {
           font-size: 35px;
           line-height: 43px;
           max-width: 280px;
-
-      span {
-        font-size: 35px;
-        line-height: 43px;
-      }
     }
 
     span {
@@ -453,6 +473,11 @@ details > summary {
       background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @include media-mobile {
+        font-size: 35px;
+        line-height: 43px;
+      }
     }
   }
 
@@ -465,11 +490,16 @@ details > summary {
     line-height: 22px;
     font-weight: 400;
 
+    @include media-tablet {
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+
     @include media-mobile {
       font-size: 16px;
       max-width: 310px;
-      margin-top: 25px;
-      margin-bottom: 35px;
+      margin-top: 16px;
+      margin-bottom: 20px;
     }
 
   }
@@ -489,8 +519,10 @@ details > summary {
     @include media-mobile {
       position: relative;
       max-width: 335px;
-      top: 0;
+      top: -50px;
       right: 0;
+      margin: 0 auto;
+      height: 250px;
     }
   }
 }
@@ -504,6 +536,11 @@ details > summary {
   background-position: center;
   border-bottom: 1px solid $border-color;
 
+  @include media-mobile {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   p {
     margin-left: auto;
     margin-right: auto;
@@ -513,6 +550,12 @@ details > summary {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
+
+    @include media-mobile {
+      max-width: 300px;
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
@@ -533,6 +576,12 @@ details > summary {
     padding-top: 80px;
   }
 
+  @include media-mobile {
+    flex-direction: column;
+    padding-bottom: 60px;
+    padding-top: 50px;
+  }
+
   .how-it-works__wrap {
     width: 100%;
   }
@@ -547,12 +596,23 @@ details > summary {
       max-width: 512px;
     }
 
+    @include media-mobile {
+      max-width: 315px;
+      margin-left: unset;
+    }
+
     p {
       margin-top: 30px;
       font-weight: 300;
       font-size: 14px;
       line-height: 140%;
       color: $primary-text;
+
+      @include media-mobile {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 20px;
+      }
     }
 
     &--hidden-text {
@@ -598,6 +658,11 @@ details > summary {
       margin-right: 0;
     }
 
+    @include media-mobile {
+      width: 100%;
+      height: 130px;
+    }
+
     &:hover {
       background: linear-gradient(286.14deg, rgba(2, 131, 159, 0.2) 0%, rgba(251, 255, 51, 0.174) 44.39%, rgba(255, 255, 255, 0) 87.33%), linear-gradient(108.47deg, #FFFFFF -0.63%, rgba(255, 255, 255, 0) 105.15%);
       filter: drop-shadow(0px 2px 15px rgba(235, 235, 235, 0.34));
@@ -610,11 +675,21 @@ details > summary {
       font-size: 14px;
       line-height: 140%;
       color: $primary-text;
+
+      @include media-mobile {
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 292px;
+      }
     }
 
     .how-it-works__card-btns {
       @include flex-justify-align(space-between, center);
       margin-top: 40px;
+
+      @include media-mobile {
+        font-size: 10px;
+      }
 
       .how-it-works__card-download {
         svg {
@@ -640,8 +715,17 @@ details > summary {
     margin-bottom: 80px;
   }
 
+  @include media-mobile {
+    margin-top: 50px;
+    margin-bottom: 65px;
+  }
+
   .pre-title {
     top: 25px;
+
+    @include media-mobile {
+      top: 0;
+    }
   }
 
   .donation__content {
@@ -658,6 +742,10 @@ details > summary {
         max-width: 515px;
       }
 
+      @include media-mobile {
+        margin-left: unset;
+      }
+
       p {
         margin-top: 35px;
         margin-bottom: 30px;
@@ -665,13 +753,30 @@ details > summary {
         @include media-tablet {
           margin-top: 30px;
         }
+
+        @include media-mobile {
+          margin-bottom: 20px;
+          margin-top: 20px;
+          font-size: 12px;
+          line-height: 15px;
+        }
       }
 
       .donation__content-btns {
         @include flex-align(center);
 
+        @include media-mobile {
+          flex-direction: column;
+          align-items: start;
+        }
+
         .linker-btn {
           margin-left: 25px;
+
+          @include media-mobile {
+            margin-left: 0;
+            margin-top: 30px;
+          }
         }
       }
     }
