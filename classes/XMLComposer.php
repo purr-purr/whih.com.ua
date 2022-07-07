@@ -18,7 +18,7 @@ class XMLComposer
                 xmlwriter_end_element($xml);
             } else {
                 xmlwriter_start_element($xml, $key);
-                xmlwriter_text($xml, $value);
+                xmlwriter_write_raw($xml, $value);
                 xmlwriter_end_element($xml);
             }
         }

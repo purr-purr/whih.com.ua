@@ -11,7 +11,15 @@ $amount = $_POST['amount'];
 $currency = $_POST['currency'];
 $description = $_POST['description'];
 $language = $_POST['language'];
-$info = $_POST['name'];
+$info = json_encode(array(
+    'service_data' => (object) array(
+        'Receiver' => 'БО "ВБФ "БЕЗ НАДІЇ СПОДІВАЮСЬ"',
+        'ZKPO' => '40991205',
+        'BankReciever' => 'АБ «УКРГАЗБАНК»',
+        'AccReceiver' => 'UA093204780000026004924922916',
+        'PayText' => 'Благодійна допомога для гуманітарних потреб України',
+    ),
+), JSON_UNESCAPED_UNICODE);
 
 if (empty($amount)
     ||
@@ -24,7 +32,9 @@ if (empty($amount)
 }
 
 if (empty($description)) {
-    $description = ($language == 'uk') ? 'Благодійна допомога' : 'Comment';
+    $description = (($language == 'uk') ? 'Благодійна допомога' : 'Comment') . ' - ' . $_POST['name'];
+} else {
+    $description .= $_POST['name'];
 }
 
 $lifetime = 24;
