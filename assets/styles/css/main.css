@@ -123,8 +123,8 @@ input::-webkit-inner-spin-button {
   color: #fff;
   background: linear-gradient(92.85deg, #30CDFF 7.07%, #00809B 101.34%);
   border-radius: 8px;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: all 1 ease-in;
+  transition: all 1 ease-in;
   cursor: pointer; }
   @media (max-width: 744px) {
     .main-btn {
@@ -133,8 +133,8 @@ input::-webkit-inner-spin-button {
       min-width: 155px; } }
   .main-btn:hover {
     background: linear-gradient(93.68deg, #FFDD2C -1.05%, #FFA132 100%);
-    -webkit-transition: all 1s ease-in;
-    transition: all 1s ease-in; }
+    -webkit-transition: all 1 ease-in;
+    transition: all 1 ease-in; }
 
 .logo {
   display: -webkit-box;
