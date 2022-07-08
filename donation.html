@@ -48,7 +48,13 @@
                     <form action="" class="donation-page__form">
                         <input type="name" placeholder="ПІБ" class="donation-page__input">
                         <input type="text" placeholder="Благодійна допомога" class="donation-page__input">
-                        <div class="donation-page__input-amount"><input type="number" placeholder="Сума" class="donation-page__input"></div>
+                        <div class="donation-page__input-amount">
+                            <input
+                                type="number" onchange="calcValue();"
+                                id="inputAmount"
+                                placeholder="Сума"
+                                class="donation-page__input">
+                        </div>
                     </form>
                     <div class="donation-page__total">
                         <h3>Орієнтовна сума</h3>
@@ -57,16 +63,23 @@
                             <li class="donation-page__item">
                                 <div class="donation-page__currency-rate">
                                     <img src="assets/images/system/icon/european-union.svg" alt="European Union Flag">
-                                    <p>1 EUR  30.1 UAH</p>
+                                    <p>
+                                        1 EUR
+                                        <span class="defaultEurValue">30.1</span>
+                                        UAH
+                                    </p>
                                 </div>
-                                <p>0.00 EUR</p>
+                                <p><span class="updatedEUR">0.00</span> EUR</p>
                             </li>
                             <li class="donation-page__item">
                                 <div class="donation-page__currency-rate">
                                     <img src="assets/images/system/icon/usa.svg" alt="European Union Flag">
-                                    <p>1 USD  29.3 UAH</p>
+                                    <p>
+                                        1 USD
+                                        <span class="defaultUsdValue">30.1</span> UAH
+                                    </p>
                                 </div>
-                                <p>0.00 USD</p>
+                                <p><span class="updatedUSD">0.00</span> USD</p>
                             </li>
                         </ul>
                         <div class="donation-page__approve">

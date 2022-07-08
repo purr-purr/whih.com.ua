@@ -1,7 +1,7 @@
 /*-------------------------------------------------------------
-    Project:        Astramed
-    Author:         Anton Shaposhnikov
-	Email:			shaposhnikov.web@gmail.com
+    Project:        Charity fund
+    Author:         Anton Shaposhnikov / Pavlo Shaposhnikov
+    Email:          shaposhnikov.web@gmail.com / pavelshaposhnikov.web@gmail.com
 --------------------------------------------------------------*/
 
 html {
@@ -823,7 +823,8 @@ input::-webkit-inner-spin-button {
 
           @include media-mobile {
             margin-left: 0;
-            margin-top: 30px;
+            order: -1;
+            margin-bottom: 30px;
           }
         }
       }
