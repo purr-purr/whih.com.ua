@@ -1,9 +1,9 @@
 $(function () {
-    $("#included__header").load("/modules/header/index.html");
-    $("#included__footer").load("/modules/footer/index.html");
-    $("#included__preloader").load("/modules/preloader/index.html");
-    $("#included__header-en").load("/modules/header/index_en.html");
-    $("#included__footer-en").load("/modules/footer/index_en.html");
+    $("#included__header").load("modules/header/index.html");
+    $("#included__footer").load("modules/footer/index.html");
+    $("#included__preloader").load("modules/preloader/index.html");
+    $("#included__header-en").load("modules/header/index_en.html");
+    $("#included__footer-en").load("modules/footer/index_en.html");
 });
 
 window.onload = function () {
