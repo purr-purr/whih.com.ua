@@ -327,14 +327,17 @@ input::-webkit-inner-spin-button {
 
 .modal-bg--active {
   display: flex;
+  align-items: center;
 }
 
 // Donation Props Modal
 .props-modal {
   max-width: 1200px;
+  height: fit-content;
+
   @include media-tablet {
     max-width: 693px;
-    padding: 80px 97px 30px;
+    padding: 80px 97px;
   }
 
   @include media-mobile {
@@ -374,29 +377,6 @@ input::-webkit-inner-spin-button {
       font-size: 20px;
       line-height: 24px;
       margin-bottom: 20px;
-    }
-  }
-
-  &__list {
-    display: flex;
-    gap: 102px;
-
-    @include media-tablet {
-      gap: 30px;
-      flex-direction: column;
-    }
-
-    @include media-mobile {
-      gap: 20px;
-    }
-  }
-
-  &__column {
-    max-width: 408px;
-    width: 100%;
-
-    @include media-mobile {
-      max-width: 100%;
     }
   }
 
